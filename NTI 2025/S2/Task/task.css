@@ -11,8 +11,8 @@ body {
 }
 
 #main {
-    width: 70%;
-    height: 400px;
+    width: 60%;
+    height: 70%;
     border-radius: 25px;
     background-color: rgb(255, 252, 252);
     margin: 10% auto;
@@ -93,7 +93,7 @@ h5 {
 #submit {
     background-color: rgb(63, 173, 220);
     border: none;
-    border-radius: 12px;
+    border-radius: 25px;
     margin-left: 30%;
     margin-top: 2%;
     margin-bottom: 2%;
