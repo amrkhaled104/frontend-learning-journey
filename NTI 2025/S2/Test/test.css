@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(200, 180, 140);
+}
+
+#main {
+    width: 25%;
+    height: 350px;
+    border: solid blue 3px;
+    border-radius: 25px;
+    background-color: rgb(39, 37, 37);
+    margin: 10% auto;
+}
+
+#title {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
+    margin: 5% auto;
+    /*background-color: red;*/
+}
+
+#form {
+    margin: 5% auto;
+    /*background: blueviolet;*/
+    padding: 5% auto
+}
+
+#form input {
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 45%;
+    padding-left: 10px;
+    margin: 5px 1% 5px 20%;
+    /* background-color: red;*/
+}
+
+#form button {
+    border: none;
+    border-radius: 5px;
+    width: 15%;
+    height: 30px;
+    margin-left: 0;
+    padding: auto;
+    font-size: large;
+    font-weight: bold;
+    background-color: blue;
+    color: black;
+}
+
+#task {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5% auto;
+}
+
+.card {
+    border: solid white 2px;
+    margin: 2% auto;
+    padding: 2%;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.card span {
+    color: white;
+    font-size: 13px;
+    font-family: sans-serif;
+    margin-right: 49.5%;
+}
+
+.card .selected {
+    color: gray;
+    text-decoration: line-through;
+    margin-right: 51%;
+
+}
+
+.card a {
+    color: red;
+    text-decoration: none;
+    margin-right: 2%;
+    font-size: 13px;
+}
+
+.card .finish {
+    margin-right: 33%;
+}
+
+#main hr {
+    width: 90%;
+    margin: 3% auto;
+    border: none;
+    height: 2px;
+    background-color: blue;
+}
+
+#main p {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
