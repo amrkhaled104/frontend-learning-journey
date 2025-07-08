@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #3a3a3a;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    font-size: 28px;
+    font-weight: 100;
+}
+
+hr {
+    width: 80px;
+    height: 1.5px;
+    background-color: orange;
+    margin: 0 auto 30px;
+    border: none;
+}
+
+.section-description {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+    margin-bottom: 5%;
+}
+
+.displ {
+
+    display: inline-block;
+
+}
+
+.Most {
+    background-color: rgb(241, 110, 2);
+    color: white;
+    width: 100%;
+    padding-top: 2%;
+    height: 5%;
+    text-align: center;
+    height: 40px;
+}
+
+/*
+.pricing-cards-container {
+    display: inline-block;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+*/
+.pricing-card {
+    width: 25%;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-left: 10%;
+    height: 550px;
+    vertical-align: bottom;
+}
+
+.popular {
+    margin-left: 2%;
+}
+
+.diff {
+    height: 580px;
+    ;
+}
+
+.card-header {
+    background-color: #3b3a3a;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-bottom: white solid 1px;
+}
+
+.card-header h3 {
+    font-size: 20px;
+}
+
+.price-box {
+    background-color: #3b3a3a;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-bottom: solid rgb(241, 110, 2) 4px;
+    width: 100%;
+}
+
+.professional {
+    padding: 25px;
+
+}
+
+.price {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.price-description {
+    font-size: 15px;
+    margin-top: 20px;
+    color: #8a8888;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.features-list {
+    list-style: none;
+}
+
+.features-list li {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    color: #666;
+}
+
+.features-list li:last-child {
+    border-bottom: none;
+}
