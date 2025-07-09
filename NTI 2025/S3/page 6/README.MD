@@ -1,0 +1,1 @@
+![Live Output](https://github.com/amrkhaled104/frontend-learning-journey/blob/main/NTI%202025/S3/page%206/output.png)
