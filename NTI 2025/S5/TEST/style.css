@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+body{
+    height: 3000px;
+}
+:root{
+    --green: #2da884;
+    --black: #000000;
+    --lightgray: #c2c2c2;
+    --lgFont: 1.5rem;
+    --mdFont:1rem;
+    --smFont:0.8rem;
+    --xlFont:2rem;
+    --fwBold: 600;
+    --fwThin: 100;
+}
+.container{
+    width: 80%;
+    margin: 5% auto;
+}
+.bggreen{
+    background-color:var(--green) ;
+}
+.text-green{
+    color: var(--green);
+}
+.text-main{
+    color: var(--black);
+}
+h1{
+    width: 40%;
+    margin: 0 1%;
+    font-size: 3rem;
+}
+p{
+    margin: 2% 1%;
+    font-size: .8rem;
+    width: 45%;
+}
+.card{
+   display: flex;
+   flex-wrap: wrap;
+   color: white;
+   justify-content: space-between; 
+}
+.card-item{
+    width: 31%;
+    height: 250px;
+    margin: 1%;
+    padding: 2%;
+    border-radius:5%;
+    box-shadow: 0 0 15px rgba(74, 72, 72, 0.7);
+}
+.card p{
+    width: 100%;
+    font-size: 1rem;
+}
+h2{
+    margin-top: 6%;
+}
+h2 span{
+    color: var(--green);
+}
+.loe{
+    margin-top: 6%;
+
+}
+
