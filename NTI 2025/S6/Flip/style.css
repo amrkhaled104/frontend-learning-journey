@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    perspective: 600px;
+}
+
+.container {
+    width: 60%;
+    height: fit-content;
+    margin: 5% auto;
+}
+
+.main{
+    width: 30%;
+    height: 300px;
+    position: relative;
+}
+.front, .back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transition: all 0.5s;
+}
+.front{
+    transform: rotateY(0deg);
+    background-color: black;
+    color: white;
+}
+.back{
+    transform: rotateY(180deg);
+    background: rgb(154, 31, 31);
+    color: rgb(253, 253, 253);
+}
+
+.main:hover .front{
+        transform: rotateY(180deg);
+}
+.main:hover .back{
+        transform: rotateY(0deg);
+}
+
