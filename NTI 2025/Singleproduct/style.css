@@ -1,0 +1,97 @@
+.fw-bo {
+    font-weight: 500;
+}
+
+.px-6 {
+    padding-right: 2rem !important;
+    padding-left: 6rem !important;
+}
+
+.mx-5 {
+    margin-right: 3rem !important;
+    margin-left: 6rem !important;
+}
+
+.stars i {
+    color: gold;
+    font-size: 1.2rem;
+}
+
+.review-text {
+    color: gray;
+    font-size: 1rem;
+    border-left: solid 1px gray;
+}
+
+.p-2 {
+    padding: 1rem !important;
+}
+
+.fs-1 {
+    font-size: 1.1rem !important;
+}
+.fs-2{
+    font-size: 1.5rem !important;
+}
+.w-70 {
+    width: 70%;
+}
+
+.ml-2{
+    margin-left: 2%;
+}
+.rounded-circle{
+       width: 28px !important;
+    height: 28px !important;
+}
+
+:root {
+    --primaryColor: #B88E2F;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.hero-content {
+    background-color: #FFF3E3;
+}
+
+.full-color-btn {
+    background-color: var(--primaryColor);
+    color: white;
+}
+
+.card3-item {
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.card3-item:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.discount {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.info-tabs .nav-link {
+    color: #878686;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.info-tabs .nav-link.active {
+    color: black;
+}
+
+footer {
+    background-color: #f8f9fa;
+}
+
+.Fh2 {
+    color: #848383 !important;
+    font-size: 1rem !important;
+}
