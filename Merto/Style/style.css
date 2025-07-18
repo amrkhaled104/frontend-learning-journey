@@ -1,3 +1,4 @@
+ /*logo*/
  .normal-logo {
      max-width: 9vw;
      height: auto;
@@ -26,29 +27,40 @@
      border-bottom: 1px solid rgb(43, 42, 42);
  }
 
+ /*all hover*/
  .hotline:hover,
  .Account:hover,
- .current-language:hover {
+ #language-selector:hover,
+ #currency-selector:hover,
+ .heart:hover,
+ .cart:hover {
      color: rgb(230, 34, 34);
      transition: all 0.3s;
  }
 
- #language-menu .lang-item:hover a {
-    color: rgb(243, 4, 4); 
-         transition: all 0.3s;
+ .lang-item:hover a {
+     color: rgb(255, 0, 0) !important;
+     transition: all 0.3s;
+ }
 
-}
-
+ .currency-item:hover a {
+     color: rgb(255, 0, 0) !important;
+     transition: all 0.3s;
+ }
 
  #language-selector:hover #language-menu {
      display: block !important;
-     transition: all 1s;
  }
 
- .top-297 {
-     top: 297% !important;
+ .position-relative:hover #searchSuggestions {
+     display: block !important;
  }
 
+ #currency-selector:hover #currency-menu {
+     display: block !important;
+ }
+
+ /*for div Suggestions*/
  .ptlr-10 {
      padding-top: 28% !important;
      left: -3%;
@@ -60,6 +72,6 @@
      width: 139% !important;
  }
 
- .position-relative:hover #searchSuggestions {
-     display: block !important;
+ .fs-08 {
+     font-size: 1.5rem;
  }
