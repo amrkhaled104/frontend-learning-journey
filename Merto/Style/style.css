@@ -1,0 +1,65 @@
+ .normal-logo {
+     max-width: 9vw;
+     height: auto;
+ }
+
+ .mobile-logo {
+     max-width: 20vw;
+     height: auto;
+     display: none;
+
+ }
+
+ @media (max-width: 768px) {
+
+     .logo img.normal-logo {
+         display: none;
+     }
+
+     .logo img.mobile-logo {
+         display: block;
+     }
+ }
+
+ .header-top {
+     border: 0;
+     border-bottom: 1px solid rgb(43, 42, 42);
+ }
+
+ .hotline:hover,
+ .Account:hover,
+ .current-language:hover {
+     color: rgb(230, 34, 34);
+     transition: all 0.3s;
+ }
+
+ #language-menu .lang-item:hover a {
+    color: rgb(243, 4, 4); 
+         transition: all 0.3s;
+
+}
+
+
+ #language-selector:hover #language-menu {
+     display: block !important;
+     transition: all 1s;
+ }
+
+ .top-297 {
+     top: 297% !important;
+ }
+
+ .ptlr-10 {
+     padding-top: 28% !important;
+     left: -3%;
+     width: 106%;
+     top: -22%
+ }
+
+ .form-select {
+     width: 139% !important;
+ }
+
+ .position-relative:hover #searchSuggestions {
+     display: block !important;
+ }
