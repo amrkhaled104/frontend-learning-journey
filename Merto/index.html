@@ -26,6 +26,13 @@
     <link rel="icon" href="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/08/cropped-favicon-1-192x192.png"
         sizes="192x192">
 
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+
     <link rel="stylesheet" href="Style/style.css" />
 </head>
 
@@ -415,26 +422,23 @@
 
                     <div class="carousel-inner h-100">
                         <div class="carousel-item active h-100 position-relative">
-                            <img src="images/slide1.jpg" class="d-block w-100 h-100" style="object-fit: cover;"
-                                alt="First slide">
-                            <div class="position-absolute text-start text-white p-4" style="bottom: 15%; left: 1.1%;">
+                            <img src="images/slide1.jpg" class="d-block w-100 h-100" alt="First slide">
+                            <div class="position-absolute text-start text-white p-4" style="bottom: 15%; left: 5.1%;">
                                 <a href="#" class="btn bg-white text-dark custom-hover-btn px-4 py-3 fw-semibold">SHOP
                                     NOW</a>
                             </div>
                         </div>
                         <div class="carousel-item h-100 position-relative">
-                            <img src="images/slide2.jpg" class="d-block w-100 h-100" style="object-fit: cover;"
-                                alt="Second slide">
-                            <div class="position-absolute text-start text-white p-4" style="bottom: 15%; left: 1.1%;">
-                               
+                            <img src="images/slide2.jpg" class="d-block w-100 h-100" alt="Second slide">
+                            <div class="position-absolute text-start text-white p-4" style="bottom: 15%; left: 6.1%;">
+
                                 <a href="#" class="btn bg-white text-dark custom-hover-btn px-4 py-3 fw-semibold">SHOP
                                     NOW</a>
                             </div>
                         </div>
                         <div class="carousel-item h-100 position-relative">
-                            <img src="images/slide3.jpg" class="d-block w-100 h-100" style="object-fit: cover;"
-                                alt="Third slide">
-                            <div class="position-absolute text-start text-white p-4" style="bottom: 15%; left: 1.1%;">
+                            <img src="images/slide3.jpg" class="d-block w-100 h-100" alt="Third slide">
+                            <div class="position-absolute text-start text-white p-4" style="bottom: 15%; left: 7.1%;">
                                 <a href="#" class="btn bg-white text-dark custom-hover-btn px-4 py-3 fw-semibold">SHOP
                                     NOW</a>
                             </div>
@@ -446,14 +450,14 @@
             <!-- Right Side Boxes -->
             <div class="col-12 col-md-4 d-flex flex-column">
                 <!-- Box 1 -->
-                <div class="position-relative overflow-hidden" style="height: 40vh;">
+                <div class="position-relative overflow-hidden col-12" style="height: 40vh;">
                     <img src="images/makeup.png" class="position-absolute top-0 start-0 w-100 h-100 hover-zoom"
                         style="object-fit: cover;">
                     <div class="position-absolute text-dark p-4 my-4">
                         <h6 class="fw-semibold">BLACK FRIDAY</h6>
                         <h1 class="w-75">Big Sale Eyeshadow</h1>
                         <h6>Over +100 items</h6>
-                        <a href="#" class="btn btn-dark mt-2">SHOP NOW</a>
+                        <a href="#" class="btn bg-dark text-white custom-hover-btn px-2 py-2 fw-semibold">SHOP NOW</a>
                     </div>
                 </div>
 
@@ -463,9 +467,9 @@
                         style="object-fit: cover;">
                     <div class="position-absolute text-dark p-4 my-4">
                         <h6 class="fw-semibold">NEW COLLECTION</h6>
-                        <h2 class="w-75">Big Sale Eyeshadow</h2>
+                        <h1 class="w-75">Big Sale Eyeshadow</h1>
                         <h6>Best jacket in year</h6>
-                        <a href="#" class="btn btn-dark mt-2">SHOP NOW</a>
+                        <a href="#" class="btn bg-dark text-white  custom-hover-btn px-2 py-2 fw-semibold">SHOP NOW</a>
                     </div>
                     <!-- Price Circle -->
                     <div class="position-absolute bg-danger text-white d-flex justify-content-center align-items-center rounded-circle shadow-sm fw-bold"
@@ -478,7 +482,156 @@
         </div>
     </section>
 
+    <section class="container-fluid p-0">
+        <div class="container py-5">
+            <div class="row text-center justify-content-center align-items-center">
+
+                <!-- 1 -->
+                <div class="col-6 col-md-3 d-md-flex align-items-center gap-2 border-md-end mb-md-0 mb-5">
+                    <i class="fas fa-shipping-fast fs-1 text-muted"></i>
+                    <div class="text-md-start">
+                        <div class="">Fast, Free Shipping</div>
+                        <div class="text-muted small">On order over $50</div>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="col-6 col-md-3 d-md-flex align-items-center gap-2 border-md-end mb-md-0 mb-5">
+                    <i class="fas fa-clock fs-1 text-muted"></i>
+                    <div class="text-md-start">
+                        <div class="">Next Day Delivery</div>
+                        <div class="text-muted small">Free - spend over $99</div>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="col-6 col-md-3 d-md-flex align-items-center gap-2 border-md-end">
+                    <i class="fas fa-percent fs-1 text-muted"></i>
+                    <div class="text-md-start">
+                        <div class="">Low Price Guarantee</div>
+                        <div class="text-muted small">We offer competitive prices</div>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="col-6 col-md-3 d-md-flex align-items-center gap-2 ">
+                    <i class="fas fa-thumbs-up fs-1 text-muted"></i>
+                    <div class="text-md-start">
+                        <div class="">Quality Guarantee</div>
+                        <div class="text-muted small">We Guarantee Our Products</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-5">
+            <div class="owl-carousel">
+                <div class="item">
+                    <a href="https://demo.theme-sky.com/merto/product-category/fashion/">
+                        <img loading="lazy" decoding="async"
+                            src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/cat-6.jpg" alt="Fashion"
+                            class="rounded-circle img-fluid" width="200" height="200" style="object-fit: cover;">
+                    </a>
+                    <h6 class="text-center">Fashion</h6>
+               </div>
+                    <div class="item">
+                    <a href="https://demo.theme-sky.com/merto/product-category/electronic/headphones/">
+                        <img loading="lazy" decoding="async"
+                            src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/cat-7.jpg" alt="Fashion"
+                            class="rounded-circle img-fluid" width="200" height="200" style="object-fit: cover;">
+                    </a>
+                    <h6 class="text-center">headphones</h6>
+                </div>
+
+                    <div class="item">
+                    <a href="https://demo.theme-sky.com/merto/product-category/fashion/">
+                        <img loading="lazy" decoding="async"
+                            src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/cat-8.jpg" alt="Fashion"
+                            class="rounded-circle img-fluid" width="200" height="200" style="object-fit: cover;">
+                    </a>
+                    <h6 class="text-center">HandBags</h6>   
+                             </div>
+
+                    <div class="item">
+                    <a href="https://demo.theme-sky.com/merto/product-category/fashion/">
+                        <img loading="lazy" decoding="async"
+                            src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/cat-1.jpg" alt="Fashion"
+                            class="rounded-circle img-fluid" width="200" height="200" style="object-fit: cover;">
+                    </a>
+                    <h6 class="text-center">Smartphone</h6>
+                </div>
+
+                    <div class="item">
+                    <a href="https://demo.theme-sky.com/merto/product-category/fashion/">
+                        <img loading="lazy" decoding="async"
+                            src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/cat-2.jpg" alt="Fashion"
+                            class="rounded-circle img-fluid" width="200" height="200" style="object-fit: cover;">
+                    </a>
+                    <h6 class="text-center">Home & Decor<h6>
+                </div>
+
+                    <div class="item">
+                    <a href="https://demo.theme-sky.com/merto/product-category/fashion/">
+                        <img loading="lazy" decoding="async"
+                            src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/09/cosmetic-cat-7.jpg" alt="Fashion"
+                            class="rounded-circle img-fluid" width="200" height="200" style="object-fit: cover;">
+                    </a>
+                    <h6 class="text-center">Makeup</h6>
+              </div>
+
+                    <div class="item">
+                    <a href="https://demo.theme-sky.com/merto/product-category/fashion/">
+                        <img loading="lazy" decoding="async"
+                            src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/cat-4.jpg" alt="Fashion"
+                            class="rounded-circle img-fluid" width="200" height="200" style="object-fit: cover;">
+                    </a>
+                    <h6 class="text-center">Autopart</h6>
+                </div>
+
+                    <div class="item">
+                    <a href="https://demo.theme-sky.com/merto/product-category/fashion/">
+                        <img loading="lazy" decoding="async"
+                            src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/cat-5.jpg" alt="Fashion"
+                            class="rounded-circle img-fluid" width="200" height="200" style="object-fit: cover;">
+                    </a>
+                    <h6 class="text-center">Laptop & Computer</h6>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery (Load First) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Owl Carousel Init -->
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 20,
+                autoplay: true,
+                autoplayTimeout: 4000,
+                smartSpeed: 800,
+                responsive: {
+                    0: {
+                        items: 3
+                    },
+                    992: {
+                        items: 8
+                    }
+                }
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>
