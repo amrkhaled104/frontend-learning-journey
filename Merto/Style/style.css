@@ -8,7 +8,7 @@ body {
     height: auto;
 }
 
- 
+
 .mobile-logo {
     max-width: 20vw;
     height: auto;
@@ -33,6 +33,7 @@ body {
 .w-92 {
     width: 92% !important;
 }
+
 /*danger hover header*/
 .hover-danger {
     transition: color 0.3s ease;
@@ -71,19 +72,60 @@ body {
 .fs-08 {
     font-size: 1.5rem;
 }
+
 .ml {
     margin-left: 7.5%;
 }
 
 .hamburger-wrapper {
-  position: relative;
+    position: relative;
 }
 
 @media (max-width: 767.98px) {
-  .hamburger-wrapper {
-    position: absolute;
-    top: 0;   /* غيّر القيم حسب ما تحب */
-    left: 0;
-    z-index: 1050;
-  }
+    .hamburger-wrapper {
+        position: absolute;
+        top: 0;
+        /* غيّر القيم حسب ما تحب */
+        left: -20;
+        z-index: 1050;
+    }
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid white;
+    opacity: 0.6;
+    margin: 0 6px;
+    transition: opacity 0.3s, background-color 0.3s;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+    background-color: #fff;
+}
+
+.bg-gray {
+    background-color: #e0e0e0 !important;
+}
+
+.hover-zoom {
+    transition: transform 0.4s ease-in-out;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.2);
+}
+
+
+.custom-hover-btn {
+    transition: all 0.3s ease;
+}
+
+.custom-hover-btn:hover {
+    transform: scale(1.1);
+     background-color: transparent !important;
+     border: 1px solid #fff;  
 }
