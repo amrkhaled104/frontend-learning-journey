@@ -195,15 +195,86 @@ body {
 /* page 4*/
 
 
-.card-hover-content{
-     height: 30vh;
+.card-hover-content {
+    height: 30vh;
 }
-.card-hover-container{
+
+.card-hover-container {
     height: 30vh;
     transition: all 0.4s ease;
 }
 
-.card-hover-content:hover  {
+.card-hover-content:hover {
     height: 40vh;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
+
+
+
+
+
+/*33*/
+/*for line under word*/
+
+a.active {
+    border-bottom: 2px solid;
+}
+
+.slide-link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    /* Optional */
+}
+
+.slide-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 1%;
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    /* underline color */
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.slide-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.ps-5 {
+     padding-left: 6rem!important;
+}
+/* forth-section part-2 */
+.cardhover {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.5s ease;
+}
+
+.card:hover .cardhover {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card:hover {
+    box-shadow: 0 0 5px rgba(169, 169, 169, 0.8);
+}
+
+.discount {
+    font-size: 0.75rem;
+    margin: 8px;
+}
+/*
+.carousel-two:hover .owl-nav .owl-prev,
+.carousel-two:hover .owl-nav .owl-next {
+    display: block;
+}*/
+
+
+
+
