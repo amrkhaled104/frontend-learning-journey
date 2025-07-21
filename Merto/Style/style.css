@@ -272,3 +272,48 @@ a.active {
 
 
 
+
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+    display: flex;
+}
+.owl-carousel .owl-nav{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  pointer-events: none; 
+}
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  width: 30px;
+  height: 60px;
+  background-color: white;
+  color: black;
+  border-radius: 10%;
+  border: 1px solid #ddd;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: all; 
+  opacity: 0;
+  transition: background-color 0.3s, opacity 0.3s;
+}
+
+.owl-carousel .item:hover .owl-nav button {
+  opacity: 1;
+}
+
+.owl-carousel:hover .owl-nav button {
+  opacity: 1;
+}
+
+.owl-carousel .owl-nav button:hover {
+  background-color: rgb(0, 0, 0) !important;
+  color: white !important;
+  border-color: black;
+}
