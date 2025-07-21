@@ -271,12 +271,12 @@ a.active {
 }
 
 
-
+/* for nav*/
 
 .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
     display: flex;
 }
-.owl-carousel .owl-nav{
+.owl-carousel .owl-nav {
   position: absolute;
   top: 50%;
   left: 0;
@@ -285,8 +285,10 @@ a.active {
   display: flex;
   justify-content: space-between;
   padding: 0 10px;
-  pointer-events: none; 
+  pointer-events: none;
+  z-index: 10;
 }
+
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel .owl-nav button.owl-next {
   width: 30px;
@@ -299,11 +301,18 @@ a.active {
   display: flex;
   align-items: center;
   justify-content: center;
-  pointer-events: all; 
+  pointer-events: all;
   opacity: 0;
-  transition: background-color 0.3s, opacity 0.3s;
+  transition: background-color 0.3s, opacity 0.3s, transform 0.3s;
+  position: relative;
 }
 
+.owl-carousel .owl-nav button.owl-prev {
+  transform: translateX(-60%);
+}
+.owl-carousel .owl-nav button.owl-next {
+  transform: translateX(60%);
+}
 .owl-carousel .item:hover .owl-nav button {
   opacity: 1;
 }
