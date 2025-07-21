@@ -37,7 +37,7 @@
 </head>
 
 <body>
-    <header class="container-fluid p-0">
+    <header class="container-fluid p-0 m-0">
 
         <div class="header-top row align-items-center justify-content-between p-md-4 py-2 border-bottom border-dark ">
 
@@ -183,7 +183,7 @@
                 <!-- lang currency-->
                 <div class="col-6 row  justify-content-end ">
                     <!--lang-->
-                    <div class="position-relative p-0 d-md-flex d-none" id="language-selector"
+                    <div class="position-relative py-3 d-md-flex d-none" id="language-selector"
                         style="width: fit-content;">
                         <div class="current-language">
                             <a href="#" class="d-flex align-items-center text-decoration-none text-dark  hover-danger">
@@ -194,7 +194,7 @@
                         </div>
 
                         <div id="language-menu"
-                            class="position-absolute top-100 start-0 bg-white rounded shadow-sm d-none">
+                            class="position-absolute top-100 start-0 bg-white rounded shadow-sm d-none ">
                             <ul class="list-unstyled p-0 m-0">
                                 <li class="py-2 px-3 lang-item">
                                     <a href="#"
@@ -223,7 +223,8 @@
                     </div>
 
                     <!--currency-->
-                    <div class="position-relative d-md-flex d-none" id="currency-selector" style="width: fit-content;">
+                    <div class="position-relative  p-3 d-md-flex d-none" id="currency-selector"
+                        style="width: fit-content;">
 
                         <div class="current-currency">
                             <a href="#" class="d-flex align-items-center text-decoration-none text-dark  hover-danger">
@@ -408,10 +409,10 @@
 
     </header>
 
-    <section class="container-fluid p-0">
-        <div class="row gx-0">
+    <section class="container-fluid p-0 m-0">
+        <div class="row gx-0 ">
             <!-- Carousel Section -->
-            <div class="col-12 col-md-8 position-relative" style="height: 80vh;">
+            <div class="col-12 col-md-8 custom  ">
                 <div id="carouselExampleIndicators" class="carousel slide h-100" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -419,26 +420,25 @@
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
                     </div>
-
                     <div class="carousel-inner h-100">
                         <div class="carousel-item active h-100 position-relative">
-                            <img src="images/slide1.jpg" class="d-block w-100 h-100" alt="First slide">
-                            <div class="position-absolute text-start text-white p-4" style="bottom: 15%; left: 5.1%;">
+                            <img src="images/slide1.jpg" class="d-block w-100 h-100 object-fit-cover" alt="First slide">
+                            <div class="position-absolute text-start text-white p-4" style="bottom: 15%; left: 5%;">
                                 <a href="#" class="btn bg-white text-dark custom-hover-btn px-4 py-3 fw-semibold">SHOP
                                     NOW</a>
                             </div>
                         </div>
                         <div class="carousel-item h-100 position-relative">
-                            <img src="images/slide2.jpg" class="d-block w-100 h-100" alt="Second slide">
-                            <div class="position-absolute text-start text-white p-4" style="bottom: 15%; left: 6.1%;">
-
+                            <img src="images/slide2.jpg" class="d-block w-100 h-100 object-fit-cover"
+                                alt="Second slide">
+                            <div class="position-absolute text-start text-white p-4" style="bottom: 15%; left: 6%;">
                                 <a href="#" class="btn bg-white text-dark custom-hover-btn px-4 py-3 fw-semibold">SHOP
                                     NOW</a>
                             </div>
                         </div>
                         <div class="carousel-item h-100 position-relative">
-                            <img src="images/slide3.jpg" class="d-block w-100 h-100" alt="Third slide">
-                            <div class="position-absolute text-start text-white p-4" style="bottom: 15%; left: 7.1%;">
+                            <img src="images/slide3.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Third slide">
+                            <div class="position-absolute text-start text-white p-4" style="bottom: 15%; left: 7%;">
                                 <a href="#" class="btn bg-white text-dark custom-hover-btn px-4 py-3 fw-semibold">SHOP
                                     NOW</a>
                             </div>
@@ -448,12 +448,11 @@
             </div>
 
             <!-- Right Side Boxes -->
-            <div class="col-12 col-md-4 d-flex flex-column">
+            <div class="col-12 col-md-4 d-flex flex-column gap-md-0">
                 <!-- Box 1 -->
-                <div class="position-relative overflow-hidden col-12" style="height: 40vh;">
-                    <img src="images/makeup.png" class="position-absolute top-0 start-0 w-100 h-100 hover-zoom"
-                        style="object-fit: cover;">
-                    <div class="position-absolute text-dark p-4 my-4">
+                <div class="position-relative overflow-hidden custom-height m-0">
+                    <img src="images/makeup.png" class="position-absolute top-0 start-0 w-100 h-100 ">
+                    <div class="position-absolute text-dark p-4">
                         <h6 class="fw-semibold">BLACK FRIDAY</h6>
                         <h1 class="w-75">Big Sale Eyeshadow</h1>
                         <h6>Over +100 items</h6>
@@ -462,14 +461,13 @@
                 </div>
 
                 <!-- Box 2 -->
-                <div class="position-relative overflow-hidden" style="height: 40vh;">
-                    <img src="images/man.png" class="position-absolute top-0 start-0 w-100 h-100 hover-zoom"
-                        style="object-fit: cover;">
-                    <div class="position-absolute text-dark p-4 my-4">
+                <div class="position-relative overflow-hidden custom-height m-0">
+                    <img src="images/man.png" class="position-absolute top-0 start-0 w-100 h-100 ">
+                    <div class="position-absolute text-dark p-4">
                         <h6 class="fw-semibold">NEW COLLECTION</h6>
                         <h1 class="w-75">Big Sale Eyeshadow</h1>
                         <h6>Best jacket in year</h6>
-                        <a href="#" class="btn bg-dark text-white  custom-hover-btn px-2 py-2 fw-semibold">SHOP NOW</a>
+                        <a href="#" class="btn bg-dark text-white custom-hover-btn px-2 py-2 fw-semibold">SHOP NOW</a>
                     </div>
                     <!-- Price Circle -->
                     <div class="position-absolute bg-danger text-white d-flex justify-content-center align-items-center rounded-circle shadow-sm fw-bold"
@@ -478,8 +476,9 @@
                     </div>
                 </div>
             </div>
-
         </div>
+
+
     </section>
 
     <section class="container-fluid p-0">
@@ -600,140 +599,253 @@
 
             </div>
         </div>
+    </section>
 
-        <div class="owl-carousel owlS2 owl-theme container  ">
-            <div class="card rounded-0 mx-0 bg-white shadow-none ">
-                <img src="images/labtop.jpg" class="" alt="...">
-                <div class="card-body text-start">
-                    <p class="card-text mb-2  ">Laptop Asus Vivobook I5 1355U,8GB RAM, 512GB SSD</p>
-                    <h5 class="card-title fw-bold mb-1">$999
-                         <span class="text-muted text-decoration-line-through fs-6">$1,536</span></h5>
+    <!-- page 3-->
+    <section class="container-fluid p-0">
 
-                    <div class="text-start text-black-50" style="font-size: 0.7rem;">
-                        <i class="fas fa-star text-dark"></i>
-                        <i class="fas fa-star text-dark"></i>
-                        <i class="fas fa-star text-dark"></i>
-                        <i class="fas fa-star text-dark"></i>
-                        <i class="fas fa-star-half-alt text-dark"></i>
+        <div class="container-fluid m-md-5 m-2 row g-3">
+
+            <div class="col-12 col-md-3 border mx-md-2 rounded overflow-hidden position-relative slide-in-left"
+                style="height: 40vh;">
+                <img src="images/car.jpg" class="img-fluid position-absolute top-0 start-0 w-100 h-100 hover-zoom"
+                    style="object-fit: cover;">
+                <div class="mx-5 position-absolute start-0 w-75 text-center text-white fw-bold fs-08 p-2"
+                    style="bottom: 6%;">
+                    <p class="mx-4 mb-0 text-center">SALE 10% OFF TIRES MICHELIN</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-5 mx-md-2 border rounded overflow-hidden position-relative slide-in-bottom"
+                style="height: 40vh;">
+                <img src="images/knb.jpg" class="img-fluid position-absolute top-0 start-0 w-100 h-100 hover-zoom">
+                <div class="mx-5 position-absolute start-0 w-75 text-center text-white fw-bold fs-08 p-2"
+                    style="top: 9%;">
+                    <h6 class="text-center text-primary">NEW COLLECTION</h6>
+                    <p class="mb-0 text-center fs-1 text-dark">Sofa Crafted in UK</p>
+                    <a href="https://demo.theme-sky.com/merto/product-category/home-decor/sofas/?vertical_menu_style=inside&amp;color=brown&amp;page_id_options=8018"
+                        target="_blank" rel="nofollow"
+                        class="btn d-inline-flex align-items-center gap-2 px-2 py-1 fw-semibold">
+                        Shop Now
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-3 mx-md-2 border rounded overflow-hidden position-relative slide-in-right"
+                style="height: 40vh;">
+                <img src="images/gsol.jpg" class="img-fluid position-absolute top-0 start-0 w-100 h-100 hover-zoom">
+                <div class="position-absolute start-0 w-100 text-center text-white fw-bold fs-08 p-2"
+                    style="bottom: 8%;">
+                    <p class="mx-4 mb-0 text-center">STEALS UNDER $25</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!--page 4-->
+    <section class="container-fluid p-0">
+        <div class="container-fluid mx-5 row align-items-center">
+            <div class="col-md-2 col-12">
+                <h1 class="fa-2x fw-semibold ">New arrivals</h1>
+            </div>
+            <div class="col-md-6 col-12 offset-4 ">
+                <div class="category-menu d-flex justify-content-center  gap-4  ">
+                    <a href="#" class="category-link active text-dark fw-semibold">Fashion</a>
+                    <a href="#" class="category-link text-dark fw-semibold">Phone & Tablet</a>
+                    <a href="#" class="category-link text-dark fw-semibold">Home & Decor</a>
+                    <a href="#" class="category-link text-dark fw-semibold">Beauty & Health</a>
+                    <!--<a href="#" class="text-dark  px-5 " style="border-left: 1px solid rgba(0,0,0,0.2);">
+                        See all products
+                    </a>-->
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row mx-md-5 my-md-3">
+            <div class="position-relative col-md-4 col-12  border  bg-white border-light rounded  card-hover-container" >
+                <!-- Shield -->
+                <div
+                    class="position-absolute top-0 start-0  bg-primary overflow-hidden bg-white  border-light rounded card-hover-content " style="z-index: 10;">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-5-700x700.jpg"
+                                class="img-fluid">
+                        </div>
+                        <div class="col-6 mt-5">
+                            <h6 class="fw-normal mb-1">
+                                Nike Air Max Unisex SYSTM<br>
+                                Men Sneaker Shoes
+                            </h6>
+                            <h5 class="fw-bold mb-1">$148</h5>
+                            <div class="text-warning fs-5">★★★★☆</div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-2 p-2 mx-5">
+                        <button class="btn btn-light d-flex align-items-center gap-2 px-3 py-2">
+                            <i class="bi bi-plus"></i>
+                            <span class="fw-bold text-uppercase small">Add to cart</span>
+                        </button>
+                        <button class="btn btn-light p-2"><i class="bi bi-arrow-left-right"></i></button>
+                        <button class="btn btn-light p-2"><i class="bi bi-search"></i></button>
+                        <button class="btn btn-light p-2"><i class="bi bi-heart"></i></button>
                     </div>
                 </div>
             </div>
-            <div class="card rounded-0 mx-0 bg-white shadow-none">
-                <img src="images/labtop.jpg" class="" alt="...">
-                <div class="card-body text-start">
-                    <p class="card-text mb-2  ">Laptop Asus Vivobook I5 1355U,8GB RAM, 512GB SSD</p>
-                    <h5 class="card-title fw-bold mb-1">$999
-                         <span class="text-muted text-decoration-line-through fs-6">$1,536</span></h5>
+            <div class="position-relative col-md-4 col-12  border  bg-white border-light rounded  card-hover-container">
+                <!-- Shield -->
+                <div
+                    class="position-absolute top-0 start-0  bg-primary overflow-hidden bg-white  border-light rounded card-hover-content " style="z-index: 10;">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-5-700x700.jpg"
+                                class="img-fluid">
+                        </div>
+                        <div class="col-6 mt-5">
+                            <h6 class="fw-normal mb-1">
+                                Nike Air Max Unisex SYSTM<br>
+                                Men Sneaker Shoes
+                            </h6>
+                            <h5 class="fw-bold mb-1">$148</h5>
+                            <div class="text-warning fs-5">★★★★☆</div>
+                        </div>
+                    </div>
 
-                    <div class="text-start text-black-50" style="font-size: 0.7rem;">
-                        <i class="fas fa-star text-dark"></i>
-                        <i class="fas fa-star text-dark"></i>
-                        <i class="fas fa-star text-dark"></i>
-                        <i class="fas fa-star text-dark"></i>
-                        <i class="fas fa-star-half-alt text-dark"></i>
+                    <div class="d-flex align-items-center gap-2 p-2 mx-5">
+                        <button class="btn btn-light d-flex align-items-center gap-2 px-3 py-2">
+                            <i class="bi bi-plus"></i>
+                            <span class="fw-bold text-uppercase small">Add to cart</span>
+                        </button>
+                        <button class="btn btn-light p-2"><i class="bi bi-arrow-left-right"></i></button>
+                        <button class="btn btn-light p-2"><i class="bi bi-search"></i></button>
+                        <button class="btn btn-light p-2"><i class="bi bi-heart"></i></button>
                     </div>
                 </div>
             </div>
-            <div class="card rounded-0 mx-0 bg-white shadow-none">
-                <img src="images/labtop.jpg" class="" alt="...">
-                <div class="card-body text-start">
-                    <p class="card-text mb-2  ">Laptop Asus Vivobook I5 1355U,8GB RAM, 512GB SSD</p>
-                    <h5 class="card-title fw-bold mb-1">$999
-                         <span class="text-muted text-decoration-line-through fs-6">$1,536</span></h5>
+            <div class="position-relative col-md-4 col-12 border  bg-white border-light rounded  card-hover-container">
+                <!-- Shield -->
+                <div
+                    class="position-absolute top-0 start-0  bg-primary overflow-hidden bg-white  border-light rounded card-hover-content " style="z-index: 10;">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-5-700x700.jpg"
+                                class="img-fluid">
+                        </div>
+                        <div class="col-6 mt-5">
+                            <h6 class="fw-normal mb-1">
+                                Nike Air Max Unisex SYSTM<br>
+                                Men Sneaker Shoes
+                            </h6>
+                            <h5 class="fw-bold mb-1">$148</h5>
+                            <div class="text-warning fs-5">★★★★☆</div>
+                        </div>
+                    </div>
 
-                    <div class="text-start text-black-50" style="font-size: 0.7rem;">
-                        <i class="fas fa-star text-dark"></i>
-                        <i class="fas fa-star text-dark"></i>
-                        <i class="fas fa-star text-dark"></i>
-                        <i class="fas fa-star text-dark"></i>
-                        <i class="fas fa-star-half-alt text-dark"></i>
+                    <div class="d-flex align-items-center gap-2 p-2 mx-5">
+                        <button class="btn btn-light d-flex align-items-center gap-2 px-3 py-2">
+                            <i class="bi bi-plus"></i>
+                            <span class="fw-bold text-uppercase small">Add to cart</span>
+                        </button>
+                        <button class="btn btn-light p-2"><i class="bi bi-arrow-left-right"></i></button>
+                        <button class="btn btn-light p-2"><i class="bi bi-search"></i></button>
+                        <button class="btn btn-light p-2"><i class="bi bi-heart"></i></button>
                     </div>
                 </div>
             </div>
-            <div class="card rounded-0 mx-0 bg-white shadow-none">
-                <img src="images/labtop.jpg" class="" alt="...">
-                <div class="card-body text-start">
-                    <p class="card-text mb-2  ">Laptop Asus Vivobook I5 1355U,8GB RAM, 512GB SSD</p>
-                    <h5 class="card-title fw-bold mb-1">$999
-                         <span class="text-muted text-decoration-line-through fs-6">$1,536</span></h5>
+            <div class="position-relative col-md-4 col-12 border  bg-white border-light rounded  card-hover-container" >
+                <!-- Shield -->
+                <div
+                    class="position-absolute top-0 start-0  bg-primary overflow-hidden bg-white  border-light rounded card-hover-content " style="z-index: 9;">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-5-700x700.jpg"
+                                class="img-fluid">
+                        </div>
+                        <div class="col-6 mt-5">
+                            <h6 class="fw-normal mb-1">
+                                Nike Air Max Unisex SYSTM<br>
+                                Men Sneaker Shoes
+                            </h6>
+                            <h5 class="fw-bold mb-1">$148</h5>
+                            <div class="text-warning fs-5">★★★★☆</div>
+                        </div>
+                    </div>
 
-                    <div class="text-start text-black-50" style="font-size: 0.7rem;">
-                        <i class="fas fa-star text-dark"></i>
-                        <i class="fas fa-star text-dark"></i>
-                        <i class="fas fa-star text-dark"></i>
-                        <i class="fas fa-star text-dark"></i>
-                        <i class="fas fa-star-half-alt text-dark"></i>
+                    <div class="d-flex align-items-center gap-2 p-2 mx-5">
+                        <button class="btn btn-light d-flex align-items-center gap-2 px-3 py-2">
+                            <i class="bi bi-plus"></i>
+                            <span class="fw-bold text-uppercase small">Add to cart</span>
+                        </button>
+                        <button class="btn btn-light p-2"><i class="bi bi-arrow-left-right"></i></button>
+                        <button class="btn btn-light p-2"><i class="bi bi-search"></i></button>
+                        <button class="btn btn-light p-2"><i class="bi bi-heart"></i></button>
                     </div>
                 </div>
             </div>
-            <div class="card rounded-0 mx-0 bg-white shadow-none">
-                <img src="images/labtop.jpg" class="" alt="...">
-                <div class="card-body text-start">
-                    <p class="card-text mb-2  ">Laptop Asus Vivobook I5 1355U,8GB RAM, 512GB SSD</p>
-                    <h5 class="card-title fw-bold mb-1">$999
-                         <span class="text-muted text-decoration-line-through fs-6">$1,536</span></h5>
+            <div class="position-relative col-md-4 col-12  border  bg-white border-light rounded  card-hover-container">
+                <!-- Shield -->
+                <div
+                    class="position-absolute top-0 start-0  bg-primary overflow-hidden bg-white  border-light rounded card-hover-content" style="z-index: 9;">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-5-700x700.jpg"
+                                class="img-fluid">
+                        </div>
+                        <div class="col-6 mt-5">
+                            <h6 class="fw-normal mb-1">
+                                Nike Air Max Unisex SYSTM<br>
+                                Men Sneaker Shoes
+                            </h6>
+                            <h5 class="fw-bold mb-1">$148</h5>
+                            <div class="text-warning fs-5">★★★★☆</div>
+                        </div>
+                    </div>
 
-                    <div class="text-start text-black-50" style="font-size: 0.7rem;">
-                        <i class="fas fa-star text-dark"></i>
-                        <i class="fas fa-star text-dark"></i>
-                        <i class="fas fa-star text-dark"></i>
-                        <i class="fas fa-star text-dark"></i>
-                        <i class="fas fa-star-half-alt text-dark"></i>
+                    <div class="d-flex align-items-center gap-2 p-2 mx-5">
+                        <button class="btn btn-light d-flex align-items-center gap-2 px-3 py-2">
+                            <i class="bi bi-plus"></i>
+                            <span class="fw-bold text-uppercase small">Add to cart</span>
+                        </button>
+                        <button class="btn btn-light p-2"><i class="bi bi-arrow-left-right"></i></button>
+                        <button class="btn btn-light p-2"><i class="bi bi-search"></i></button>
+                        <button class="btn btn-light p-2"><i class="bi bi-heart"></i></button>
                     </div>
                 </div>
             </div>
-            <div class="card rounded-0 mx-0 bg-white shadow-none">
-                <img src="images/labtop.jpg" class="" alt="...">
-                <div class="card-body text-start">
-                    <p class="card-text mb-2  ">Laptop Asus Vivobook I5 1355U,8GB RAM, 512GB SSD</p>
-                    <h5 class="card-title fw-bold mb-1">$999
-                         <span class="text-muted text-decoration-line-through fs-6">$1,536</span></h5>
-
-                    <div class="text-start text-black-50" style="font-size: 0.7rem;">
-                        <i class="fas fa-star text-dark"></i>
-                        <i class="fas fa-star text-dark"></i>
-                        <i class="fas fa-star text-dark"></i>
-                        <i class="fas fa-star text-dark"></i>
-                        <i class="fas fa-star-half-alt text-dark"></i>
+            <div class="position-relative col-md-4 col-12  border  bg-white border-light rounded  card-hover-container" >
+                <!-- Shield -->
+                <div
+                    class="position-absolute top-0 start-0  bg-primary overflow-hidden bg-white  border-light rounded card-hover-content" style="z-index: 9;">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-5-700x700.jpg"
+                                class="img-fluid">
+                        </div>
+                        <div class="col-6 mt-5">
+                            <h6 class="fw-normal mb-1">
+                                Nike Air Max Unisex SYSTM<br>
+                                Men Sneaker Shoes
+                            </h6>
+                            <h5 class="fw-bold mb-1">$148</h5>
+                            <div class="text-warning fs-5">★★★★☆</div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="card rounded-0 mx-0 bg-white shadow-none">
-                <img src="images/labtop.jpg" class="" alt="...">
-                <div class="card-body text-start">
-                    <p class="card-text mb-2  ">Laptop Asus Vivobook I5 1355U,8GB RAM, 512GB SSD</p>
-                    <h5 class="card-title fw-bold mb-1">$999
-                         <span class="text-muted text-decoration-line-through fs-6">$1,536</span></h5>
 
-                    <div class="text-start text-black-50" style="font-size: 0.7rem;">
-                        <i class="fas fa-star text-dark"></i>
-                        <i class="fas fa-star text-dark"></i>
-                        <i class="fas fa-star text-dark"></i>
-                        <i class="fas fa-star text-dark"></i>
-                        <i class="fas fa-star-half-alt text-dark"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="card rounded-0 mx-0 bg-white shadow-none">
-                <img src="images/labtop.jpg" class="" alt="...">
-                <div class="card-body text-start">
-                    <p class="card-text mb-2  ">Laptop Asus Vivobook I5 1355U,8GB RAM, 512GB SSD</p>
-                    <h5 class="card-title fw-bold mb-1">$999
-                         <span class="text-muted text-decoration-line-through fs-6">$1,536</span></h5>
-
-                    <div class="text-start text-black-50" style="font-size: 0.7rem;">
-                        <i class="fas fa-star text-dark"></i>
-                        <i class="fas fa-star text-dark"></i>
-                        <i class="fas fa-star text-dark"></i>
-                        <i class="fas fa-star text-dark"></i>
-                        <i class="fas fa-star-half-alt text-dark"></i>
+                    <div class="d-flex align-items-center gap-2 p-2 mx-5">
+                        <button class="btn btn-light d-flex align-items-center gap-2 px-3 py-2">
+                            <i class="bi bi-plus"></i>
+                            <span class="fw-bold text-uppercase small">Add to cart</span>
+                        </button>
+                        <button class="btn btn-light p-2"><i class="bi bi-arrow-left-right"></i></button>
+                        <button class="btn btn-light p-2"><i class="bi bi-search"></i></button>
+                        <button class="btn btn-light p-2"><i class="bi bi-heart"></i></button>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
 
     </section>
 
@@ -749,6 +861,7 @@
     <!-- Owl Carousel Init -->
     <script>
         $(document).ready(function () {
+            // Initialize first carousel
             $(".owlS1").owlCarousel({
                 loop: true,
                 margin: 20,
@@ -764,19 +877,30 @@
                     }
                 }
             });
-        });
-        $(".owlS2").owlCarousel({
-            loop: false,
-            nav: true,
-            dots: false,
-            responsive: {
-                0: {
-                    items: 3
-                },
-                992: {
-                    items: 5
+
+            // Initialize second carousel with different settings
+            $(".owlS2").owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: true,
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 2,
+                        nav: false
+                    },
+                    576: {
+                        items: 3
+                    },
+                    768: {
+                        items: 4,
+                        nav: true
+                    },
+                    992: {
+                        items: 5
+                    }
                 }
-            }
+            });
         });
     </script>
 
