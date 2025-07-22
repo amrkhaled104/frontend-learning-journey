@@ -326,3 +326,7 @@ a.active {
   color: white !important;
   border-color: black;
 }
+.card6:hover img{
+    transition: all .3s;
+    transform: rotate(3deg) scale(1.15);
+}
