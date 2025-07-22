@@ -65,8 +65,7 @@ body {
 #Categories-selector:hover #Categories-menu,
 #Products-selector:hover #Products-menu,
 #Pages-selector:hover #Pages-menu,
-#Recentlyviewed-selector:hover #Recentlyviewed-menu,
-.form:hover #searchSuggestions {
+#Recentlyviewed-selector:hover #Recentlyviewed-menu {
     display: block !important;
 }
 
@@ -201,15 +200,36 @@ body {
 
 .card-hover-container {
     height: 30vh;
-    transition: all 0.4s ease;
 }
 
-.card-hover-content:hover {
-    height: 40vh;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+@media (max-width: 992px) {
+    .card-hover-container {
+        height: 40vh;
+    }
+    .card-hover-content{
+         height: 40vh;
+    }
 }
 
 
+@media (min-width: 992px) {
+    .card-hover-content {
+        transition: all 0.4s ease;
+    }
+
+    .card-hover-container:hover .card-hover-content {
+        height: 40vh;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .zindextop {
+        z-index: 10;
+    }
+
+    .zindexbut {
+        z-index: 9;
+    }
+}
 
 
 
@@ -246,9 +266,11 @@ a.active {
     transform: scaleX(1);
     transform-origin: left;
 }
+
 .ps-5 {
-     padding-left: 6rem!important;
+    padding-left: 6rem !important;
 }
+
 /* forth-section part-2 */
 .cardhover {
     opacity: 0;
@@ -273,60 +295,79 @@ a.active {
 
 /* for nav*/
 
-.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+.owl-carousel .owl-dots.disabled,
+.owl-carousel .owl-nav.disabled {
     display: flex;
 }
+
 .owl-carousel .owl-nav {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  transform: translateY(-50%);
-  display: flex;
-  justify-content: space-between;
-  padding: 0 10px;
-  pointer-events: none;
-  z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    pointer-events: none;
+    z-index: 10;
 }
 
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel .owl-nav button.owl-next {
-  width: 30px;
-  height: 60px;
-  background-color: white;
-  color: black;
-  border-radius: 10%;
-  border: 1px solid #ddd;
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  pointer-events: all;
-  opacity: 0;
-  transition: background-color 0.3s, opacity 0.3s, transform 0.3s;
-  position: relative;
+    width: 30px;
+    height: 60px;
+    background-color: white;
+    color: black;
+    border-radius: 10%;
+    border: 1px solid #ddd;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: all;
+    opacity: 0;
+    transition: background-color 0.3s, opacity 0.3s, transform 0.3s;
+    position: relative;
 }
 
 .owl-carousel .owl-nav button.owl-prev {
-  transform: translateX(-60%);
+    transform: translateX(-60%);
 }
+
 .owl-carousel .owl-nav button.owl-next {
-  transform: translateX(60%);
+    transform: translateX(60%);
 }
+
 .owl-carousel .item:hover .owl-nav button {
-  opacity: 1;
+    opacity: 1;
 }
 
 .owl-carousel:hover .owl-nav button {
-  opacity: 1;
+    opacity: 1;
 }
 
 .owl-carousel .owl-nav button:hover {
-  background-color: rgb(0, 0, 0) !important;
-  color: white !important;
-  border-color: black;
+    background-color: rgb(0, 0, 0) !important;
+    color: white !important;
+    border-color: black;
 }
-.card6:hover img{
+
+.card6:hover img {
     transition: all .3s;
     transform: rotate(3deg) scale(1.15);
+}
+/*footer*/
+.custom-btn-padding {
+  --bs-btn-padding-y: 0.85rem;
+  padding-top: var(--bs-btn-padding-y);
+  padding-bottom: var(--bs-btn-padding-y);
+  background-color: black;
+}
+.carousel-indicators [data-bs-target] {
+   
+    border-radius: 5% !important;
+    background-color: white !important;
+    border: 1px solid #030303 !important;
+  
 }
