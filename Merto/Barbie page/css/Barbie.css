@@ -157,17 +157,18 @@
     background-color: white !important;
     color: black !important;
 }
+
 .buynowho:hover {
     background-color: white !important;
     color: black !important;
 }
 
- .carousel-indicators button {
+.carousel-indicators button {
     width: 75px !important;
     height: 75px !important;
-  }
+}
 
-  .owl-carousel .owl-dots.disabled,
+.owl-carousel .owl-dots.disabled,
 .owl-carousel .owl-nav.disabled {
     display: flex;
 }
@@ -224,6 +225,7 @@
     color: white !important;
     border-color: black;
 }
+
 .cardhover {
     opacity: 0;
     transform: translateY(100%);
@@ -237,4 +239,26 @@
 
 .card:hover {
     box-shadow: 0 0 5px rgba(169, 169, 169, 0.8);
+}
+
+.rating {
+    direction: rtl;
+    display: inline-flex;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 1.5rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.rating input:checked~label,
+.rating label:hover,
+.rating label:hover~label {
+    color: #f39c12;
 }
