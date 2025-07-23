@@ -16,15 +16,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="css/animate.css" />
 
-    <!-- Favicon -->
-    <link rel="icon" href="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/08/cropped-favicon-1-32x32.png"
-        sizes="32x32">
-    <link rel="icon" href="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/08/cropped-favicon-1-192x192.png"
-        sizes="192x192">
 
     <!-- Owl Carousel CSS -->
     <link rel="stylesheet"
@@ -282,7 +274,7 @@
                 data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
                 aria-controls="offcanvasWithBothOptions">
                 <i class="fas fa-bars fs-5"></i>
-                <span class="d-none d-md-inline">SHOP BY CATEGORIES</span>
+                <span class="d-none d-md-inline hover-danger">SHOP BY CATEGORIES</span>
             </button>
 
             <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
@@ -415,29 +407,30 @@
         </nav>
     </section>
     <section class="container">
-        <div class="row ">
+        <div class="row justify-content-between">
 
-            <div class="col-6 border rounded offset-1">
+            <div class="col-12 col-lg-6 offset-lg-1 border rounded">
 
                 <div id="carouselExampleControlsNoTouching" class="carousel slide position-relative"
                     data-bs-touch="false">
 
-                    <div class="carousel-indicators position-absolute row flex-column" style="top: -40%; left: -32%;">
+                    <div class="carousel-indicators position-absolute row flex-column d-lg-flex  d-none"
+                        style="top: -40%; left: -32%;">
                         <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="0"
                             class="active border rounded my-2" aria-current="true" aria-label="Slide 1"
-                            style="width: 75px; height: 75px; background-image: url(images/fashion1.jpg); background-size: cover; background-repeat: no-repeat;">
+                            style=" background-image: url(images/fashion1.jpg); background-size: cover; background-repeat: no-repeat;">
                         </button>
                         <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="1"
-                            aria-label="Slide 2" class=" border rounded my-2"
-                            style="width: 75px; height: 75px; background-image: url(images/fashion2.jpg); background-size: cover; background-repeat: no-repeat;">
+                            aria-label="Slide 2" class=" border rounded my-2 active"
+                            style=" background-image: url(images/fashion2.jpg); background-size: cover; background-repeat: no-repeat;">
                         </button>
                         <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="2"
-                            aria-label="Slide 3" class=" border rounded my-2"
-                            style="width: 75px; height: 75px; background-image: url(images/fashion3.jpg); background-size: cover; background-repeat: no-repeat;">
+                            aria-label="Slide 3" class=" border rounded my-2 active"
+                            style=" background-image: url(images/fashion3.jpg); background-size: cover; background-repeat: no-repeat;">
                         </button>
                         <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="3"
-                            aria-label="Slide 4" class=" border rounded my-2"
-                            style="width: 75px; height: 75px; background-image: url(images/fashion4.jpg); background-size: cover; background-repeat: no-repeat;">
+                            aria-label="Slide 4" class=" border rounded my-2 active"
+                            style=" background-image: url(images/fashion4.jpg); background-size: cover; background-repeat: no-repeat;">
                         </button>
                     </div>
 
@@ -459,18 +452,386 @@
 
             </div>
 
-            <div class="col-4">
+            <div class="col-12 col-lg-5 px-3 px-lg-5">
 
                 <h6 class="text-muted">zara</h6>
-                <h1 class="text-start">Barbie Baseball Hat Cap Berkshire Fashions New</h1>
+                <h3 class="text-start" style="width: 100%;">Barbie Baseball Hat Cap Berkshire Fashions New</h3>
+                <div class="text-dark fs-5">
+                    ☆☆☆☆☆<span class="text-muted" style="font-size: 1rem;">(0 Reviews)</span>
+                    <span class="text-muted hover-danger slide-link " style="font-size: 1rem;">write a Review</span>
+                    <div class=" text-start" style="line-height: 2rem;">
+                        <ul style="list-style: none;" class="p-0">
+                            <li> <i class="bi bi-check text-success"></i><span> Unique Design</span></li>
+                            <li> <i class="bi bi-check text-success"></i><span> Premium Material</span></li>
+                            <li> <i class="bi bi-check text-success"></i><span>Classic &amp; Versatile</span></li>
+                        </ul>
+                    </div>
+                    <p class=" fw-bold mb-0" style="font-size: 2rem;">$12</p>
+                    <h4 class="text-success border rounded  p-1 px-2 "
+                        style="background-color: rgb(146, 202, 170); width: fit-content; font-size: .8rem;">in stock
+                    </h4>
+                    <div class="row py-2 gx-2 justify-content-between">
+                        <!-- Input number -->
+                        <div class="col-3">
+                            <input type="number" class="form-control bg-gray text-center counter-value" value="0"
+                                min="1">
+                        </div>
+
+                        <!-- Add to cart -->
+                        <div class="col-6 ">
+                            <h3 class="btn w-100 border rounded text-white addtocardho"
+                                style="background-color: black;">
+                                Add to cart
+                            </h3>
+                        </div>
+
+                        <!-- Buy now -->
+                        <div class="col-3">
+                            <h3 class="btn w-100 border rounded text-white buynowho" style="background-color: red;">
+                                Buy Now
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Add to wishlist -->
+                        <div class="d-flex align-items-center text-secondary col-auto hover-danger"
+                            style="cursor: pointer; font-size: .7rem;">
+                            <i class="fa-regular fa-heart me-1"></i>
+                            <span>Add to wishlist</span>
+                        </div>
+
+                        <!-- Add to compare -->
+                        <div class="d-flex align-items-center text-muted col-auto hover-danger"
+                            style="cursor: pointer; font-size: .7rem;">
+                            <i class="fas fa-random me-1"></i>
+                            <span>Add to compare</span>
+                        </div>
+                    </div>
+
+
+                </div>
+
 
             </div>
         </div>
     </section>
 
+    <section class="container ">
+        <div class="promo-banner d-flex justify-content-between align-items-center px-3 py-1 mt-5 rounded"
+            style=" background-color: #d9f2de;">
+            <div class="text-content">
+                <h2 class="fw-bold" style="font-size: 1.5rem; color: black;">Earn Cash Back For The Things<br>You Buy
+                    Every Where</h2>
+                <p class="">
+                    Application via Merto.
+                    <a href="#" class="text-decoration-underline fw-semibold">Terms & Conditions.</a>
+                </p>
+            </div>
+
+            <div class="">
+                <button class="btn btn-success px-4 py-2 fw-semibold">VIEW MORE</button>
+            </div>
+
+            <div class="d-flex align-items-center gap-3">
+                <img src="images/payments-2-1.png" alt="Card">
+            </div>
+        </div>
 
 
-    <script src="app.js"></script>
+    </section>
+
+
+    <section class="container">
+
+       <div class="container py-5">
+            <div class="row">
+                <!-- Best Selling Section -->
+                <div class="container-fluid py-5">
+                    <div class="container mx-auto p-0">
+                        <div class="row align-items-center">
+                            <h3 class="fw-bold col-md-7 col-12 text-md-start text-center mb-md-0 mb-4">Related products
+
+                            </h3>
+                        </div>
+
+                        <div class="my-4 overflow-hidden">
+                            <div class="owl-carousel owl-theme carousel-two py-1 rounded-2 overflow-hidden">
+
+                                <!-- Start Card 1 -->
+                                <div class="item">
+                                    <div class="card border-0 position-relative h-100">
+                                        <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-9-300x300.jpg"
+                                            class="card-img-top w-100" alt="...">
+                                        <div class="card-body">
+                                            <a href="#" class="text-decoration-none text-dark">
+                                                <p class="lh-sm m-0 hover-danger"
+                                                    style="max-height: 2.5em; overflow: hidden;">
+                                                    Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD
+                                                </p>
+                                            </a>
+                                            <div class="fw-semibold fs-5">$999
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="position-absolute top-0 end-0 m-2 d-flex flex-column gap-2 cardhover">
+                                            <button class="btn btn-light p-1"><i
+                                                    class="fa-regular fa-heart"></i></button>
+                                            <button class="btn btn-light p-1"><i
+                                                    class="fa-solid fa-code-compare"></i></button>
+                                            <button class="btn btn-light p-1"><i
+                                                    class="fa-solid fa-magnifying-glass"></i></button>
+                                            <button class="btn btn-light p-1"><i
+                                                    class="fa-solid fa-cart-shopping"></i></button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+                                <!--  Card 2 -->
+                                <div class="item">
+                                    <div class="card border-0 position-relative h-100">
+                                        <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-1-300x300.jpg"
+                                            class="card-img-top w-100" alt="...">
+                                        <div class="card-body">
+                                            <a href="#" class="text-decoration-none text-dark">
+                                                <p class="lh-sm m-0 hover-danger"
+                                                    style="max-height: 2.5em; overflow: hidden;">
+                                                    Luxury Smart Watch with Fitness Tracker & Notifications
+                                                </p>
+                                            </a>
+                                            <div class="fw-semibold fs-5">$149
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="position-absolute top-0 end-0 m-2 d-flex flex-column gap-2 cardhover">
+                                            <button class="btn btn-light p-1"><i
+                                                    class="fa-regular fa-heart"></i></button>
+                                            <button class="btn btn-light p-1"><i
+                                                    class="fa-solid fa-code-compare"></i></button>
+                                            <button class="btn btn-light p-1"><i
+                                                    class="fa-solid fa-magnifying-glass"></i></button>
+                                            <button class="btn btn-light p-1"><i
+                                                    class="fa-solid fa-cart-shopping"></i></button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+                                <!--  Card 3 -->
+                                <div class="item">
+                                    <div class="card border-0 position-relative h-100">
+                                        <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-20-300x300.jpg"
+                                            class="card-img-top w-100" alt="...">
+                                        <div class="card-body">
+                                            <a href="#" class="text-decoration-none text-dark">
+                                                <p class="lh-sm m-0 hover-danger"
+                                                    style="max-height: 2.5em; overflow: hidden;">
+                                                    Mechanical Gaming Keyboard RGB Backlight Anti-Ghosting
+                                                </p>
+                                            </a>
+                                            <div class="fw-semibold fs-5">$79
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="position-absolute top-0 end-0 m-2 d-flex flex-column gap-2 cardhover">
+                                            <button class="btn btn-light p-1"><i
+                                                    class="fa-regular fa-heart"></i></button>
+                                            <button class="btn btn-light p-1"><i
+                                                    class="fa-solid fa-code-compare"></i></button>
+                                            <button class="btn btn-light p-1"><i
+                                                    class="fa-solid fa-magnifying-glass"></i></button>
+                                            <button class="btn btn-light p-1"><i
+                                                    class="fa-solid fa-cart-shopping"></i></button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+                                <!--  Card 4 -->
+                                <div class="item">
+                                    <div class="card border-0 position-relative h-100">
+                                        <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-5-300x300.jpg"
+                                            class="card-img-top w-100" alt="...">
+                                        <div class="card-body">
+                                            <a href="#" class="text-decoration-none text-dark">
+                                                <p class="lh-sm m-0 hover-danger"
+                                                    style="max-height: 2.5em; overflow: hidden;">
+                                                    Wireless Noise-Canceling Headphones with Mic - Black
+                                                </p>
+                                            </a>
+                                            <div class="fw-semibold fs-5">$199
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="position-absolute top-0 end-0 m-2 d-flex flex-column gap-2 cardhover">
+                                            <button class="btn btn-light p-1"><i
+                                                    class="fa-regular fa-heart"></i></button>
+                                            <button class="btn btn-light p-1"><i
+                                                    class="fa-solid fa-code-compare"></i></button>
+                                            <button class="btn btn-light p-1"><i
+                                                    class="fa-solid fa-magnifying-glass"></i></button>
+                                            <button class="btn btn-light p-1"><i
+                                                    class="fa-solid fa-cart-shopping"></i></button>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                                <!--  Card 5 -->
+                                <div class="item">
+                                    <div class="card border-0 position-relative h-100">
+                                        <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/automotive-11-300x300.jpg"
+                                            class="card-img-top w-100" alt="...">
+                                        <div class="card-body">
+                                            <a href="#" class="text-decoration-none text-dark">
+                                                <p class="lh-sm m-0 hover-danger"
+                                                    style="max-height: 2.5em; overflow: hidden;">
+                                                    Wireless Noise-Canceling Headphones with Mic - Black
+                                                </p>
+                                            </a>
+                                            <div class="fw-semibold fs-5">$199
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="position-absolute top-0 end-0 m-2 d-flex flex-column gap-2 cardhover">
+                                            <button class="btn btn-light p-1"><i
+                                                    class="fa-regular fa-heart"></i></button>
+                                            <button class="btn btn-light p-1"><i
+                                                    class="fa-solid fa-code-compare"></i></button>
+                                            <button class="btn btn-light p-1"><i
+                                                    class="fa-solid fa-magnifying-glass"></i></button>
+                                            <button class="btn btn-light p-1"><i
+                                                    class="fa-solid fa-cart-shopping"></i></button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <!--  Card 6 -->
+                                <div class="item">
+                                    <div class="card border-0 position-relative h-100">
+                                        <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/automotive-13-300x300.jpg"
+                                            class="card-img-top w-100" alt="...">
+                                        <div class="card-body">
+                                            <a href="#" class="text-decoration-none text-dark">
+                                                <p class="lh-sm m-0 hover-danger"
+                                                    style="max-height: 2.5em; overflow: hidden;">
+                                                    Wireless Noise-Canceling Headphones with Mic - Black
+                                                </p>
+                                            </a>
+                                            <div class="fw-semibold fs-5">$199
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="position-absolute top-0 end-0 m-2 d-flex flex-column gap-2 cardhover">
+                                            <button class="btn btn-light p-1"><i
+                                                    class="fa-regular fa-heart"></i></button>
+                                            <button class="btn btn-light p-1"><i
+                                                    class="fa-solid fa-code-compare"></i></button>
+                                            <button class="btn btn-light p-1"><i
+                                                    class="fa-solid fa-magnifying-glass"></i></button>
+                                            <button class="btn btn-light p-1"><i
+                                                    class="fa-solid fa-cart-shopping"></i></button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+                                <!--  Card 7 -->
+                                <div class="item">
+                                    <div class="card border-0 position-relative h-100">
+                                        <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-6-300x300.jpg"
+                                            class="card-img-top w-100" alt="...">
+                                        <div class="card-body">
+                                            <a href="#" class="text-decoration-none text-dark">
+                                                <p class="lh-sm m-0 hover-danger"
+                                                    style="max-height: 2.5em; overflow: hidden;">
+                                                    Wireless Noise-Canceling Headphones with Mic - Black
+                                                </p>
+                                            </a>
+                                            <div class="fw-semibold fs-5">$199
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="position-absolute top-0 end-0 m-2 d-flex flex-column gap-2 cardhover">
+                                            <button class="btn btn-light p-1"><i
+                                                    class="fa-regular fa-heart"></i></button>
+                                            <button class="btn btn-light p-1"><i
+                                                    class="fa-solid fa-code-compare"></i></button>
+                                            <button class="btn btn-light p-1"><i
+                                                    class="fa-solid fa-magnifying-glass"></i></button>
+                                            <button class="btn btn-light p-1"><i
+                                                    class="fa-solid fa-cart-shopping"></i></button>
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+
+                                <!--  Card 8 -->
+                                <div class="item">
+                                    <div class="card border-0 position-relative h-100">
+                                        <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-5-300x300.jpg"
+                                            class="card-img-top w-100" alt="...">
+                                        <div class="card-body">
+                                            <a href="#" class="text-decoration-none text-dark">
+                                                <p class="lh-sm m-0 hover-danger"
+                                                    style="max-height: 2.5em; overflow: hidden;">
+                                                    Wireless Noise-Canceling Headphones with Mic - Black
+                                                </p>
+                                            </a>
+                                            <div class="fw-semibold fs-5">$199
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="position-absolute top-0 end-0 m-2 d-flex flex-column gap-2 cardhover">
+                                            <button class="btn btn-light p-1"><i
+                                                    class="fa-regular fa-heart"></i></button>
+                                            <button class="btn btn-light p-1"><i
+                                                    class="fa-solid fa-code-compare"></i></button>
+                                            <button class="btn btn-light p-1"><i
+                                                    class="fa-solid fa-magnifying-glass"></i></button>
+                                            <button class="btn btn-light p-1"><i
+                                                    class="fa-solid fa-cart-shopping"></i></button>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: true,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                smartSpeed: 800,
+                responsive: {
+                    0: { items: 1 },
+                    576: { items: 2 },
+                    992: { items: 3 },
+                    1200: { items: 5 }
+                }
+            });
+    </script>
+
+
+
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
