@@ -1,0 +1,149 @@
+
+/*logo*/
+.normal-logo {
+    max-width: 9vw;
+    height: auto;
+}
+
+
+.mobile-logo {
+    max-width: 20vw;
+    height: auto;
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .logo img.normal-logo {
+        display: none;
+    }
+
+    .logo img.mobile-logo {
+        display: block;
+    }
+
+    .header-top-left {
+        margin-left: 12.5rem;
+    }
+}
+
+.w-92 {
+    width: 92% !important;
+}
+
+.custom-height {
+    height: 40vh;
+}
+
+@media (max-width: 768px) {
+
+    .custom-height,
+    .custom {
+        height: 50vh;
+    }
+
+}
+
+/*danger hover header*/
+.hover-danger {
+    transition: color 0.3s ease;
+}
+
+.hover-danger:hover {
+    color: #dc3545 !important;
+}
+
+
+/* hide blocks*/
+#language-selector:hover #language-menu,
+#currency-selector:hover #currency-menu,
+#Homepage-selector:hover #Homepage-menu,
+#Categories-selector:hover #Categories-menu,
+#Products-selector:hover #Products-menu,
+#Pages-selector:hover #Pages-menu,
+#Recentlyviewed-selector:hover #Recentlyviewed-menu {
+    display: block !important;
+}
+
+
+/*Just for final touches*/
+.ptlr-10 {
+    padding-top: 28% !important;
+    left: -4%;
+    width: 100%;
+    top: -28%;
+}
+
+.form-select {
+    width: 139% !important;
+}
+
+.fs-08 {
+    font-size: 1.5rem;
+}
+
+.ml {
+    margin-left: 7.5%;
+}
+
+.hamburger-wrapper {
+    position: relative;
+}
+
+@media (max-width: 767.98px) {
+    .hamburger-wrapper {
+        position: absolute;
+        top: 0;
+        left: -20;
+        z-index: 1050;
+    }
+}
+.bg-gray {
+    background-color: #e0e0e0 !important;
+}
+/*barbie css*/
+@media (min-width: 1400px) {
+section.container {
+        margin-left: 7%;
+}
+}
+/*for line*/
+.slide-link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    /* Optional */
+}
+
+.slide-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 1%;
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    /* underline color */
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.slide-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.zoom-container {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.zoom-container img {
+  transition: transform 0.5s ease;
+}
+
+.zoom-container:hover img {
+  transform: scale(1.1);
+}
