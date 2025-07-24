@@ -1,0 +1,148 @@
+/* Container adjustment for large screens */
+@media (min-width: 1400px) {
+    section.container {
+        margin-left: 7%;
+    }
+}
+
+/* ========== BUTTON HOVER EFFECTS ========== */
+
+/* Add to Cart button hover effect */
+.addtocardho:hover {
+    background-color: white !important;
+    color: black !important;
+}
+
+/* Buy Now button hover effect */
+.buynowho:hover {
+    background-color: white !important;
+    color: black !important;
+}
+
+/* ========== CAROUSEL STYLES ========== */
+
+/* Carousel indicator buttons sizing */
+.carousel-indicators button {
+    width: 75px !important;
+    height: 75px !important;
+}
+
+/* ========== CARD HOVER EFFECTS ========== */
+
+/* Initial state for card hover elements */
+.cardhover {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.5s ease;
+}
+
+/* Card hover state - shows hidden elements */
+.card:hover .cardhover {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Card hover shadow effect */
+.card:hover {
+    box-shadow: 0 0 5px rgba(169, 169, 169, 0.8);
+}
+
+/* ========== RATING STYLES ========== */
+
+/* Rating container */
+.rating {
+    direction: rtl; 
+    display: inline-flex;
+}
+
+/* Hide radio inputs */
+.rating input {
+    display: none;
+}
+
+/* Star label styling */
+.rating label {
+    font-size: 1.5rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s; 
+}
+
+/* Selected and hover states for stars */
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+    color: #f39c12; 
+}
+
+/*header*/
+/*logo*/
+.normal-logo {
+    max-width: 9vw;
+    height: auto;
+}
+
+
+.mobile-logo {
+    max-width: 20vw;
+    height: auto;
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .logo img.normal-logo {
+        display: none;
+    }
+
+    .logo img.mobile-logo {
+        display: block;
+    }
+
+    .header-top-left {
+        margin-left: 12.5rem;
+    }
+}
+
+.w-92 {
+    width: 92% !important;
+}
+
+.custom-height {
+    height: 40vh;
+}
+
+@media (max-width: 768px) {
+
+    .custom-height,
+    .custom {
+        height: 50vh;
+    }
+
+}
+  .offcanvas-custom-width {
+        width: 240px !important;
+    }
+    .category-link {
+        padding: 12px 16px;
+    }
+/*danger hover header*/
+.hover-danger {
+    transition: color 0.3s ease;
+}
+
+.hover-danger:hover {
+    color: #dc3545 !important;
+}
+
+
+/* hide blocks*/
+#language-selector:hover #language-menu,
+#currency-selector:hover #currency-menu,
+#Homepage-selector:hover #Homepage-menu,
+#Categories-selector:hover #Categories-menu,
+#Products-selector:hover #Products-menu,
+#Pages-selector:hover #Pages-menu,
+#Recentlyviewed-selector:hover #Recentlyviewed-menu {
+    display: block !important;
+}

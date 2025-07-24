@@ -2,10 +2,12 @@
 <html lang="en">
 
 <head>
+    <!-- ========== META TAGS ========== -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Merto - Elementor Multipurpose WooCommerce Theme</title>
 
+    <!-- ========== CSS LINKS ========== -->
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
 
@@ -18,7 +20,6 @@
 
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="css/animate.css" />
 
     <!-- Favicon -->
     <link rel="icon" href="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/08/cropped-favicon-1-32x32.png"
@@ -32,14 +33,17 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../CSS CODE/Com.css" />
 
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../CSS CODE/main.css" />
+    <link rel="stylesheet" href="../CSS CODE/Footer.css" />
 </head>
 
 <body>
-
-    <!--top header-->
-    <div class="header-top row align-items-center justify-content-between p-md-4 py-2 border-bottom border-dark  bg-white position-sticky top-0"
+    <!-- ========== HEADER SECTION ========== -->
+    <!-- Top Header -->
+    <div class="header-top row align-items-center justify-content-between p-md-4 py-2 border-bottom border-dark bg-white position-sticky top-0"
         style="z-index: 990;">
         <!-- Logo -->
         <div class="header-top-left col-md-2 col-1 d-flex justify-content-md-end justify-content-center">
@@ -55,9 +59,8 @@
 
         <!-- Hotline + Search Bar -->
         <div class="header-top-middle col-md d-none d-md-flex align-items-center justify-content-end">
-
             <!-- Hotline -->
-            <div class="col-3 d-flex align-items-center hotline hover-danger ">
+            <div class="col-3 d-flex align-items-center hotline hover-danger">
                 <i class="bi bi-telephone fa-2x me-2"></i>
                 <div>
                     <p class="mb-0">Contact us 24/7</p>
@@ -67,12 +70,11 @@
 
             <!-- Search Form -->
             <div class="col-6 ms-4 position-relative form">
-
-                <form class="p-2 form-control border-0 w-92 bg-light position-relative " id="form"
-                    style="z-index: 900;">
-                    <div class="d-flex align-items-center gap-2 ">
+                <form class="p-2 form-control border-0 w-92 bg-light position-relative" id="form" style="z-index: 900;">
+                    <div class="d-flex align-items-center gap-2">
                         <select class="form-select bg-transparent border-0 shadow-none">
                             <option>All Categories</option>
+                            <!-- Category options -->
                             <option>Electronic</option>
                             <option>Fashion</option>
                             <option value="wheels">&nbsp;&nbsp;&nbsp;Wheels</option>
@@ -110,46 +112,8 @@
                             <option value="women">&nbsp;&nbsp;&nbsp;Women</option>
                             <option value="women-accessories">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Accessories
                             </option>
-                            <option value="dress">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dress</option>
-                            <option value="shirts">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shirts</option>
-                            <option value="shoes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shoes</option>
-                            <option value="shorts">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shorts</option>
-                            <option value="skirts">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skirts</option>
-                            <option value="tops">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tops</option>
-                            <option value="game-accessories">Game Accessories</option>
-                            <option value="home-decor">Home &amp; Decor</option>
-                            <option value="beds">&nbsp;&nbsp;&nbsp;Beds</option>
-                            <option value="bookcase">&nbsp;&nbsp;&nbsp;Bookcase</option>
-                            <option value="cabinets">&nbsp;&nbsp;&nbsp;Cabinets</option>
-                            <option value="chairs">&nbsp;&nbsp;&nbsp;Chairs</option>
-                            <option value="fireplaces">&nbsp;&nbsp;&nbsp;Fireplaces</option>
-                            <option value="lighting">&nbsp;&nbsp;&nbsp;Lighting</option>
-                            <option value="mirrors-clocks">&nbsp;&nbsp;&nbsp;Mirrors &amp; Clocks</option>
-                            <option value="office-furniture">&nbsp;&nbsp;&nbsp;Office Furniture</option>
-                            <option value="outdoor">&nbsp;&nbsp;&nbsp;Outdoor</option>
-                            <option value="rugs">&nbsp;&nbsp;&nbsp;Rugs</option>
-                            <option value="sectionals">&nbsp;&nbsp;&nbsp;Sectionals</option>
-                            <option value="sofas">&nbsp;&nbsp;&nbsp;Sofas</option>
-                            <option value="tables">&nbsp;&nbsp;&nbsp;Tables</option>
-                            <option value="wall-decor">&nbsp;&nbsp;&nbsp;Wall Decor</option>
-                            <option value="laptop-computer">Laptop &amp; Computer</option>
-                            <option value="computer">&nbsp;&nbsp;&nbsp;Computer</option>
-                            <option value="all-in-one">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All in One</option>
-                            <option value="laptop">&nbsp;&nbsp;&nbsp;Laptop</option>
-                            <option value="macbook">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Macbook</option>
-                            <option value="msi">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MSI</option>
-                            <option value="phone-tablet">Phone &amp; Tablet</option>
-                            <option value="tablet-accessories">&nbsp;&nbsp;&nbsp;Accessories</option>
-                            <option value="apple">&nbsp;&nbsp;&nbsp;Apple</option>
-                            <option value="huawei">&nbsp;&nbsp;&nbsp;Huawei</option>
-                            <option value="oppo">&nbsp;&nbsp;&nbsp;Oppo</option>
-                            <option value="realme">&nbsp;&nbsp;&nbsp;Realme</option>
-                            <option value="samsung">&nbsp;&nbsp;&nbsp;Samsung</option>
-                            <option value="smartphone">&nbsp;&nbsp;&nbsp;Smartphone</option>
-                            <option value="tablet">&nbsp;&nbsp;&nbsp;Tablet</option>
-                            <option value="xiaomi">&nbsp;&nbsp;&nbsp;Xiaomi</option>
                         </select>
-                        <input type="text" class="form-control   border-0 bg-transparent shadow-none " id="searchInput"
+                        <input type="text" class="form-control border-0 bg-transparent shadow-none" id="searchInput"
                             placeholder="Search for products">
                         <button type="submit" class="btn btn-dark">
                             <i class="bi bi-search"></i>
@@ -158,8 +122,8 @@
                 </form>
 
                 <!-- Suggestions Box -->
-                <div class="bg-white rounded shadow-sm p-3 position-absolute  z-index-998 mt-2  ptlr-10 d-none "
-                    style="z-index: 899;" id="searchSuggestions">
+                <div class="bg-white rounded shadow-sm p-3 position-absolute  mt-2 ptlr-10 d-none" style="z-index: 899;"
+                    id="searchSuggestions">
                     <p class="fw-semibold mb-3">Popular search</p>
                     <div class="d-flex flex-wrap gap-2">
                         <button class="btn btn-outline-secondary btn-sm rounded-pill">smartphone</button>
@@ -173,28 +137,23 @@
                         <button class="btn btn-outline-secondary btn-sm rounded-pill">camera</button>
                     </div>
                 </div>
-
             </div>
-
         </div>
 
-        <!-- lang currency heart cart-->
-        <div
-            class="header-end col-md-4  col-4 d-flex align-items-center justify-content-md-center justify-content-end ">
-            <!-- lang currency-->
-            <div class="col-6 row  justify-content-end ">
-                <!--lang-->
+        <!-- Language, Currency, Account, Cart -->
+        <div class="header-end col-md-4 col-4 d-flex align-items-center justify-content-md-center justify-content-end">
+            <!-- Language and Currency Selectors -->
+            <div class="col-6 row justify-content-end">
+                <!-- Language Selector -->
                 <div class="position-relative py-3 d-md-flex d-none" id="language-selector" style="width: fit-content;">
                     <div class="current-language">
-                        <a href="#" class="d-flex align-items-center text-decoration-none text-dark  hover-danger">
+                        <a href="#" class="d-flex align-items-center text-decoration-none text-dark hover-danger">
                             <img src="https://flagcdn.com/us.svg" width="20" alt="English" />
                             <span class="ms-1">English</span>
                             <i class="bi bi-chevron-down ms-1"></i>
                         </a>
                     </div>
-
-                    <div id="language-menu"
-                        class="position-absolute top-100 start-0 bg-white rounded shadow-sm d-none ">
+                    <div id="language-menu" class="position-absolute top-100 start-0 bg-white rounded shadow-sm d-none">
                         <ul class="list-unstyled p-0 m-0">
                             <li class="py-2 px-3 lang-item">
                                 <a href="#"
@@ -219,21 +178,16 @@
                             </li>
                         </ul>
                     </div>
-
                 </div>
 
-                <!--currency-->
-                <div class="position-relative  p-3 d-md-flex d-none" id="currency-selector" style="width: fit-content;">
-
+                <!-- Currency Selector -->
+                <div class="position-relative p-3 d-md-flex d-none" id="currency-selector" style="width: fit-content;">
                     <div class="current-currency">
-                        <a href="#" class="d-flex align-items-center text-decoration-none text-dark  hover-danger">
-
+                        <a href="#" class="d-flex align-items-center text-decoration-none text-dark hover-danger">
                             <span>USD</span>
                             <i class="bi bi-chevron-down ms-1"></i>
                         </a>
-
                     </div>
-
                     <div id="currency-menu" class="position-absolute top-100 start-0 bg-white rounded shadow-sm d-none">
                         <ul class="list-unstyled p-0 m-0">
                             <li class="py-2 px-3 currency-item">
@@ -242,42 +196,71 @@
                                     EUR
                                 </a>
                             </li>
-                            <li class="py-2 px-3 currency-item">
-                                <a href="#"
-                                    class="d-flex align-items-center text-decoration-none text-dark  hover-danger">
-                                    BRL
-                                </a>
-                            </li>
                         </ul>
                     </div>
-
                 </div>
-
             </div>
-            <!--Account-->
-            <div class="col-3 d-flex align-items-center d-md-flex d-none ">
 
-                <button
-                    class="btn btn-light  d-flex align-items-center  hover-danger  shadow-none bg-transparent border-0"
+            <!-- Account -->
+            <div class="col-3 d-flex align-items-center d-md-flex d-none">
+                <button class="btn btn-light d-flex align-items-center hover-danger shadow-none bg-transparent border-0"
                     type="button">
                     <i class="bi bi-person fs-08 me-2"></i>
                     <span class="fw-semibold align-self-center">Account</span>
                 </button>
-
             </div>
 
-            <!--heart cart-->
-            <div class="col-3 d-flex align-items-center ">
+            <!-- Wishlist and Cart -->
+            <div class="col-3 d-flex align-items-center">
                 <i class="bi bi-heart heart fs-08 d-md-flex d-none mx-2 hover-danger"></i>
                 <i class="bi bi-cart2 cart fs-08 hover-danger" style="width: fit-content;"></i>
             </div>
-
         </div>
-
     </div>
 
-    <div class="header-buttom row p-0  align-items-stretch ">
-        <!--off canvas-->
+    <!-- ========== NAVIGATION MENU ========== -->
+    <div class="header-buttom row p-0  position-relative" style="z-index: 1000">
+        <div class=" py-5 position-absolute Fashion bg-gray d-none "
+            style="width: 400px; height: 700px; z-index: 999910;">
+            <div class="row nav-block ">
+                <!-- Column 1: Ladies -->
+                <div class="col-md-6">
+                    <h4 class="fw-bold text-uppercase">Woman</h4>
+                    <nav class="nav flex-column">
+                        <a class="nav-link nav-item-link text-dark" href="#">Bags</a>
+                        <a class="nav-link nav-item-link text-dark" href="#">Blouses</a>
+                        <a class="nav-link nav-item-link text-dark" href="#">Jackets</a>
+                        <a class="nav-link nav-item-link text-dark" href="#">Dresses</a>
+                    </nav>
+                </div>
+
+                <!-- Column 2: Gents -->
+                <div class="col-md-6">
+                    <h4 class="fw-bold text-uppercase">Men</h4>
+                    <nav class="nav flex-column">
+                        <a class="nav-link nav-item-link text-dark" href="#">Wallets</a>
+                        <a class="nav-link nav-item-link text-dark" href="#">Suits</a>
+                        <a class="nav-link nav-item-link text-dark" href="#">Coats</a>
+                        <a class="nav-link nav-item-link text-dark" href="#">Shirts</a>
+                    </nav>
+                </div>
+
+                <!-- Image Preview Section -->
+                <div class="col-12 mt-4 preview-section">
+                    <div class="card border-0 shadow overflow-hidden text-white position-relative">
+                        <img src="../images/images_ for_ main/back.jpg" class="card-img" alt="Preview"
+                            style="object-fit: cover; height: 300px;">
+                        <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+                            <p class="mb-2 fs-5">Doopy</p>
+                            <h3 class="card-title">Caro Line Collection</h3>
+                            <button class="btn btn-outline-light mt-2">Explore Now</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Categories Offcanvas -->
         <div class="col-auto border-md-end border-md-dark p-0 hamburger-wrapper ml">
             <button class="btn w-100 h-100 border-0 d-flex align-items-center gap-3 px-3 py-3" type="button"
                 data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
@@ -287,123 +270,170 @@
             </button>
 
             <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
-                aria-labelledby="offcanvasWithBothOptionsLabel" style="z-index: 999;">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+                aria-labelledby="offcanvasWithBothOptionsLabel" style="z-index: 9999;">
+                <div class="offcanvas-header" style="background-color: black;">
+                    <h5 class="offcanvas-title text-white " id="offcanvasWithBothOptionsLabel">SHOP BY CATEGORIES
+                    </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body">
-                    <p>Try scrolling the rest of the page to see this option in action.</p>
+                <div class="offcanvas-body position-relative p-0">
+                    <div class="list-group list-group-flush ">
+
+                        <a href="#"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category-link  Fashionhover">
+                            <span class="slide-link hover-danger"><i
+                                    class="fas fa-tshirt me-2 slide-link"></i>Fashion</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category-link">
+                            <span class="slide-link hover-danger"><i class="fas fa-tablet-alt me-2 slide-link"></i>Phone
+                                & Tablet</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category-link">
+                            <span class="slide-link hover-danger"><i class="fas fa-laptop me-2 slide-link"></i>Laptop &
+                                Computer</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category-link">
+                            <span class="slide-link hover-danger"><i class="fas fa-tv me-2 "></i>TV, Audio –
+                                Video</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category-link">
+                            <span><i class="fas fa-camera me-2 k"></i>Camera & Photo</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category-link">
+                            <span class="slide-link hover-danger"><i class="fas fa-couch me-2 "></i>Home &
+                                Decor</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category-link">
+                            <span class="slide-link hover-danger"><i class="fas fa-heartbeat me-2 "></i>Beauty &
+                                Health</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category-link">
+                            <span class="slide-link hover-danger"><i class="fas fa-gamepad me-2"></i>Game
+                                Accessories</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category-link">
+                            <span class="slide-link hover-danger"><i class="fas fa-cog me-2  "></i>Autopart</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
 
-
-        <!-- home page gategories pages product-->
+        <!-- Main Navigation -->
         <div class="col-auto row p-3 px-4 d-md-flex d-none">
-
+            <!-- Homepages Dropdown -->
             <div class="col-auto">
                 <div class="position-relative p-0 d-md-flex d-none" id="Homepage-selector" style="width: fit-content;">
                     <div class="Homepage-language">
-                        <a href="#" class="d-flex align-items-center text-decoration-none text-dark  hover-danger">
+                        <a href="#" class="d-flex align-items-center text-decoration-none text-dark hover-danger">
                             <span class="ms-1">Homepages</span>
                             <i class="bi bi-chevron-down ms-1"></i>
                         </a>
                     </div>
-                    <div id="Homepage-menu" class="position-absolute top-100 start-0 bg-white rounded shadow-sm d-none "
-                        style="width: 100%; height: 500px;">
-
-                    </div>
+                    <div id="Homepage-menu" class="position-absolute top-100 start-0 bg-white rounded shadow-sm d-none"
+                        style="width: 100%; height: 500px;"></div>
                 </div>
             </div>
 
+            <!-- Categories Dropdown -->
             <div class="col-auto">
                 <div class="position-relative p-0 d-md-flex d-none" id="Categories-selector"
                     style="width: fit-content;">
                     <div class="Categories-language">
-                        <a href="#" class="d-flex align-items-center text-decoration-none text-dark  hover-danger">
+                        <a href="#" class="d-flex align-items-center text-decoration-none text-dark hover-danger">
                             <span class="ms-1">Categories</span>
                             <i class="bi bi-chevron-down ms-1"></i>
                         </a>
                     </div>
                     <div id="Categories-menu"
                         class="position-absolute top-100 start-0 bg-white rounded shadow-sm d-none"
-                        style="width: 100%; height: 500px;">
-
-                    </div>
+                        style="width: 100%; height: 500px;"></div>
                 </div>
             </div>
 
-
+            <!-- Products Dropdown -->
             <div class="col-auto">
                 <div class="position-relative p-0 d-md-flex d-none" id="Products-selector" style="width: fit-content;">
                     <div class="Products-language">
-                        <a href="#" class="d-flex align-items-center text-decoration-none text-dark  hover-danger">
+                        <a href="#" class="d-flex align-items-center text-decoration-none text-dark hover-danger">
                             <span class="ms-1">Products</span>
                             <i class="bi bi-chevron-down ms-1"></i>
                         </a>
                     </div>
                     <div id="Products-menu" class="position-absolute top-100 start-0 bg-white rounded shadow-sm d-none"
-                        style="width: 100%; height: 500px;">
-
-                    </div>
+                        style="width: 100%; height: 500px;"></div>
                 </div>
             </div>
 
+            <!-- Pages Dropdown -->
             <div class="col-auto">
                 <div class="position-relative p-0 d-md-flex d-none" id="Pages-selector" style="width: fit-content;">
                     <div class="Pages-language">
-                        <a href="#" class="d-flex align-items-center text-decoration-none text-dark  hover-danger">
+                        <a href="#" class="d-flex align-items-center text-decoration-none text-dark hover-danger">
                             <span class="ms-1">Pages</span>
                             <i class="bi bi-chevron-down ms-1"></i>
                         </a>
                     </div>
                     <div id="Pages-menu" class="position-absolute top-100 start-0 bg-white rounded shadow-sm d-none"
-                        style="width: 100%; height: 500px;">
-
-                    </div>
+                        style="width: 100%; height: 500px;"></div>
                 </div>
             </div>
-
         </div>
 
-        <!-- About Discount-->
-        <div class=" col-auto d-flex justify-content-center align-items-center gap-4 d-md-flex d-none">
-            <div class=" col-auto d-flex gap-4">
-                <a href="#" class="text-decoration-none text-dark  hover-danger">About us</a>
-                <a href="#" class="text-decoration-none text-dark  hover-danger">Blog</a>
+        <!-- About and Discount Links -->
+        <div class="col-auto d-flex justify-content-center align-items-center gap-4 d-md-flex d-none">
+            <div class="col-auto d-flex gap-4">
+                <a href="#" class="text-decoration-none text-dark hover-danger">About us</a>
+                <a href="#" class="text-decoration-none text-dark hover-danger">Blog</a>
             </div>
 
             <div class="col-auto">
-                <a href="#" class="text-decoration-none text-dark  d-flex align-items-center gap-1 hover-danger">
+                <a href="#" class="text-decoration-none text-dark d-flex align-items-center gap-1 hover-danger">
                     <i class="fas fa-ticket-alt"></i>
                     Best Discount
                 </a>
             </div>
         </div>
 
+        <!-- Recently Viewed -->
         <div class="col-auto p-3 ml d-md-flex d-none">
             <div class="position-relative p-0 d-md-flex d-none" id="Recentlyviewed-selector"
                 style="width: fit-content;">
                 <div class="Recentlyviewed-language">
-                    <a href="#" class="d-flex align-items-center text-decoration-none text-dark  hover-danger">
+                    <a href="#" class="d-flex align-items-center text-decoration-none text-dark hover-danger">
                         <span class="ms-1">Recently viewed</span>
                         <i class="bi bi-chevron-down ms-1"></i>
                     </a>
                 </div>
                 <div id="Recentlyviewed-menu"
-                    class="position-absolute top-100 start-0 bg-white rounded shadow-sm d-none "
-                    style="width: 100%; height: 500px;">
-
-                </div>
+                    class="position-absolute top-100 start-0 bg-white rounded shadow-sm d-none"
+                    style="width: 100%; height: 500px;"></div>
             </div>
         </div>
     </div>
 
+    <!-- ========== HERO SECTION ========== -->
     <section class="container-fluid p-0 m-0">
-        <div class="row gx-0 ">
-            <!-- Carousel Section -->
-            <div class="col-12 col-md-8 custom  ">
+        <div class="row gx-0">
+            <!-- Main Carousel -->
+            <div class="col-12 col-md-8 custom">
                 <div id="carouselExampleIndicators" class="carousel slide h-100" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -412,23 +442,28 @@
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
                     </div>
                     <div class="carousel-inner h-100">
+                        <!-- Slide 1 -->
                         <div class="carousel-item active h-100 position-relative">
-                            <img src="images/slide1.jpg" class="d-block w-100 h-100 object-fit-cover" alt="First slide">
+                            <img src="../images/images_ for_ main/slide1.jpg"
+                                class="d-block w-100 h-100 object-fit-cover" alt="First slide">
                             <div class="position-absolute text-start text-white p-4" style="bottom: 15%; left: 5%;">
                                 <a href="#" class="btn bg-white text-dark custom-hover-btn px-4 py-3 fw-semibold">SHOP
                                     NOW</a>
                             </div>
                         </div>
+                        <!-- Slide 2 -->
                         <div class="carousel-item h-100 position-relative">
-                            <img src="images/slide2.jpg" class="d-block w-100 h-100 object-fit-cover"
-                                alt="Second slide">
+                            <img src="../images/images_ for_ main/slide2.jpg"
+                                class="d-block w-100 h-100 object-fit-cover" alt="Second slide">
                             <div class="position-absolute text-start text-white p-4" style="bottom: 15%; left: 6%;">
                                 <a href="#" class="btn bg-white text-dark custom-hover-btn px-4 py-3 fw-semibold">SHOP
                                     NOW</a>
                             </div>
                         </div>
+                        <!-- Slide 3 -->
                         <div class="carousel-item h-100 position-relative">
-                            <img src="images/slide3.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Third slide">
+                            <img src="../images/images_ for_ main/slide3.jpg"
+                                class="d-block w-100 h-100 object-fit-cover" alt="Third slide">
                             <div class="position-absolute text-start text-white p-4" style="bottom: 15%; left: 7%;">
                                 <a href="#" class="btn bg-white text-dark custom-hover-btn px-4 py-3 fw-semibold">SHOP
                                     NOW</a>
@@ -438,74 +473,76 @@
                 </div>
             </div>
 
-            <!-- Right Side Boxes -->
+            <!-- Right Side Promo Boxes -->
             <div class="col-12 col-md-4 d-flex flex-column gap-md-0">
-                <!-- Box 1 -->
-                <div class="position-relative overflow-hidden custom-height m-0">
-                    <img src="images/makeup.png" class="position-absolute hover-zoom top-0 start-0 w-100 h-100 ">
+                <!-- Promo Box 1 -->
+                <div class="position-relative overflow-hidden custom-height m-0 bg-gray">
+                    <img src="../images/images_ for_ main/makeup.png"
+                        class="position-absolute hover-zoom top-0 start-0 w-100 h-100">
                     <div class="position-absolute text-dark p-4">
                         <h6 class="fw-semibold">BLACK FRIDAY</h6>
                         <h1 class="w-75">Big Sale Eyeshadow</h1>
                         <h6>Over +100 items</h6>
-                        <a href="#" class="btn bg-dark text-white custom-hover-btn px-2 py-2 fw-semibold">SHOP NOW</a>
+                        <a href="#" class="btn bg-dark text-white custom-hover-btn px-2 py-2 fw-semibold">SHOP
+                            NOW</a>
                     </div>
                 </div>
 
-                <!-- Box 2 -->
-                <div class="position-relative overflow-hidden custom-height m-0">
-                    <img src="images/man.png" class="position-absolute  hover-zoom top-0 start-0 w-100 h-100 ">
+                <!-- Promo Box 2 -->
+                <div class="position-relative overflow-hidden custom-height bg-gray m-0">
+                    <img src="../images/images_ for_ main/man.png"
+                        class="position-absolute hover-zoom top-0 start-0 w-100 h-100">
                     <div class="position-absolute text-dark p-4">
                         <h6 class="fw-semibold">NEW COLLECTION</h6>
                         <h1 class="w-75">Big Sale Eyeshadow</h1>
                         <h6>Best jacket in year</h6>
-                        <a href="#" class="btn bg-dark text-white custom-hover-btn px-2 py-2 fw-semibold">SHOP NOW</a>
+                        <a href="#" class="btn bg-dark text-white custom-hover-btn px-2 py-2 fw-semibold">SHOP
+                            NOW</a>
                     </div>
-                    <!-- Price Circle -->
+                    <!-- Discount Badge -->
                     <div class="position-absolute bg-danger text-white d-flex justify-content-center align-items-center rounded-circle shadow-sm fw-bold"
-                        style="width: 70px; height: 70px; font-size: 1rem; top: -16px; right: 20px;">
+                        style="width: 70px; height: 70px; font-size: 1.7rem; top: -16px; right: 20px;">
                         <small style="font-size: 0.7em;">$</small><span class="fs-1">29</span>
                     </div>
                 </div>
             </div>
         </div>
-
-
     </section>
 
+    <!-- ========== FEATURES SECTION ========== -->
     <section class="container-fluid p-0">
         <div class="container py-5">
             <div class="row text-center justify-content-center align-items-center">
-
-                <!-- 1 -->
-                <div class="col-6 col-md-3 d-md-flex align-items-center gap-2 border-md-end mb-md-0 mb-5">
-                    <i class="fas fa-shipping-fast fs-1 text-muted"></i>
+                <!-- Feature 1: Fast Shipping -->
+                <div class="col-6 col-md-3 d-md-flex align-items-center gap-2 border-md-end mb-md-0 mb-5 ho">
+                    <i class="fas fa-shipping-fast  hover-danger fs-1 text-muted"></i>
                     <div class="text-md-start">
                         <div class="">Fast, Free Shipping</div>
                         <div class="text-muted small">On order over $50</div>
                     </div>
                 </div>
 
-                <!-- 2 -->
+                <!-- Feature 2: Next Day Delivery -->
                 <div class="col-6 col-md-3 d-md-flex align-items-center gap-2 border-md-end mb-md-0 mb-5">
-                    <i class="fas fa-clock fs-1 text-muted"></i>
+                    <i class="fas fa-clock fs-1   hover-danger text-muted"></i>
                     <div class="text-md-start">
                         <div class="">Next Day Delivery</div>
                         <div class="text-muted small">Free - spend over $99</div>
                     </div>
                 </div>
 
-                <!-- 3 -->
+                <!-- Feature 3: Low Price Guarantee -->
                 <div class="col-6 col-md-3 d-md-flex align-items-center gap-2 border-md-end">
-                    <i class="fas fa-percent fs-1 text-muted"></i>
+                    <i class="fas fa-percent fs-1 hover-danger text-muted"></i>
                     <div class="text-md-start">
                         <div class="">Low Price Guarantee</div>
                         <div class="text-muted small">We offer competitive prices</div>
                     </div>
                 </div>
 
-                <!-- 4 -->
-                <div class="col-6 col-md-3 d-md-flex align-items-center gap-2 ">
-                    <i class="fas fa-thumbs-up fs-1 text-muted"></i>
+                <!-- Feature 4: Quality Guarantee -->
+                <div class="col-6 col-md-3 d-md-flex align-items-center gap-2">
+                    <i class="fas fa-thumbs-up fs-1 hover-danger text-muted"></i>
                     <div class="text-md-start">
                         <div class="">Quality Guarantee</div>
                         <div class="text-muted small">We Guarantee Our Products</div>
@@ -514,9 +551,11 @@
             </div>
         </div>
 
+        <!-- Categories Carousel -->
         <div class="container py-5">
             <div class="owl-carousel owlS1">
-                <div class="item">
+                <!-- Category 1: Fashion -->
+                <div class="itemm">
                     <a href="https://demo.theme-sky.com/merto/product-category/fashion/">
                         <img loading="lazy" decoding="async"
                             src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/cat-6.jpg" alt="Fashion"
@@ -524,7 +563,9 @@
                     </a>
                     <h6 class="text-center">Fashion</h6>
                 </div>
-                <div class="item">
+
+                <!-- Category 2: Headphones -->
+                <div class="itemm">
                     <a href="https://demo.theme-sky.com/merto/product-category/electronic/headphones/">
                         <img loading="lazy" decoding="async"
                             src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/cat-7.jpg" alt="Fashion"
@@ -532,17 +573,7 @@
                     </a>
                     <h6 class="text-center">headphones</h6>
                 </div>
-
-                <div class="item">
-                    <a href="https://demo.theme-sky.com/merto/product-category/fashion/">
-                        <img loading="lazy" decoding="async"
-                            src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/cat-8.jpg" alt="Fashion"
-                            class="rounded-circle img-fluid" width="200" height="200" style="object-fit: cover;">
-                    </a>
-                    <h6 class="text-center">HandBags</h6>
-                </div>
-
-                <div class="item">
+                <div class="itemm">
                     <a href="https://demo.theme-sky.com/merto/product-category/fashion/">
                         <img loading="lazy" decoding="async"
                             src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/cat-1.jpg" alt="Fashion"
@@ -551,7 +582,7 @@
                     <h6 class="text-center">Smartphone</h6>
                 </div>
 
-                <div class="item">
+                <div class="itemm">
                     <a href="https://demo.theme-sky.com/merto/product-category/fashion/">
                         <img loading="lazy" decoding="async"
                             src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/cat-2.jpg" alt="Fashion"
@@ -560,7 +591,7 @@
                     <h6 class="text-center">Home & Decor<h6>
                 </div>
 
-                <div class="item">
+                <div class="itemm">
                     <a href="https://demo.theme-sky.com/merto/product-category/fashion/">
                         <img loading="lazy" decoding="async"
                             src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/09/cosmetic-cat-7.jpg"
@@ -570,7 +601,7 @@
                     <h6 class="text-center">Makeup</h6>
                 </div>
 
-                <div class="item">
+                <div class="itemm">
                     <a href="https://demo.theme-sky.com/merto/product-category/fashion/">
                         <img loading="lazy" decoding="async"
                             src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/cat-4.jpg" alt="Fashion"
@@ -579,7 +610,7 @@
                     <h6 class="text-center">Autopart</h6>
                 </div>
 
-                <div class="item">
+                <div class="itemm position-relative">
                     <a href="https://demo.theme-sky.com/merto/product-category/fashion/">
                         <img loading="lazy" decoding="async"
                             src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/cat-5.jpg" alt="Fashion"
@@ -592,68 +623,56 @@
         </div>
     </section>
 
-    <!-- page 3-->
+    <!-- ========== FLASH DEALS SECTION ========== -->
     <section class="container-fluid p-0">
-
         <div class="container py-5">
             <div class="row">
-
-                <div class="container-fluid  py-5">
+                <div class="container-fluid py-5">
                     <div class="container mx-auto p-0">
-
-                        <div class=" row align-items-center">
-                            <h3 class="fw-bold  col-md-7 col-12 text-md-start text-center mb-md-0 mb-4">Flash Deals</h3>
-                            <div class="row col-md-4  col-12 align-items-center ps-md-0 ps-5  ">
+                        <div class="row align-items-center">
+                            <h3 class="fw-bold col-md-7 col-12 text-md-start text-center mb-md-0 mb-4">Flash Deals
+                            </h3>
+                            <div class="row col-md-4 col-12 align-items-center ps-md-0 ps-5">
                                 <span class="text-muted col-auto fw-semibold">End in</span>
-
+                                <!-- Countdown Timer -->
                                 <div class="zero-circle d-flex justify-content-center align-items-center border rounded-circle bg-dark text-white col-auto"
                                     style="width: 35px; height: 35px;">
                                     <span>00</span>
                                 </div>
-
                                 <span class="text-muted col-auto fw-semibold">:</span>
-
                                 <div class="zero-circle d-flex justify-content-center align-items-center border rounded-circle bg-dark text-white col-auto"
                                     style="width: 35px; height: 35px;">
                                     <span>00</span>
                                 </div>
-
                                 <span class="text-muted col-auto fw-semibold">:</span>
-
                                 <div class="zero-circle d-flex justify-content-center align-items-center border rounded-circle bg-dark text-white col-auto"
                                     style="width: 35px; height: 35px;">
                                     <span>00</span>
                                 </div>
-                                <!--
-                        <div class=" col-md-auto ms-2 d-md-flex d-none">
-                            <span>
-                                <a href="#" class="slide-link" style="width: 100%;">See All Products</a>
-                            </span>
-                        </div>-->
                             </div>
-
-
                         </div>
 
-
-                        <div class=" my-4 overflow-hidden">
+                        <!-- Products Carousel -->
+                        <div class="my-4 overflow-hidden">
                             <div class="owl-carousel owl-theme carousel-two py-1 rounded-2 overflow-hidden">
-
+                                <!-- Product 1 -->
                                 <div class="item">
                                     <div class="card border-0 position-relative h-100">
-                                        <img src="images/labtop.jpg" class="card-img-top w-100" alt="...">
+                                        <img src="../images/images_ for_ main/labtop.jpg" class="card-img-top w-100"
+                                            alt="...">
                                         <div class="card-body">
                                             <a href="#" class="text-decoration-none text-dark">
                                                 <p class="lh-sm m-0 hover-danger"
                                                     style="max-height: 2.5em; overflow: hidden;">
-                                                    Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</p>
+                                                    Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD
+                                                </p>
                                             </a>
                                             <div class="fw-semibold fs-5">$999 <span
                                                     class="text-muted text-decoration-line-through fs-6">$1,536</span>
                                             </div>
                                             <div class="text-dark fs-5">★★★★☆</div>
-
                                         </div>
+                                        <!-- Product Hover Actions -->
                                         <div
                                             class="position-absolute top-0 end-0 m-2 d-flex flex-column gap-2 cardhover">
                                             <button class="btn btn-light p-1"><i
@@ -665,12 +684,13 @@
                                             <button class="btn btn-light p-1"><i
                                                     class="fa-solid fa-cart-shopping"></i></button>
                                         </div>
+                                        <!-- Discount Badge -->
                                         <div
                                             class="position-absolute top-0 start-0 bg-danger text-white px-2 py-1 small rounded-start discount">
-                                            -35%</div>
+                                            -35%
+                                        </div>
                                     </div>
                                 </div>
-
                                 <div class="item">
                                     <div class="card border-0 position-relative h-100">
                                         <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-14-2-300x300.jpg"
@@ -685,7 +705,6 @@
                                                     class="text-muted text-decoration-line-through fs-6">$837</span>
                                             </div>
                                             <div class="text-dark fs-5">★★★★☆</div>
-
                                         </div>
                                         <div
                                             class="position-absolute top-0 end-0 m-2 d-flex flex-column gap-2 cardhover">
@@ -703,7 +722,6 @@
                                             -6%</div>
                                     </div>
                                 </div>
-
                                 <div class="item">
                                     <div class="card border-0 position-relative h-100">
                                         <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/automotive-11-300x300.jpg"
@@ -718,7 +736,6 @@
                                                     class="text-muted text-decoration-line-through fs-6">$950</span>
                                             </div>
                                             <div class="text-dark fs-5">★★★★☆</div>
-
                                         </div>
                                         <div
                                             class="position-absolute top-0 end-0 m-2 d-flex flex-column gap-2 cardhover">
@@ -736,7 +753,6 @@
                                             -8%</div>
                                     </div>
                                 </div>
-
                                 <div class="item">
                                     <div class="card border-0 position-relative h-100">
                                         <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/furniture-6-300x300.jpg"
@@ -769,7 +785,6 @@
                                             -33%</div>
                                     </div>
                                 </div>
-
                                 <div class="item">
                                     <div class="card border-0 position-relative h-100">
                                         <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/cosmetics-33-300x300.jpg"
@@ -802,7 +817,6 @@
                                             -33%</div>
                                     </div>
                                 </div>
-
                                 <div class="item">
                                     <div class="card border-0 position-relative h-100">
                                         <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/cosmetics-40-1-700x700.jpg"
@@ -817,7 +831,6 @@
                                                     class="text-muted text-decoration-line-through fs-6">$24</span>
                                             </div>
                                             <div class="text-dark fs-5">★★★★☆</div>
-
                                         </div>
                                         <div
                                             class="position-absolute top-0 end-0 m-2 d-flex flex-column gap-2 cardhover">
@@ -835,7 +848,6 @@
                                             -33%</div>
                                     </div>
                                 </div>
-
                                 <div class="item">
                                     <div class="card border-0 position-relative h-100">
                                         <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-10-1-700x700.jpg"
@@ -848,7 +860,6 @@
                                             </a>
                                             <div class="fw-semibold fs-5">$25</div>
                                             <div class="text-dark fs-5">★★★★☆</div>
-
                                         </div>
                                         <div
                                             class="position-absolute top-0 end-0 m-2 d-flex flex-column gap-2 cardhover">
@@ -881,7 +892,6 @@
                                                     class="text-muted text-decoration-line-through fs-6">$30</span>
                                             </div>
                                             <div class="text-dark fs-5">★★★★☆</div>
-
                                         </div>
                                         <div
                                             class="position-absolute top-0 end-0 m-2 d-flex flex-column gap-2 cardhover">
@@ -899,107 +909,95 @@
                                             -33%</div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
         </div>
 
+        <!-- Promo Banners -->
         <div class="container">
             <div class="row g-3">
-                <!-- First Column -->
+                <!-- Banner 1 -->
                 <div class="col-12 col-lg-3">
                     <div class="border rounded overflow-hidden position-relative" style="height: 40vh">
-                        <img src="images/car.jpg" class="img-fluid w-100 h-100 hover-zoom">
+                        <img src="../images/images_ for_ main/car.jpg" class="img-fluid w-100 h-100 hover-zoom">
                         <div class="position-absolute start-0 bottom-0 w-100 text-center text-white fw-bold p-2">
                             <p class="me-4 mb-3 fs-08 w-75">SALE 10% OFF TIRES MICHELIN</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Second Column -->
+                <!-- Banner 2 -->
                 <div class="col-12 col-lg-6">
                     <div class="border rounded overflow-hidden position-relative" style="height: 40vh">
-                        <img src="images/knb.jpg" class="img-fluid w-100 h-100 hover-zoom">
+                        <img src="../images/images_ for_ main/knb.jpg" class="img-fluid w-100 h-100 hover-zoom">
                         <div class="position-absolute start-0 top-0 w-100 text-center p-3">
                             <h6 class="text-primary">NEW COLLECTION</h6>
                             <p class="mb-2 fa-2x fw-bold text-dark">Sofa Crafted in UK</p>
-                            <a href="#" class="  text-dark text-decoration-none fw-semibold slide-link ">
+                            <a href="#" class="text-dark text-decoration-none fw-semibold slide-link">
                                 Shop Now <i class="bi bi-arrow-right"></i>
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Third Column -->
+                <!-- Banner 3 -->
                 <div class="col-12 col-lg-3">
                     <div class="border rounded overflow-hidden position-relative" style="height: 40vh">
-                        <img src="images/gsol.jpg" class="img-fluid w-100 h-100 hover-zoom">
+                        <img src="../images/images_ for_ main/gsol.jpg" class="img-fluid w-100 h-100 hover-zoom">
                         <div class="position-absolute start-0 bottom-0 w-100 text-center text-white fw-semibold p-2">
-                            <p class="mx-4 mb-4 fs-08 ">STEALS UNDER $25</p>
+                            <p class="mx-4 mb-4 fs-08">STEALS UNDER $25</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
 
-    <!--Good-->
-    <!--page 4-->
+    <!-- ========== NEW ARRIVALS SECTION ========== -->
     <section class="container-fluid p-0">
-
         <div class="container py-5">
             <div class="row">
-
-                <div class="container-fluid  row align-items-center text-center">
-                    <div class="col-md-2 col-12 ">
-                        <h1 class="fa-2x fw-semibold ">New arrivals</h1>
+                <div class="container-fluid row align-items-center text-center">
+                    <div class="col-md-2 col-12">
+                        <h1 class="fa-2x fw-semibold">New arrivals</h1>
                     </div>
-                    <div class="col-md-6 col-12 offset-md-4  ">
-                        <div class="category-menu d-flex justify-content-center  gap-4  ">
+                    <div class="col-md-6 col-12 offset-md-4">
+                        <div class="category-menu d-flex justify-content-center gap-4">
                             <a href="#"
-                                class="category-link active text-dark text-decoration-none fw-semibold slide-link ">Fashion</a>
+                                class="category-link active text-dark text-decoration-none fw-semibold slide-link">Fashion</a>
                             <a href="#"
                                 class="category-link text-dark fw-semibold text-decoration-none slide-link">Phone &
                                 Tablet</a>
                             <a href="#" class="category-link text-dark fw-semibold text-decoration-none slide-link">Home
-                                &
-                                Decor</a>
+                                & Decor</a>
                             <a href="#"
-                                class="category-link text-dark fw-semibold d-md-block d-none text-decoration-none slide-link ">Beauty
+                                class="category-link text-dark fw-semibold d-md-block d-none text-decoration-none slide-link">Beauty
                                 & Health</a>
-                            <!--<a href="#" class="text-dark  px-5 " style="border-left: 1px solid rgba(0,0,0,0.2);">
-                        See all products
-                    </a>-->
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </div>
 
-        <div class="container ">
+        <!-- New Arrivals Products -->
+        <div class="container">
             <div class="row">
                 <div class="row">
-
+                    <!-- Product 1 -->
                     <div
-                        class="position-relative col-lg-4 col-md-6 col-12  border  bg-white border-light rounded  card-hover-container">
-                        <!-- Shield -->
+                        class="position-relative col-lg-4 col-md-6 col-12 border bg-white border-light rounded card-hover-container">
+                        <!-- Hover Content -->
                         <div
-                            class="position-absolute top-0 start-0  bg-primary overflow-hidden bg-white  border-light rounded card-hover-content zindextop ">
+                            class="position-absolute top-0 start-0 bg-primary overflow-hidden bg-white border-light rounded card-hover-content zindextop">
                             <div class="row">
                                 <div class="col-6">
                                     <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-5-700x700.jpg"
                                         class="img-fluid">
                                 </div>
-                                <div class="col-6 mt-5 ">
+                                <div class="col-6 mt-5">
                                     <h6 class="fw-normal mb-1 hover-danger">
                                         Nike Air Max Unisex SYSTM<br>
                                         Men Sneaker Shoes
@@ -1008,7 +1006,7 @@
                                     <div class="text-warning fs-5">★★★★☆</div>
                                 </div>
                             </div>
-
+                            <!-- Product Actions -->
                             <div class="d-flex align-items-center gap-2 p-2 mx-5">
                                 <button class="btn btn-light d-flex align-items-center gap-2 px-3 py-2">
                                     <i class="bi bi-plus"></i>
@@ -1021,7 +1019,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div
                         class="position-relative col-lg-4 col-md-6 col-12  border  bg-white border-light rounded  card-hover-container">
                         <!-- Shield -->
@@ -1187,11 +1184,10 @@
             </div>
         </div>
 
-
     </section>
-    <!-- section 5 for slider -->
+
+    <!-- ========== FEATURED PRODUCT SECTION ========== -->
     <section class="container-fluid p-0 bg-gray position-relative" style="width: 100%;">
-        <!-- كلمة Hoodie كخلفية -->
         <h1 class="position-absolute w-100 text-center fw-bold"
             style="font-size: 20vw; top: 25%; left: 5%; transform: translate(-25%, -25%); color: rgba(252, 242, 242, 0.367); z-index: 1;">
             Hoodie
@@ -1224,13 +1220,13 @@
                 <div class="carousel-indicators position-absolute" style="z-index: 501; right: 15%; top: 55%;">
                     <button type="button" data-bs-target="#mainHomeCarousel" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"
-                        style="width: 75px; height: 75px; background-image: url(images/slideeee.jpg); background-size: cover; background-repeat: no-repeat;">
+                        style="width: 75px; height: 75px; background-image: url(slideeee.jpg); background-size: cover; background-repeat: no-repeat;">
                         ></button>
                     <button type="button" data-bs-target="#mainHomeCarousel" data-bs-slide-to="1" aria-label="Slide 2"
-                        style="width: 75px; height: 75px; background-image: url(images/slideee.jpg); background-size: cover; background-repeat: no-repeat;">
+                        style="width: 75px; height: 75px; background-image: url(slideee.jpg); background-size: cover; background-repeat: no-repeat;">
                         ></button>
                     <button type="button" data-bs-target="#mainHomeCarousel" data-bs-slide-to="2" aria-label="Slide 3"
-                        style="width: 75px; height: 75px; background-image: url(images/slidee.jpg); background-size: cover; background-repeat: no-repeat;"></button>
+                        style="width: 75px; height: 75px; background-image: url(slidee.jpg); background-size: cover; background-repeat: no-repeat;"></button>
                 </div>
 
 
@@ -1240,14 +1236,14 @@
 
             <div class="carousel-inner h-100">
                 <div class="carousel-item active h-100 position-relative bg-gray">
-                    <img src="images/slide-hoodie-1.png" class="" style="margin-left: 7rem;">
+                    <img src="../images/images_ for_ main/slide-hoodie-1.png" class="" style="margin-left: 7rem;">
 
                 </div>
                 <div class="carousel-item h-100 position-relative bg-gray ">
-                    <img src="images/slide-hoodie-2.png" class="" style="margin-left: 7rem;">
+                    <img src="../images/images_ for_ main/slide-hoodie-2.png" class="" style="margin-left: 7rem;">
                 </div>
                 <div class="carousel-item h-100 position-relative bg-gray">
-                    <img src="images/slide-hoodie-4.png" class="" style="margin-left: 7rem;">
+                    <img src="../images/images_ for_ main/slide-hoodie-4.png" class="" style="margin-left: 7rem;">
                 </div>
             </div>
 
@@ -1263,13 +1259,10 @@
     </section>
 
 
-
-    <!--page 6-->
+    <!-- ==========  Best Selling Section SECTION ========== -->
     <section class="container-fluid p-0">
-
         <div class="container py-5">
             <div class="row">
-                <!-- Best Selling Section -->
                 <div class="container-fluid py-5">
                     <div class="container mx-auto p-0">
                         <div class="row align-items-center">
@@ -1283,10 +1276,8 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="my-4 overflow-hidden">
                             <div class="owl-carousel owl-theme carousel-two py-1 rounded-2 overflow-hidden">
-
                                 <!-- Start Card 1 -->
                                 <div class="item">
                                     <div class="card border-0 position-relative h-100">
@@ -1321,7 +1312,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <!--  Card 2 -->
                                 <div class="item">
                                     <div class="card border-0 position-relative h-100">
@@ -1356,7 +1346,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <!--  Card 3 -->
                                 <div class="item">
                                     <div class="card border-0 position-relative h-100">
@@ -1391,7 +1380,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <!--  Card 4 -->
                                 <div class="item">
                                     <div class="card border-0 position-relative h-100">
@@ -1494,7 +1482,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <!--  Card 7 -->
                                 <div class="item">
                                     <div class="card border-0 position-relative h-100">
@@ -1529,7 +1516,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <!--  Card 8 -->
                                 <div class="item">
                                     <div class="card border-0 position-relative h-100">
@@ -1564,7 +1550,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -1809,6 +1794,145 @@
 
     </section>
 
+    <!-- ========== FOOTER SECTION ========== -->
+    <footer class="footer container-fluid py-5 bg-footer px-0">
+        <!-- Mobile View Footer -->
+        <div class="col-12 d-md-none d-block mb-4">
+            <img src="../images/logo.png" class="col-4 mb-4">
+            <div class="row footer-text-color align-items-center">
+                <div class="col-1 text-center mb-1"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="col-10">
+                    <p class="mb-0">29 SE 2nd Ave, Miami Florida 33131, United States</p>
+                </div>
+            </div>
+            <div class="footer-text-color row align-items-center mb-4">
+                <div class="col-1 text-center"><i class="fa-solid fa-envelope text-center"></i></div>
+                <div class="col-10">
+                    <p class="mb-0">29 SE 2nd Ave, Miami Florida 33131, United States</p>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="link-item fs-4">(+92) 3942 7879</a>
+            </div>
+        </div>
+
+        <!-- Desktop View Footer -->
+        <div class="container px-0 m-auto row justify-content-between" dir="rtl">
+            <!-- Newsletter Subscription -->
+            <div class="col-md-3 col-12 pb-4" dir="ltr">
+                <p class="text-white fs-4">Let's keep in touch</p>
+                <div class="input-group mb-3 bg-footer border border-1 rounded-2 text-white py-1 mt-5">
+                    <input type="text" class="form-control bg-transparent border-0 text-white"
+                        placeholder="enter your email" aria-label="Recipient's username"
+                        aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary border-0" type="button" id="button-addon2">
+                        <a href="#" class="link-item"> <i class="fa-solid fa-arrow-right"></i></a>
+                    </button>
+                </div>
+                <div class="mt-5">
+                    <span class="px-2"><a href="#" class="link-item"><i
+                                class="fa-brands fa-facebook-f icon"></i></a></span>
+                    <span class="px-2"><a href="#" class="link-item"><i class="fa-brands fa-tiktok icon"></i></a></span>
+                    <span class="px-2"><a href="#" class="link-item"><i
+                                class="fa-brands fa-x-twitter icon"></i></a></span>
+                    <span class="px-2"><a href="#" class="link-item"><i
+                                class="fa-brands fa-youtube icon"></i></a></span>
+                    <span class="px-2"><a href="#" class="link-item"><i
+                                class="fa-brands fa-instagram icon"></i></a></span>
+                </div>
+            </div>
+
+            <!-- Account Links -->
+            <div class="col-md-2 col-3" dir="ltr">
+                <p class="fs- text-white mb-4 fw-bold">Account</p>
+                <ul class="list-unstyled">
+                    <li class="my-4"><a href="#" class="link-item">Cart</a></li>
+                    <li class="my-4"><a href="#" class="link-item">My accout</a></li>
+                    <li class="my-4"><a href="#" class="link-item">My orders</a></li>
+                    <li class="my-4"><a href="#" class="link-item">Wishlist</a></li>
+                    <li class="my-4"><a href="#" class="link-item">Affiliate Program</a></li>
+                </ul>
+            </div>
+
+            <!-- Information Links -->
+            <div class="col-md-2 col-3" dir="ltr">
+                <p class="fs-6 text-white mb-4 fw-bold">Information</p>
+                <ul class="list-unstyled">
+                    <li class="my-4"><a href="#" class="link-item">Track order</a></li>
+                    <li class="my-4"><a href="#" class="link-item">Shipping & Returns</a></li>
+                    <li class="my-4"><a href="#" class="link-item">About us</a></li>
+                    <li class="my-4"><a href="#" class="link-item">Help</a></li>
+                    <li class="my-4"><a href="#" class="link-item">Git Cards</a></li>
+                </ul>
+            </div>
+
+            <!-- Shopping Links -->
+            <div class="col-md-2 col-3" dir="ltr">
+                <p class="fs- text-white mb-4 fw-bold">Shopping</p>
+                <ul class="list-unstyled">
+                    <li class="my-4"><a href="#" class="link-item">Wishlist</a></li>
+                    <li class="my-4"><a href="#" class="link-item">Shop by Brand</a></li>
+                    <li class="my-4"><a href="#" class="link-item">Offers</a></li>
+                    <li class="my-4"><a href="#" class="link-item">Track order</a></li>
+                    <li class="my-4"><a href="#" class="link-item">Size Guide</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="col-md-3 col-3 pe-2" dir="ltr">
+                <img src="../images/logo.png" class="w-50 mb-5">
+                <div class="row footer-text-color align-items-center">
+                    <div class="col-1"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="col-10">
+                        <p class="">29 SE 2nd Ave, Miami Florida 33131, United States</p>
+                    </div>
+                </div>
+                <div class="footer-text-color row align-items-center">
+                    <div class="col-1"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="col-10">
+                        <p class="">29 SE 2nd Ave, Miami Florida 33131, United States</p>
+                    </div>
+                </div>
+                <div>
+                    <a href="#" class="link-item fs-4">(+92) 3942 7879</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Links -->
+        <div class="container mx-auto mt-5 row down-footer">
+            <div class="col-md-4 col-11 row align-items-start p-0 mb-2">
+                <div class="col-2 text-white pt-2">
+                    <i class="fa-solid fa-phone fa-2x"></i>
+                </div>
+                <div class="col-10 text-white p-0">
+                    <p class="mb-1 fw-light">Didn't find what you were looking for?</p>
+                    <a href="#" class="slide-link">Contact us</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-11 row align-items-start p-0 mb-2">
+                <div class="col-2 text-white pt-2">
+                    <i class="fa-solid fa-phone fa-2x"></i>
+                </div>
+                <div class="col-10 text-white p-0">
+                    <p class="mb-1 fw-light">Didn't find what you were looking for?</p>
+                    <a href="#" class="slide-link">Contact us</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-11 row align-items-start p-0 mb-2">
+                <div class="col-2 text-white pt-2">
+                    <i class="fa-solid fa-phone fa-2x"></i>
+                </div>
+                <div class="col-10 text-white p-0">
+                    <p class="mb-1 fw-light">Didn't find what you were looking for?</p>
+                    <a href="#" class="slide-link">Contact us</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
     <!-- jQuery (Load First) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -1818,68 +1942,9 @@
     <!-- Owl Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-    <!-- Owl Carousel Init -->
-    <script>
-        $(document).ready(function () {
-            // Initialize first carousel
-            $(".owlS1").owlCarousel({
-                loop: true,
-                margin: 20,
-                autoplay: true,
-                autoplayTimeout: 4000,
-                smartSpeed: 800,
-                responsive: {
-                    0: {
-                        items: 3
-                    },
-                    992: {
-                        items: 8
-                    }
-                }
-            });
 
-            $(".carousel-two").owlCarousel({
-                loop: true,
-                dots: false,
-                nav: true,
-                margin: 15,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    576: {
-                        items: 2
-                    },
-                    768: {
-                        items: 3
-                    },
-                    1200: {
-                        items: 5
-                    }
-                }
-            });
-        });
 
-        $(".carousel-three").owlCarousel({
-            loop: true,
-            margin: 20,
-            dots: false,
-            nav: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                768: {
-                    items: 2
-                },
-                1200: {
-                    items: 3
-                }
-            }
-        });
-    </script>
-
-    <script src="merto.js"></script>
+    <script src="../JS CODE/main.js"></script>
 
 
 

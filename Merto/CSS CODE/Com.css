@@ -1,9 +1,10 @@
-/*logo*/
+/* ===================== */
+/* LOGO & HEADER STYLES */
+/* ===================== */
 .normal-logo {
     max-width: 9vw;
     height: auto;
 }
-
 
 .mobile-logo {
     max-width: 20vw;
@@ -11,19 +12,32 @@
     display: none;
 }
 
-
 @media (max-width: 768px) {
     .logo img.normal-logo {
         display: none;
     }
-
+    
     .logo img.mobile-logo {
         display: block;
     }
-
+    
     .header-top-left {
         margin-left: 12.5rem;
     }
+}
+
+/* ================= */
+/* LAYOUT & SPACING */
+/* ================= */
+.ptlr-10 {
+    padding-top: 28% !important;
+    left: -4%;
+    width: 100%;
+    top: -28%;
+}
+
+.ml {
+    margin-left: 7.5%;
 }
 
 .w-92 {
@@ -35,15 +49,60 @@
 }
 
 @media (max-width: 768px) {
-
     .custom-height,
     .custom {
         height: 50vh;
     }
-
 }
 
-/*danger hover header*/
+/* ============== */
+/* COLOR & BACKGROUND */
+/* ============== */
+.bg-gray {
+    background-color: #e0e0e0 !important;
+}
+
+/* ============= */
+/* FORM ELEMENTS */
+/* ============= */
+.form-select {
+    width: 139% !important;
+}
+
+/* ================== */
+/* MENU & NAVIGATION */
+/* ================== */
+.hamburger-wrapper {
+    position: relative;
+}
+
+@media (max-width: 767.98px) {
+    .hamburger-wrapper {
+        position: absolute;
+        top: 0;
+        left: -20px;
+        z-index: 1050;
+    }
+}
+
+.offcanvas-custom-width {
+    width: 240px !important;
+}
+
+.category-link {
+    padding: 12px 16px;
+}
+
+/* ============== */
+/* TYPOGRAPHY */
+/* ============== */
+.fs-08 {
+    font-size: 1.5rem;
+}
+
+/* ============== */
+/* HOVER EFFECTS */
+/* ============== */
 .hover-danger {
     position: relative;
     z-index: 1001;
@@ -54,71 +113,12 @@
     color: #dc3545 !important;
 }
 
-
-/* hide blocks*/
-#language-selector:hover #language-menu,
-#currency-selector:hover #currency-menu,
-#Homepage-selector:hover #Homepage-menu,
-#Categories-selector:hover #Categories-menu,
-#Products-selector:hover #Products-menu,
-#Pages-selector:hover #Pages-menu,
-#Recentlyviewed-selector:hover #Recentlyviewed-menu {
-    display: block !important;
-}
-
-
-/*Just for final touches*/
-.ptlr-10 {
-    padding-top: 28% !important;
-    left: -4%;
-    width: 100%;
-    top: -28%;
-}
-
-.form-select {
-    width: 139% !important;
-}
-
-.fs-08 {
-    font-size: 1.5rem;
-}
-
-.ml {
-    margin-left: 7.5%;
-}
-
-.hamburger-wrapper {
-    position: relative;
-}
-
-@media (max-width: 767.98px) {
-    .hamburger-wrapper {
-        position: absolute;
-        top: 0;
-        left: -20;
-        z-index: 1050;
-    }
-}
-
-.bg-gray {
-    background-color: #e0e0e0 !important;
-}
-
-/*barbie css*/
-@media (min-width: 1400px) {
-    section.container {
-        margin-left: 7%;
-    }
-}
-
-/*for line*/
 .slide-link {
     position: relative;
     z-index: 1000;
     display: inline-block;
     text-decoration: none;
     color: black;
-    /* Optional */
 }
 
 .slide-link::after {
@@ -129,7 +129,6 @@
     height: 1px;
     width: 100%;
     background-color: black;
-    /* underline color */
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.3s ease;
@@ -140,34 +139,9 @@
     transform-origin: left;
 }
 
-.zoom-container {
-    overflow: hidden;
-    display: inline-block;
-}
-
-.zoom-container img {
-    transition: transform 0.5s ease;
-}
-
-.zoom-container:hover img {
-    transform: scale(1.1);
-}
-
-.addtocardho:hover {
-    background-color: white !important;
-    color: black !important;
-}
-
-.buynowho:hover {
-    background-color: white !important;
-    color: black !important;
-}
-
-.carousel-indicators button {
-    width: 75px !important;
-    height: 75px !important;
-}
-
+/* ============== */
+/* CAROUSEL STYLES */
+/* ============== */
 .owl-carousel .owl-dots.disabled,
 .owl-carousel .owl-nav.disabled {
     display: flex;
@@ -212,10 +186,7 @@
     transform: translateX(60%);
 }
 
-.owl-carousel .item:hover .owl-nav button {
-    opacity: 1;
-}
-
+.owl-carousel .item:hover .owl-nav button,
 .owl-carousel:hover .owl-nav button {
     opacity: 1;
 }
@@ -224,41 +195,4 @@
     background-color: rgb(0, 0, 0) !important;
     color: white !important;
     border-color: black;
-}
-
-.cardhover {
-    opacity: 0;
-    transform: translateY(100%);
-    transition: all 0.5s ease;
-}
-
-.card:hover .cardhover {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.card:hover {
-    box-shadow: 0 0 5px rgba(169, 169, 169, 0.8);
-}
-
-.rating {
-    direction: rtl;
-    display: inline-flex;
-}
-
-.rating input {
-    display: none;
-}
-
-.rating label {
-    font-size: 1.5rem;
-    color: #ccc;
-    cursor: pointer;
-    transition: color 0.3s;
-}
-
-.rating input:checked~label,
-.rating label:hover,
-.rating label:hover~label {
-    color: #f39c12;
 }
