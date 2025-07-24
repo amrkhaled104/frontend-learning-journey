@@ -47,7 +47,7 @@ This was built as part of my **Frontend learning journey during NTI training**, 
 
 1. Clone the repo:
   
-   git clone https://github.com/amrkhaled104/frontend-learning-journey.git
+   `git clone https://github.com/amrkhaled104/frontend-learning-journey.git`
    cd frontend-learning-journey/Merto
 
 ---
@@ -58,5 +58,6 @@ This was built as part of my **Frontend learning journey during NTI training**, 
 Amr Khaled
 
  GitHub: [amrkhaled104](https://github.com/amrkhaled104)
+ 
  LinkedIn: [Amr Khaled](https://www.linkedin.com/in/amr-khaled-419260304/)
 
