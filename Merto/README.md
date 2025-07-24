@@ -48,6 +48,7 @@ This was built as part of my **Frontend learning journey during NTI training**, 
 1. Clone the repo:
   
    `git clone https://github.com/amrkhaled104/frontend-learning-journey.git`
+   
    cd frontend-learning-journey/Merto
 
 ---
