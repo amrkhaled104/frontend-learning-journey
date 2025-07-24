@@ -43,7 +43,6 @@ This was built as part of my **Frontend learning journey during NTI training**, 
 - Owl Carousel 2  
 - Animate.css,Wow.css
 ---
-
 ## 🚀 Getting Started
 
 1. Clone the repo:
@@ -51,6 +50,7 @@ This was built as part of my **Frontend learning journey during NTI training**, 
    git clone https://github.com/amrkhaled104/frontend-learning-journey.git
    cd frontend-learning-journey/Merto
 ```
+---
 
 
 ##  About Me
