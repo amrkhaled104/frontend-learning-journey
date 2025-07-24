@@ -52,12 +52,6 @@ This was built as part of my **Frontend learning journey during NTI training**, 
    cd frontend-learning-journey/Merto
 ````
 
-2. Open `index.html` directly in your browser.
-
-> Ensure you’re connected to the internet to load the CDN-based libraries (Bootstrap, jQuery, Owl Carousel).
-
----
-
 
 ## 🙋 About Me
 
@@ -66,4 +60,3 @@ This was built as part of my **Frontend learning journey during NTI training**, 
 * GitHub: [amrkhaled104](https://github.com/amrkhaled104)
 * LinkedIn: [Amr Khaled](https://www.linkedin.com/in/amr-khaled-419260304/)
 
---
