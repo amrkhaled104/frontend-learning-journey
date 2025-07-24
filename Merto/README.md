@@ -50,10 +50,10 @@ This was built as part of my **Frontend learning journey during NTI training**, 
    ```bash
    git clone https://github.com/amrkhaled104/frontend-learning-journey.git
    cd frontend-learning-journey/Merto
-````
+```
 
 
-## 🙋 About Me
+##  About Me
 
 **Amr Khaled**
 
