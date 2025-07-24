@@ -55,8 +55,8 @@ This was built as part of my **Frontend learning journey during NTI training**, 
 
 ##  About Me
 
-**Amr Khaled**
+Amr Khaled
 
-* GitHub: [amrkhaled104](https://github.com/amrkhaled104)
-* LinkedIn: [Amr Khaled](https://www.linkedin.com/in/amr-khaled-419260304/)
+ GitHub: [amrkhaled104](https://github.com/amrkhaled104)
+ LinkedIn: [Amr Khaled](https://www.linkedin.com/in/amr-khaled-419260304/)
 
