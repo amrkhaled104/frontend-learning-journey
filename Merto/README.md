@@ -1,7 +1,6 @@
 # 🛠 Merto – NTI Frontend Training Project
 
-> 💡 This is a learning project created during the **Frontend Training at NTI (National Telecommunication Institute)**. It reflects the practical application of HTML, CSS, Bootstrap, JavaScript, and UI interaction techniques.
-
+> 💡 This is a learning project created during the **Frontend Training at NTI (National Telecommunication Institute)**. It reflects the practical application of HTML, CSS, Bootstrap, JavaScript
 ---
 
 ## 📌 Overview
