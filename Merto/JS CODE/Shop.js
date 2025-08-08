@@ -331,9 +331,35 @@ const col = createMyOwnEle(parent, "div", null, null, "product-item card col-lg-
 
 products.forEach(product => draw(product, product_cards));
 
-/* filter by disount*/
 let saleCheckbox = document.querySelector("#saleCheckbox");
+
+document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    const isDiscount = params.get("discount") === "true";
+
+    if (isDiscount) {
+        saleCheckbox.checked = true;
+
+        product_cards.innerHTML = "";
+        let filtered = products.filter(el => el.salePrice != null);
+        filtered.forEach(product => draw(product, product_cards));
+    } else {
+        product_cards.innerHTML = "";
+        products.forEach(product => draw(product, product_cards));
+    }
+});
+
 saleCheckbox.addEventListener("change", () => {
+    const url = new URL(window.location.href);
+
+    if (saleCheckbox.checked) {
+        url.searchParams.set("discount", "true");
+    } else {
+        url.searchParams.delete("discount");
+    }
+
+    window.history.replaceState({}, '', url);
+
     product_cards.innerHTML = "";
 
     let filtered = saleCheckbox.checked
@@ -341,28 +367,4 @@ saleCheckbox.addEventListener("change", () => {
         : products;
 
     filtered.forEach(product => draw(product, product_cards));
-
 });
-const gridBtn = document.querySelector(".bi-grid-3x3-gap-fill").parentElement;
-const listBtn = document.querySelector(".bi-list").parentElement;
-
-gridBtn.addEventListener("click", () => {
-    product_cards.classList.remove("list-view");
-    product_cards.classList.add("grid-view");
-    redrawProducts();
-});
-
-listBtn.addEventListener("click", () => {
-    product_cards.classList.remove("grid-view");
-    product_cards.classList.add("list-view");
-    redrawProducts();
-});
-
-function redrawProducts() {
-    product_cards.innerHTML = "";
-    let filtered = saleCheckbox.checked
-        ? products.filter(el => el.salePrice != null)
-        : products;
-
-    filtered.forEach(product => draw(product, product_cards));
-}

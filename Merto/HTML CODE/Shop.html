@@ -23,11 +23,11 @@
 
 <body>
      <!-- ========== HEADER SECTION ========== -->
-    <!-- Top Header -->
-    <div class="header-top row align-items-center justify-content-between p-md-4 py-2 border-bottom border-dark bg-white position-sticky top-0"
-        style="z-index: 990;">
+     <!-- Top Header -->
+    <div class="header-top row align-items-center justify-content-between p-md-3 py-3 border-bottom border-dark bg-white position-sticky top-0"
+        style="z-index: 1006;">
         <!-- Logo -->
-        <div class="header-top-left col-md-2 col-1 d-flex justify-content-md-end justify-content-center">
+        <div class="header-top-left col-xl-2 col-lg-2 col-1 d-flex justify-content-xl-end justify-content-center">
             <div class="logo">
                 <a href="https://demo.theme-sky.com/merto/">
                     <img src="https://merto-be87.kxcdn.com/merto/wp-content/themes/merto/images/logo.png" alt="Merto"
@@ -39,9 +39,9 @@
         </div>
 
         <!-- Hotline + Search Bar -->
-        <div class="header-top-middle col-md d-none d-md-flex align-items-center justify-content-end">
+        <div class="header-top-middle col-xl col-5 d-none ms-5 d-md-flex align-items-center justify-content-end">
             <!-- Hotline -->
-            <div class="col-3 d-flex align-items-center hotline hover-danger">
+            <div class="col-lg-3 d-xl-flex d-none align-items-center hotline hover-danger">
                 <i class="bi bi-telephone fa-2x me-2"></i>
                 <div>
                     <p class="mb-0">Contact us 24/7</p>
@@ -50,8 +50,9 @@
             </div>
 
             <!-- Search Form -->
-            <div class="col-6 ms-4 position-relative form">
-                <form class="p-2 form-control border-0 w-92 bg-light position-relative" id="form" style="z-index: 900;">
+            <div class="col-xl-6 col-12 ms-xl-4  position-relative form">
+                <form class="p-2 form-control border-0 w-92 bg-light position-relative" id="form"
+                    style="z-index: 1007;">
                     <div class="d-flex align-items-center gap-2">
                         <select class="form-select bg-transparent border-0 shadow-none">
                             <option>All Categories</option>
@@ -103,8 +104,8 @@
                 </form>
 
                 <!-- Suggestions Box -->
-                <div class="bg-white rounded shadow-sm p-3 position-absolute  mt-2 ptlr-10 d-none" style="z-index: 899;"
-                    id="searchSuggestions">
+                <div class="bg-white rounded shadow-sm p-3 position-absolute  mt-2 ptlr-10 d-none"
+                    style="z-index: 1006;" id="searchSuggestions">
                     <p class="fw-semibold mb-3">Popular search</p>
                     <div class="d-flex flex-wrap gap-2">
                         <button class="btn btn-outline-secondary btn-sm rounded-pill">smartphone</button>
@@ -122,11 +123,11 @@
         </div>
 
         <!-- Language, Currency, Account, Cart -->
-        <div class="header-end col-md-4 col-4 d-flex align-items-center justify-content-md-center justify-content-end">
+        <div class="header-end col-xl-4 col-3 d-flex align-items-center justify-content-md-center justify-content-end">
             <!-- Language and Currency Selectors -->
-            <div class="col-6 row justify-content-end">
+            <div class="col-lg-6 d-xl-flex  row justify-content-end">
                 <!-- Language Selector -->
-                <div class="position-relative py-3 d-md-flex d-none" id="language-selector" style="width: fit-content;">
+                <div class="position-relative py-3 d-xl-flex d-none" id="language-selector" style="width: fit-content;">
                     <div class="current-language">
                         <a href="#" class="d-flex align-items-center text-decoration-none text-dark hover-danger">
                             <img src="https://flagcdn.com/us.svg" width="20" alt="English" />
@@ -134,7 +135,8 @@
                             <i class="bi bi-chevron-down ms-1"></i>
                         </a>
                     </div>
-                    <div id="language-menu" class="position-absolute top-100 start-0 bg-white rounded shadow-sm d-none">
+                    <div id="language-menu" class="position-absolute top-100 start-0 bg-white rounded shadow-sm d-none"
+                        style="z-index: 1006;">
                         <ul class="list-unstyled p-0 m-0">
                             <li class="py-2 px-3 lang-item">
                                 <a href="#"
@@ -162,14 +164,15 @@
                 </div>
 
                 <!-- Currency Selector -->
-                <div class="position-relative p-3 d-md-flex d-none" id="currency-selector" style="width: fit-content;">
+                <div class="position-relative p-3 d-xl-flex d-none" id="currency-selector" style="width: fit-content;">
                     <div class="current-currency">
                         <a href="#" class="d-flex align-items-center text-decoration-none text-dark hover-danger">
                             <span>USD</span>
                             <i class="bi bi-chevron-down ms-1"></i>
                         </a>
                     </div>
-                    <div id="currency-menu" class="position-absolute top-100 start-0 bg-white rounded shadow-sm d-none">
+                    <div id="currency-menu" class="position-absolute top-100 start-0 bg-white rounded shadow-sm d-none"
+                        style="z-index: 1006;">
                         <ul class="list-unstyled p-0 m-0">
                             <li class="py-2 px-3 currency-item">
                                 <a href="#"
@@ -185,157 +188,457 @@
             <!-- Account -->
             <div class="col-3 d-flex align-items-center d-md-flex d-none">
                 <button class="btn btn-light d-flex align-items-center hover-danger shadow-none bg-transparent border-0"
-                    type="button">
+                    type="button" id="accountBtn">
                     <i class="bi bi-person fs-08 me-2"></i>
-                    <span class="fw-semibold align-self-center">Account</span>
+                    <span class="fw-semibold align-self-center d-xl-flex d-none">Account</span>
                 </button>
             </div>
 
-            <!-- Wishlist and Cart -->
-            <div class="col-3 d-flex align-items-center">
-                <i class="bi bi-heart heart fs-08 d-md-flex d-none mx-2 hover-danger"></i>
-                <i class="bi bi-cart2 cart fs-08 hover-danger" style="width: fit-content;"></i>
-            </div>
-        </div>
-    </div>
+            <!-- Login Popup -->
+            <div id="loginPopup"
+                class="position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-dark bg-opacity-75 d-none overflow-hidden"
+                style="z-index: 99999;">
 
-    <!-- ========== NAVIGATION MENU ========== -->
-    <div class="header-buttom row p-0  position-relative" style="z-index: 1000">
-        <div class=" py-5 position-absolute Fashion bg-gray d-none "
-            style="width: 400px; height: 700px; z-index: 999910;">
-            <div class="row nav-block ">
-                <!-- Column 1: Ladies -->
-                <div class="col-md-6">
-                    <h4 class="fw-bold text-uppercase">Woman</h4>
-                    <nav class="nav flex-column">
-                        <a class="nav-link nav-item-link text-dark" href="#">Bags</a>
-                        <a class="nav-link nav-item-link text-dark" href="#">Blouses</a>
-                        <a class="nav-link nav-item-link text-dark" href="#">Jackets</a>
-                        <a class="nav-link nav-item-link text-dark" href="#">Dresses</a>
-                    </nav>
-                </div>
+                <div class="bg-white rounded position-relative animate__animated animate__fadeIn overflow-hidden"
+                    style="min-width: 320px; max-width: 700px;">
 
-                <!-- Column 2: Gents -->
-                <div class="col-md-6">
-                    <h4 class="fw-bold text-uppercase">Men</h4>
-                    <nav class="nav flex-column">
-                        <a class="nav-link nav-item-link text-dark" href="#">Wallets</a>
-                        <a class="nav-link nav-item-link text-dark" href="#">Suits</a>
-                        <a class="nav-link nav-item-link text-dark" href="#">Coats</a>
-                        <a class="nav-link nav-item-link text-dark" href="#">Shirts</a>
-                    </nav>
-                </div>
+                    <div class="row g-0">
+                        <!-- Left Side: Image -->
+                        <div class="col-md-6 d-none d-md-block">
+                            <img src="../images/login-banner.jpg" alt="Login Image" class="img-fluid h-100 w-100"
+                                style="object-fit: cover;">
+                        </div>
 
-                <!-- Image Preview Section -->
-                <div class="col-12 mt-4 preview-section">
-                    <div class="card border-0 shadow overflow-hidden text-white position-relative">
-                        <img src="../images/images_ for_ main/back.jpg" class="card-img" alt="Preview"
-                            style="object-fit: cover; height: 300px;">
-                        <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
-                            <p class="mb-2 fs-5">Doopy</p>
-                            <h3 class="card-title">Caro Line Collection</h3>
-                            <button class="btn btn-outline-light mt-2">Explore Now</button>
+                        <!-- Right Side: Login Form -->
+                        <div class="col-md-6 p-4 position-relative">
+                            <!-- Close button -->
+                            <button id="closeLoginPopup" type="button"
+                                class="btn position-absolute bg-black text-white rounded shadow-none border-0 p-2"
+                                style="--bs-btn-close-color: white; top: 10px; right: 10px;" aria-label="Close">
+                                <i class="bi bi-x-lg"></i>
+                            </button>
+
+                            <!-- Login Content -->
+                            <h4 class="mb-3 text-center">Login to Your Account</h4>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="password" placeholder="•••••••">
+                                </div>
+                                <button type="submit" class="btn btn-danger w-100">Login</button>
+                            </form>
                         </div>
                     </div>
                 </div>
 
             </div>
+
+
+            <!-- Wishlist and Cart -->
+            <div class="col-2 d-flex align-items-center justify-content-end gap-3">
+
+                <!-- Wishlist Button -->
+                <a href="#" class="btn position-relative d-md-flex d-none p-0">
+                    <i class="bi bi-heart fs-5 hover-danger"></i>
+                    <span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger text-white"
+                        style="font-size: 0.7rem; width: 20px; height: 20px; display: flex; justify-content: center; align-items: center;">
+                        0
+                    </span>
+                </a>
+
+                <!-- Cart Button -->
+                <a href="#" class="btn position-relative p-0 ms-2 ms-md-0">
+                    <i class="bi bi-cart2 fs-5 hover-danger"></i>
+                    <span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger text-white"
+                        style="font-size: 0.7rem; width: 20px; height: 20px; display: flex; justify-content: center; align-items: center;">
+                        0
+                    </span>
+                </a>
+
+            </div>
+
         </div>
+    </div>
+    <!-- ========== NAVIGATION MENU ========== -->
+    <div class="header-buttom row p-0  position-relative">
         <!-- Categories Offcanvas -->
-        <div class="col-auto border-md-end border-md-dark p-0 hamburger-wrapper ml">
-            <button class="btn w-100 h-100 border-0 d-flex align-items-center gap-3 px-3 py-3" type="button"
+        <div class="col-auto border-xl-end border-xl-dark p-0 hamburger-wrapper ml ">
+            <button class="btn w-100 h-100 border-0 d-flex align-items-center gap-3 px-3 py-3 " type="button"
                 data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
-                aria-controls="offcanvasWithBothOptions">
+                aria-controls="offcanvasWithBothOptions" style="z-index: 1100;">
                 <i class="fas fa-bars fs-5"></i>
-                <span class="d-none d-md-inline">SHOP BY CATEGORIES</span>
+                <span class="d-none d-xl-inline">SHOP BY CATEGORIES</span>
             </button>
 
-            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
-                aria-labelledby="offcanvasWithBothOptionsLabel" style="z-index: 9999;">
-                <div class="offcanvas-header" style="background-color: black;">
-                    <h5 class="offcanvas-title text-white " id="offcanvasWithBothOptionsLabel">SHOP BY CATEGORIES
-                    </h5>
+            <div class="offcanvas offcanvas-start small-offcanvas" data-bs-scroll="true" tabindex="-1"
+                id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header" style="background-color: black; ">
+                    <h6 class="offcanvas-title text-white " id="offcanvasWithBothOptionsLabel">SHOP BY CATEGORIES
+                    </h6>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body position-relative p-0">
+                <div class="offcanvas-body position-relative p-0" style="overflow: visible;">
                     <div class="list-group list-group-flush ">
-
-                        <a href="#"
-                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category-link  Fashionhover">
+                        <a href="../HTML CODE/Shop.html"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category-link   "
+                            data-target="box-fashion">
                             <span class="slide-link hover-danger"><i
                                     class="fas fa-tshirt me-2 slide-link"></i>Fashion</span>
                             <i class="fas fa-chevron-right"></i>
                         </a>
                         <a href="#"
-                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category-link">
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category-link"
+                            data-target="box-Phone">
                             <span class="slide-link hover-danger"><i class="fas fa-tablet-alt me-2 slide-link"></i>Phone
                                 & Tablet</span>
                             <i class="fas fa-chevron-right"></i>
                         </a>
                         <a href="#"
-                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category-link">
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category-link"
+                            data-target="box-Laptop">
                             <span class="slide-link hover-danger"><i class="fas fa-laptop me-2 slide-link"></i>Laptop &
                                 Computer</span>
                             <i class="fas fa-chevron-right"></i>
                         </a>
                         <a href="#"
-                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category-link">
-                            <span class="slide-link hover-danger"><i class="fas fa-tv me-2 "></i>TV, Audio –
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category-link"
+                            data-target="box-TV">
+                            <span class="slide-link hover-danger"><i class="fas fa-tv me-2 "></i>TV, Audio -
                                 Video</span>
                             <i class="fas fa-chevron-right"></i>
                         </a>
                         <a href="#"
-                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category-link">
-                            <span><i class="fas fa-camera me-2 k"></i>Camera & Photo</span>
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category-link"
+                            data-target="box-Camera">
+                            <span class="slide-link hover-danger"><i class="fas fa-camera me-2 "></i>Camera &
+                                Photo</span>
                             <i class="fas fa-chevron-right"></i>
                         </a>
                         <a href="#"
-                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category-link">
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category-link"
+                            data-target="box-Home">
                             <span class="slide-link hover-danger"><i class="fas fa-couch me-2 "></i>Home &
                                 Decor</span>
                             <i class="fas fa-chevron-right"></i>
                         </a>
                         <a href="#"
-                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category-link">
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category-link"
+                            data-target="box-Beauty">
                             <span class="slide-link hover-danger"><i class="fas fa-heartbeat me-2 "></i>Beauty &
                                 Health</span>
                             <i class="fas fa-chevron-right"></i>
                         </a>
                         <a href="#"
-                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category-link">
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category-link"
+                            data-target="box-Game">
                             <span class="slide-link hover-danger"><i class="fas fa-gamepad me-2"></i>Game
                                 Accessories</span>
                             <i class="fas fa-chevron-right"></i>
                         </a>
                         <a href="#"
-                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category-link">
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category-link"
+                            data-target="box-Autopart">
                             <span class="slide-link hover-danger"><i class="fas fa-cog me-2  "></i>Autopart</span>
                             <i class="fas fa-chevron-right"></i>
                         </a>
                     </div>
+
+                    <div id="box-fashion"
+                        class=" position-absolute bg-white border row  justify-content-center align-items-center hover-box shadow p-4"
+                        style="top: 0; left: 103%; width: 50ch; min-height: 100%;  z-index: 1050;">
+                        <div class="col-6" style="height: fit-content;">
+                            <h5 class="mb-3">Woman</h5>
+                            <ul class="list-unstyled ">
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger"
+                                        href="#">Bags</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger "
+                                        href="#">Accessories</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger"
+                                        href="#">Blazers</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger" href="#">Coats
+                                        & Jackets</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger"
+                                        href="#">Dress</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger"
+                                        href="#">Shirts</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger"
+                                        href="#">Shoes</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger"
+                                        href="#">Shorts</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger"
+                                        href="#">Skirts</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger"
+                                        href="#">Sweatshirts</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="col-6" style="height: fit-content;">
+                            <h5 class="mb-3">Man</h5>
+                            <ul class="list-unstyled ">
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger"
+                                        href="#">Bags</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger "
+                                        href="#">Accessories</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger"
+                                        href="#">Blazers</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger" href="#">Coats
+                                        & Jackets</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger"
+                                        href="#">Dress</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger"
+                                        href="#">Shirts</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger"
+                                        href="#">Shoes</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger"
+                                        href="#">Shorts</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger"
+                                        href="#">Skirts</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger"
+                                        href="#">Sweatshirts</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="col-12 mt-4 ">
+                            <div class=" border rounded overflow-hidden hover-zoom" style="background-image: url(../images/banner-vertical-menu-1.jpg); 
+                background-size: cover; 
+                background-position: center; 
+                height: 220px; ">
+
+                                <div class=" d-flex flex-column justify-content-center align-items-start p-4">
+                                    <p class="mb-2 text-white fs-6">New Collection</p>
+                                    <h3 class="text-white fw-bold mb-2" style="width: 50%;">Boody Caro Drees</h3>
+                                    <button class="btn btn-sm btn-outline-light">Shop now</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="box-Phone"
+                        class=" position-absolute bg-white border row  justify-content-center align-items-center hover-box shadow p-4"
+                        style="top: 0; left: 103%; width: 50ch; min-height: 100%;">
+                        <div class="col-6" style="height: fit-content;">
+                            <h5 class="mb-3">SMARTPHONE</h5>
+                            <ul class="list-unstyled ">
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger"
+                                        href="#">Bags</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger "
+                                        href="#">Accessories</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger"
+                                        href="#">Blazers</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger" href="#">Coats
+                                        & Jackets</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger"
+                                        href="#">Dress</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger"
+                                        href="#">Shirts</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger"
+                                        href="#">Shoes</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger"
+                                        href="#">Shorts</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger"
+                                        href="#">Skirts</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger"
+                                        href="#">Sweatshirts</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="col-6" style="height: fit-content;">
+                            <h5 class="mb-3">TABLET</h5>
+                            <ul class="list-unstyled ">
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger"
+                                        href="#">Bags</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger "
+                                        href="#">Accessories</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger"
+                                        href="#">Blazers</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger" href="#">Coats
+                                        & Jackets</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger"
+                                        href="#">Dress</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger"
+                                        href="#">Shirts</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger"
+                                        href="#">Shoes</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger"
+                                        href="#">Shorts</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger"
+                                        href="#">Skirts</a>
+                                </li>
+                                <li class="my-2"><a class=" text-decoration-none text-dark hover-danger"
+                                        href="#">Sweatshirts</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="col-12 mt-4 ">
+                            <div class=" border rounded overflow-hidden hover-zoom" style="background-image: url(../images/banner-vertical-menu-2.jpg); 
+                background-size: cover; 
+                background-position: center; 
+                height: 220px; ">
+
+                                <div class=" d-flex flex-column justify-content-center align-items-start p-4">
+                                    <p class="mb-2 text-dark fs-6">New Collection</p>
+                                    <h3 class="text-dark fw-bold mb-2" style="width: 50%;">Boody Caro Drees</h3>
+                                    <button class="btn btn-sm btn-outline-dark">Shop now</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
+        <button type="button"
+            class="btn btn-dark rounded-circle shadow d-flex justify-content-center align-items-center position-fixed d-none"
+            id="backToTop" style="bottom: 20px; right: 20px; z-index: 9999; width: 3rem; height: 3rem;"
+            aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
 
         <!-- Main Navigation -->
-        <div class="col-auto row p-3 px-4 d-md-flex d-none">
+        <div class="col-auto row p-3 px-xl-4 d-xl-flex d-md-flex d-none">
             <!-- Homepages Dropdown -->
-            <div class="col-auto">
-                <div class="position-relative p-0 d-md-flex d-none" id="Homepage-selector" style="width: fit-content;">
+            <div class="col-auto ">
+                <div class=" p-0  position-relative d-xl-flex d-md-flex d-none" id="Homepage-selector" style="width: fit-content;">
                     <div class="Homepage-language">
                         <a href="#" class="d-flex align-items-center text-decoration-none text-dark hover-danger">
                             <span class="ms-1">Homepages</span>
                             <i class="bi bi-chevron-down ms-1"></i>
                         </a>
                     </div>
-                    <div id="Homepage-menu" class="position-absolute top-100 start-0 bg-white rounded shadow-sm d-none"
-                        style="width: 100%; height: 500px;"></div>
+
+                    <div id="Homepage-menu" class="position-absolute bg-gray rounded shadow-lg d-none"
+                        style="z-index: 1008; width: 100vw; top: 168%; left:-320%;  padding: 1rem;">
+
+                        <div class="row g-5 justify-content-center">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="card h-100 hover-shadow">
+                                    <img src="../images/NAv/mega-home-1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <a href="../HTML CODE/main.html"
+                                            class="card-text text-decoration-none text-dark hover-danger"
+                                            target="_blank">
+                                            Subermarket 01
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="card h-100 hover-shadow">
+                                    <img src="../images/NAv/mega-home-2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <a href="https://demo.theme-sky.com/merto/home-supermarket-02/?color=red&vertical_menu_style=inside"
+                                            class="card-text text-decoration-none text-dark hover-danger"
+                                            target="_blank">
+                                            Subermarket 02
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="card h-100 hover-shadow">
+                                    <img src="../images/NAv/mega-home-3.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <a href="https://demo.theme-sky.com/merto/home-furniture/?color=brown&vertical_menu_style=inside&store_notice=1"
+                                            class="card-text text-decoration-none text-dark hover-danger"
+                                            target="_blank">
+                                            Subermarket 03
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="card h-100 hover-shadow">
+                                    <img src="../images/NAv/mega-home-4.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <a href="../HTML CODE/main.html"
+                                            class="card-text text-decoration-none text-dark hover-danger"
+                                            target="_blank">
+                                            Subermarket 04
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="card h-100 hover-shadow">
+                                    <img src="../images/NAv/mega-home-5.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <a href="../HTML CODE/main.html"
+                                            class="card-text text-decoration-none text-dark hover-danger"
+                                            target="_blank">
+                                            Subermarket 05
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="card h-100 hover-shadow">
+                                    <img src="../images/NAv/mega-home-5.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <a href="../HTML CODE/main.html"
+                                            class="card-text text-decoration-none text-dark hover-danger"
+                                            target="_blank">
+                                            Subermarket 06
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
 
+
             <!-- Categories Dropdown -->
-            <div class="col-auto">
-                <div class="position-relative p-0 d-md-flex d-none" id="Categories-selector"
+            <div class="col-auto ">
+                <div class="position-relative p-0 d-xl-flex d-md-flex d-none  " id="Categories-selector"
                     style="width: fit-content;">
                     <div class="Categories-language">
                         <a href="#" class="d-flex align-items-center text-decoration-none text-dark hover-danger">
@@ -343,14 +646,73 @@
                             <i class="bi bi-chevron-down ms-1"></i>
                         </a>
                     </div>
-                    <div id="Categories-menu"
-                        class="position-absolute top-100 start-0 bg-white rounded shadow-sm d-none"
-                        style="width: 100%; height: 500px;"></div>
+                    <div id="Categories-menu" class="position-absolute  bg-white rounded shadow-sm d-none"
+                        style="z-index: 1008; width: 100vw; top: 168%; left: -480%;">
+
+                        <div class="container-fluid">
+                            <div class="row py-4 px-5">
+
+                                <div class="col-md-3">
+                                    <h5 class="mb-3">SHOP LAYOUTS</h5>
+                                    <ul class="list-unstyled">
+                                        <li class="my-2"><a class="text-decoration-none text-dark hover-danger"
+                                                href="#">Top Categories - Style 1</a></li>
+                                        <li class="my-2"><a class="text-decoration-none text-dark hover-danger"
+                                                href="#">Top Categories - Style 2</a></li>
+                                        <li class="my-2"><a class="text-decoration-none text-dark hover-danger"
+                                                href="#">Top Brands</a></li>
+                                        <li class="my-2"><a class="text-decoration-none text-dark hover-danger"
+                                                href="#">List Layout</a></li>
+                                        <li class="my-2"><a class="text-decoration-none text-dark hover-danger"
+                                                href="#">Collapse Scroll Sidebar</a></li>
+                                        <li class="my-2"><a class="text-decoration-none text-dark hover-danger"
+                                                href="#">Filter Sidebar</a></li>
+                                        <li class="my-2"><a class="text-decoration-none text-dark hover-danger"
+                                                href="#">Top Banner</a></li>
+                                        <li class="my-2"><a class="text-decoration-none text-dark hover-danger"
+                                                href="#">Bottom Banner</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <h5 class="mb-3">SHOP LAYOUTS</h5>
+                                    <ul class="list-unstyled">
+                                        <li class="my-2"><a class="text-decoration-none text-dark hover-danger"
+                                                href="#">
+                                                Load More Button</a></li>
+                                        <li class="my-2"><a class="text-decoration-none text-dark hover-danger"
+                                                href="#">Infinity Scroll</a></li>
+                                        <li class="my-2"><a class="text-decoration-none text-dark hover-danger"
+                                                href="#">Ajax Pagination</a></li>
+                                        <li class="my-2"><a class="text-decoration-none text-dark hover-danger"
+                                                href="#">Supermarket</a></li>
+                                        <li class="my-2"><a class="text-decoration-none text-dark hover-danger"
+                                                href="#">Furniture</a></li>
+                                        <li class="my-2"><a class="text-decoration-none text-dark hover-danger"
+                                                href="#">Shirts</a></li>
+                                        <li class="my-2"><a class="text-decoration-none text-dark hover-danger"
+                                                href="#">Electronic</a></li>
+                                        <li class="my-2"><a class="text-decoration-none text-dark hover-danger"
+                                                href="#">Cosmetic</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-6 d-flex align-items-center">
+                                    <div class="w-100  rounded overflow-hidden">
+                                        <img src="../images/NAv/mega-shop-layout.png">
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
             <!-- Products Dropdown -->
-            <div class="col-auto">
+            <div class="col-auto ">
                 <div class="position-relative p-0 d-md-flex d-none" id="Products-selector" style="width: fit-content;">
                     <div class="Products-language">
                         <a href="#" class="d-flex align-items-center text-decoration-none text-dark hover-danger">
@@ -358,35 +720,57 @@
                             <i class="bi bi-chevron-down ms-1"></i>
                         </a>
                     </div>
-                    <div id="Products-menu" class="position-absolute top-100 start-0 bg-white rounded shadow-sm d-none"
-                        style="width: 100%; height: 500px;"></div>
+                    <div id="Products-menu" class="position-absolute p-3 bg-white rounded shadow-sm d-none"
+                        style=" z-index: 1008; width: 18vw; top: 168%;">
+                        <ul class="list-unstyled">
+                            <li class="my-2"><a class="text-decoration-none text-dark hover-danger" href="#">Simple
+                                    product</a></li>
+                            <li class="my-2"><a class="text-decoration-none text-dark hover-danger" href="#">Variable –
+                                    Label Attribute</a></li>
+                            <li class="my-2"><a class="text-decoration-none text-dark hover-danger" href="#">Variable –
+                                    Dropdown Attribute</a></li>
+                            <li class="my-2"><a class="text-decoration-none text-dark hover-danger" href="#">Variable –
+                                    Color Swatch</a></li>
+                            <li class="my-2"><a class="text-decoration-none text-dark hover-danger" href="#">Variable –
+                                    Variation Thumbnail</a></li>
+                            <li class="my-2"><a class="text-decoration-none text-dark hover-danger" href="#">Group
+                                    product</a></li>
+                            <li class="my-2"><a class="text-decoration-none text-dark hover-danger" href="#">External
+                                    product</a></li>
+                            <li class="my-2"><a class="text-decoration-none text-dark hover-danger" href="#">Vertical
+                                    thumbnail</a></li>
+                            <li class="my-2"><a class="text-decoration-none text-dark hover-danger" href="#">Horizontal
+                                    thumbnail</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
             <!-- Pages Dropdown -->
-            <div class="col-auto">
-                <div class="position-relative p-0 d-md-flex d-none" id="Pages-selector" style="width: fit-content;">
+            <div class="col-auto  ">
+                <div class="position-relative p-0 d-xl-flex d-md-flex d-none" id="Pages-selector" style="width: fit-content;">
                     <div class="Pages-language">
                         <a href="#" class="d-flex align-items-center text-decoration-none text-dark hover-danger">
                             <span class="ms-1">Pages</span>
                             <i class="bi bi-chevron-down ms-1"></i>
                         </a>
                     </div>
-                    <div id="Pages-menu" class="position-absolute top-100 start-0 bg-white rounded shadow-sm d-none"
-                        style="width: 100%; height: 500px;"></div>
+                    <div id="Pages-menu" class="position-absolute top-100  start-0 bg-white rounded shadow-sm d-none"
+                        style=" z-index: 1008;"></div>
                 </div>
             </div>
         </div>
 
         <!-- About and Discount Links -->
-        <div class="col-auto d-flex justify-content-center align-items-center gap-4 d-md-flex d-none">
+        <div class="col-auto  d-xl-flex d-md-flex d-none justify-content-center align-items-center gap-4 d-md-flex d-none">
             <div class="col-auto d-flex gap-4">
                 <a href="#" class="text-decoration-none text-dark hover-danger">About us</a>
                 <a href="#" class="text-decoration-none text-dark hover-danger">Blog</a>
             </div>
 
-            <div class="col-auto">
-                <a href="#" class="text-decoration-none text-dark d-flex align-items-center gap-1 hover-danger">
+            <div class="col-auto  d-xl-flex d-md-none">
+                <a href="../HTML CODE/Shop.html?discount=true"
+                    class="text-decoration-none text-dark d-flex align-items-center gap-1 hover-danger">
                     <i class="fas fa-ticket-alt"></i>
                     Best Discount
                 </a>
@@ -394,8 +778,8 @@
         </div>
 
         <!-- Recently Viewed -->
-        <div class="col-auto p-3 ml d-md-flex d-none">
-            <div class="position-relative p-0 d-md-flex d-none" id="Recentlyviewed-selector"
+        <div class="col-auto  p-3 ml d-md-flex d-none">
+            <div class="position-relative p-0 d-md-flex d-md-none" id="Recentlyviewed-selector"
                 style="width: fit-content;">
                 <div class="Recentlyviewed-language">
                     <a href="#" class="d-flex align-items-center text-decoration-none text-dark hover-danger">
@@ -405,7 +789,7 @@
                 </div>
                 <div id="Recentlyviewed-menu"
                     class="position-absolute top-100 start-0 bg-white rounded shadow-sm d-none"
-                    style="width: 100%; height: 500px;"></div>
+                    style="width: 100%; height: 500px; z-index: 1008;"></div>
             </div>
         </div>
     </div>
@@ -853,6 +1237,8 @@
     <!-- JavaScript Files -->
     <script src="../JS CODE/Shop.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../JS CODE/NAV.js"></script>
+
 </body>
 
 </html>

@@ -3,6 +3,7 @@
 .hover-zoom {
     transition: transform 0.4s ease-in-out;
 }
+
 .hover-zoom:hover {
     transform: scale(1.2);
 }
@@ -10,11 +11,37 @@
 .custom-hover-btn {
     transition: all 0.3s ease;
 }
+
 .custom-hover-btn:hover {
     transform: scale(1.1);
     background-color: transparent !important;
     border: 1px solid #fff;
 }
+.start-25{
+    left: 17% !important;
+}
+.carousel-content {
+    opacity: 0;
+    transform: translateX(100px);
+}
+
+.carousel-item.active .carousel-content {
+    animation: fadeInRight 0.5s ease forwards;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
 
 /* Dropdown Menus */
 #language-selector:hover #language-menu,
@@ -38,6 +65,7 @@
     margin: 0 6px;
     transition: opacity 0.3s, background-color 0.3s;
 }
+
 .carousel-indicators .active {
     opacity: 1;
     background-color: #fff;
@@ -45,57 +73,100 @@
 
 /* Animations */
 @keyframes slideInLeft {
-    0% { transform: translateX(-100%); opacity: 0; }
-    100% { transform: translateX(0); opacity: 1; }
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
+
 @keyframes slideInRight {
-    0% { transform: translateX(100%); opacity: 0; }
-    100% { transform: translateX(0); opacity: 1; }
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
+
 @keyframes slideInBottom {
-    0% { transform: translateY(100%); opacity: 0; }
-    100% { transform: translateY(0); opacity: 1; }
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
-.slide-in-left { animation: slideInLeft 1s ease-out forwards; }
-.slide-in-right { animation: slideInRight 1s ease-out forwards; }
-.slide-in-bottom { animation: slideInBottom 1s ease-out forwards; }
+
+.slide-in-left {
+    animation: slideInLeft 1s ease-out forwards;
+}
+
+.slide-in-right {
+    animation: slideInRight 1s ease-out forwards;
+}
+
+.slide-in-bottom {
+    animation: slideInBottom 1s ease-out forwards;
+}
 
 /* Card Hover Effects */
-.card-hover-content, .card-hover-container {
+.card-hover-content,
+.card-hover-container {
     height: 30vh;
 }
+
 @media (max-width: 992px) {
-    .card-hover-content, .card-hover-container {
+
+    .card-hover-content,
+    .card-hover-container {
         height: 40vh;
     }
 }
+
 @media (min-width: 992px) {
     .card-hover-content {
         transition: all 0.4s ease;
     }
+
     .card-hover-container:hover .card-hover-content {
         height: 40vh;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
-    .zindextop { z-index: 10; }
-    .zindexbut { z-index: 9; }
+
+    .zindextop {
+        z-index: 10;
+    }
+
+    .zindexbut {
+        z-index: 9;
+    }
 }
 
-.Fashion {
-    top: -202%;
-    left: 26%;
-}
+
 
 /* Link Underline Effect */
 a.active {
     border-bottom: 2px solid;
 }
+
 .slide-link {
     position: relative;
     display: inline-block;
     text-decoration: none;
     color: black;
 }
+
 .slide-link::after {
     content: '';
     position: absolute;
@@ -108,6 +179,7 @@ a.active {
     transform-origin: right;
     transition: transform 0.3s ease;
 }
+
 .slide-link:hover::after {
     transform: scaleX(1);
     transform-origin: left;
@@ -124,13 +196,16 @@ a.active {
     transform: translateY(100%);
     transition: all 0.5s ease;
 }
+
 .card:hover .cardhover {
     opacity: 1;
     transform: translateY(0);
 }
+
 .card:hover {
     box-shadow: 0 0 5px rgba(169, 169, 169, 0.8);
 }
+
 .discount {
     font-size: 0.75rem;
     margin: 8px;
@@ -141,6 +216,7 @@ a.active {
 .owl-carousel .owl-nav.disabled {
     display: flex;
 }
+
 .owl-carousel .owl-nav {
     position: absolute;
     top: 50%;
@@ -153,6 +229,7 @@ a.active {
     pointer-events: none;
     z-index: 10;
 }
+
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel .owl-nav button.owl-next {
     width: 30px;
@@ -170,21 +247,26 @@ a.active {
     transition: background-color 0.3s, opacity 0.3s, transform 0.3s;
     position: relative;
 }
+
 .owl-carousel .owl-nav button.owl-prev {
     transform: translateX(-60%);
 }
+
 .owl-carousel .owl-nav button.owl-next {
     transform: translateX(60%);
 }
+
 .owl-carousel .item:hover .owl-nav button,
 .owl-carousel:hover .owl-nav button {
     opacity: 1;
 }
+
 .owl-carousel .owl-nav button:hover {
     background-color: rgb(0, 0, 0) !important;
     color: white !important;
     border-color: black;
 }
+
 .card6:hover img {
     transition: all .3s;
     transform: rotate(3deg) scale(1.15);
@@ -197,8 +279,22 @@ a.active {
     padding-bottom: var(--bs-btn-padding-y);
     background-color: black;
 }
+
 .carousel-indicators [data-bs-target] {
     border-radius: 5% !important;
     background-color: white !important;
     border: 1px solid #030303 !important;
+}
+
+/*offcanvas*/
+.small-offcanvas {
+    width: 40ch !important;
+}
+
+.hover-shadow {
+  transition: box-shadow 0.3s ease;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
 }

@@ -1,79 +1,76 @@
-let searchSuggestions=document.querySelector("#searchSuggestions");
-let form=document.querySelector("#form");
 
-form.addEventListener("click",function(){
-    searchSuggestions.classList.toggle("d-none");
-})
-
-  $(document).ready(function () {
-            // Initialize first carousel
-            $(".owlS1").owlCarousel({
-                loop: true,
-                margin: 20,
-                autoplay: true,
-                autoplayTimeout: 4000,
-                smartSpeed: 800,
-                responsive: {
-                    0: {
-                        items: 3
-                    },
-                    992: {
-                        items: 8
-                    }
-                }
-            });
-
-            $(".carousel-two").owlCarousel({
-                loop: true,
-                dots: false,
-                nav: true,
-                margin: 15,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    576: {
-                        items: 2
-                    },
-                    768: {
-                        items: 3
-                    },
-                    1200: {
-                        items: 5
-                    }
-                }
-            });
-        });
-
-        $(".carousel-three").owlCarousel({
-            loop: true,
-            margin: 20,
-            dots: false,
-            nav: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                768: {
-                    items: 2
-                },
-                1200: {
-                    items: 3
-                }
+$(document).ready(function () {
+    // Initialize first carousel
+    $(".owlS1").owlCarousel({
+        loop: true,
+        margin: 20,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        smartSpeed: 800,
+        responsive: {
+            0: {
+                items: 3
+            },
+            992: {
+                items: 8
             }
-        });
+        }
+    });
 
-const hoverLink = document.querySelector('.Fashionhover');
-  const fashionBox = document.querySelector('.Fashion');
+    $(".carousel-two").owlCarousel({
+        loop: true,
+        dots: false,
+        nav: true,
+        margin: 15,
+        responsive: {
+            0: {
+                items: 1
+            },
+            576: {
+                items: 2
+            },
+            768: {
+                items: 3
+            },
+            1200: {
+                items: 5
+            }
+        }
+    });
+});
 
-  hoverLink.addEventListener('mouseenter', () => {
-    fashionBox.classList.remove('d-none');
-  });
+$(".carousel-three").owlCarousel({
+    loop: true,
+    margin: 20,
+    dots: false,
+    nav: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        768: {
+            items: 2
+        },
+        1200: {
+            items: 3
+        }
+    }
+});
 
-  hoverLink.addEventListener('mouseleave', () => {
-    fashionBox.classList.add('d-none');
-  });
+/*backToTop */
+const backToTopBtn = document.getElementById("backToTop");
 
-  fashionBox.addEventListener('mouseleave', () => {
-    fashionBox.classList.add('d-none');
-  });
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 500) {
+        backToTopBtn.classList.remove('d-none');
+    } else {
+        backToTopBtn.classList.add('d-none');
+    }
+});
+
+backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
