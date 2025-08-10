@@ -1,6 +1,18 @@
 const products = [
     {
         id: Date.now(),
+        title: "Barbie Baseball Hat Cap Berkshire Fashions New",
+        price: "$12",
+        salePrice: null,
+        color: "Black",
+        image: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-8-300x300.jpg",
+        onSale: true,
+        popularity: 120,
+        releaseDate: "2025-07-01",
+        link: "file:///C:/Users/Al-3amer/Desktop/frontend-learning-journey/Merto/HTML%20CODE/Barbie.html"
+    },
+    {
+        id: Date.now(),
         title: "TOOLS 34 Low Profile Hydraulic Trolley",
         price: "$837",
         salePrice: "$586",
@@ -8,7 +20,9 @@ const products = [
         image: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/automotive-11-300x300.jpg",
         onSale: true,
         popularity: 120,
-        releaseDate: "2025-07-01"
+        releaseDate: "2025-07-01",
+        link: "file:///C:/Users/Al-3amer/Desktop/frontend-learning-journey/Merto/HTML%20CODE/Barbie.html"
+
     },
     {
         id: Date.now(),
@@ -19,7 +33,9 @@ const products = [
         image: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/furniture-17-300x300.jpg",
         onSale: false,
         popularity: 90,
-        releaseDate: "2025-06-15"
+        releaseDate: "2025-06-15",
+        link: "file:///C:/Users/Al-3amer/Desktop/frontend-learning-journey/Merto/HTML%20CODE/Barbie.html"
+
     },
     {
         id: Date.now(),
@@ -30,7 +46,9 @@ const products = [
         image: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-5-300x300.jpg",
         onSale: true,
         popularity: 250,
-        releaseDate: "2025-05-10"
+        releaseDate: "2025-05-10",
+        link: "file:///C:/Users/Al-3amer/Desktop/frontend-learning-journey/Merto/HTML%20CODE/Barbie.html"
+
     },
     {
         id: Date.now(),
@@ -41,7 +59,9 @@ const products = [
         image: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-20-300x300.jpg",
         onSale: false,
         popularity: 180,
-        releaseDate: "2025-04-22"
+        releaseDate: "2025-04-22",
+        link: "file:///C:/Users/Al-3amer/Desktop/frontend-learning-journey/Merto/HTML%20CODE/Barbie.html"
+
     },
     {
         id: Date.now(),
@@ -52,7 +72,9 @@ const products = [
         image: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-1-300x300.jpg",
         onSale: true,
         popularity: 300,
-        releaseDate: "2025-06-30"
+        releaseDate: "2025-06-30",
+        link: "file:///C:/Users/Al-3amer/Desktop/frontend-learning-journey/Merto/HTML%20CODE/Barbie.html"
+
     },
     {
         id: Date.now(),
@@ -63,7 +85,9 @@ const products = [
         image: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-16-300x300.jpg",
         onSale: false,
         popularity: 340,
-        releaseDate: "2025-07-05"
+        releaseDate: "2025-07-05",
+        link: "file:///C:/Users/Al-3amer/Desktop/frontend-learning-journey/Merto/HTML%20CODE/Barbie.html"
+
     },
     {
         id: Date.now(),
@@ -74,7 +98,9 @@ const products = [
         image: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-16-300x300.jpg",
         onSale: true,
         popularity: 290,
-        releaseDate: "2025-06-25"
+        releaseDate: "2025-06-25",
+        link: "file:///C:/Users/Al-3amer/Desktop/frontend-learning-journey/Merto/HTML%20CODE/Barbie.html"
+
     },
     {
         id: Date.now(),
@@ -85,7 +111,9 @@ const products = [
         image: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-19-300x300.jpg",
         onSale: true,
         popularity: 320,
-        releaseDate: "2025-07-10"
+        releaseDate: "2025-07-10",
+        link: "file:///C:/Users/Al-3amer/Desktop/frontend-learning-journey/Merto/HTML%20CODE/Barbie.html"
+
     },
     {
         id: Date.now(),
@@ -96,7 +124,9 @@ const products = [
         image: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/automotive-3-300x300.jpg",
         onSale: false,
         popularity: 190,
-        releaseDate: "2025-07-03"
+        releaseDate: "2025-07-03",
+        link: "file:///C:/Users/Al-3amer/Desktop/frontend-learning-journey/Merto/HTML%20CODE/Barbie.html"
+
     },
     {
         id: Date.now(),
@@ -107,7 +137,9 @@ const products = [
         image: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/furniture-11-300x300.jpg",
         onSale: true,
         popularity: 220,
-        releaseDate: "2025-06-29"
+        releaseDate: "2025-06-29",
+        link: "file:///C:/Users/Al-3amer/Desktop/frontend-learning-journey/Merto/HTML%20CODE/Barbie.html"
+
     },
     {
         id: Date.now(),
@@ -118,7 +150,9 @@ const products = [
         image: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-16-300x300.jpg",
         onSale: true,
         popularity: 170,
-        releaseDate: "2025-05-22"
+        releaseDate: "2025-05-22",
+        link: "file:///C:/Users/Al-3amer/Desktop/frontend-learning-journey/Merto/HTML%20CODE/Barbie.html"
+
     },
     {
         id: Date.now(),
@@ -129,7 +163,9 @@ const products = [
         image: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-7-300x300.jpg",
         onSale: true,
         popularity: 200,
-        releaseDate: "2025-06-18"
+        releaseDate: "2025-06-18",
+        link: "file:///C:/Users/Al-3amer/Desktop/frontend-learning-journey/Merto/HTML%20CODE/Barbie.html"
+
     },
     {
         id: Date.now(),
@@ -137,10 +173,12 @@ const products = [
         price: "$265",
         salePrice: null,
         color: "Gray",
-        image: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-16-300x300.jpg",
+        image: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/cosmetics-34-300x300.jpg",
         onSale: false,
         popularity: 140,
-        releaseDate: "2025-06-05"
+        releaseDate: "2025-06-05",
+        link: "file:///C:/Users/Al-3amer/Desktop/frontend-learning-journey/Merto/HTML%20CODE/Barbie.html"
+
     },
     {
         id: Date.now(),
@@ -148,10 +186,12 @@ const products = [
         price: "$110",
         salePrice: null,
         color: "Brown",
-        image: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-16-300x300.jpg",
+        image: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/11-300x300.jpg",
         onSale: false,
         popularity: 105,
-        releaseDate: "2025-05-25"
+        releaseDate: "2025-05-25",
+        link: "file:///C:/Users/Al-3amer/Desktop/frontend-learning-journey/Merto/HTML%20CODE/Barbie.html"
+
     },
     {
         id: Date.now(),
@@ -159,10 +199,12 @@ const products = [
         price: "$150",
         salePrice: "$108",
         color: "Beige",
-        image: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-16-300x300.jpg",
+        image: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/furniture-7-300x300.jpg",
         onSale: true,
         popularity: 270,
-        releaseDate: "2025-06-27"
+        releaseDate: "2025-06-27",
+        link: "file:///C:/Users/Al-3amer/Desktop/frontend-learning-journey/Merto/HTML%20CODE/Barbie.html"
+
     },
     {
         id: Date.now(),
@@ -173,7 +215,9 @@ const products = [
         image: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-16-300x300.jpg",
         onSale: false,
         popularity: 210,
-        releaseDate: "2025-06-15"
+        releaseDate: "2025-06-15",
+        link: "file:///C:/Users/Al-3amer/Desktop/frontend-learning-journey/Merto/HTML%20CODE/Barbie.html"
+
     },
     {
         id: Date.now(),
@@ -184,7 +228,9 @@ const products = [
         image: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-16-300x300.jpg",
         onSale: true,
         popularity: 310,
-        releaseDate: "2025-07-12"
+        releaseDate: "2025-07-12",
+        link: "file:///C:/Users/Al-3amer/Desktop/frontend-learning-journey/Merto/HTML%20CODE/Barbie.html"
+
     },
     {
         id: Date.now(),
@@ -195,7 +241,9 @@ const products = [
         image: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-16-300x300.jpg",
         onSale: false,
         popularity: 160,
-        releaseDate: "2025-06-11"
+        releaseDate: "2025-06-11",
+        link: "file:///C:/Users/Al-3amer/Desktop/frontend-learning-journey/Merto/HTML%20CODE/Barbie.html"
+
     },
     {
         id: Date.now(),
@@ -206,7 +254,9 @@ const products = [
         image: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-16-300x300.jpg",
         onSale: true,
         popularity: 240,
-        releaseDate: "2025-06-09"
+        releaseDate: "2025-06-09",
+        link: "file:///C:/Users/Al-3amer/Desktop/frontend-learning-journey/Merto/HTML%20CODE/Barbie.html"
+
     },
     {
         id: Date.now(),
@@ -217,7 +267,9 @@ const products = [
         image: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-10-300x300.jpg",
         onSale: true,
         popularity: 330,
-        releaseDate: "2025-07-14"
+        releaseDate: "2025-07-14",
+        link: "file:///C:/Users/Al-3amer/Desktop/frontend-learning-journey/Merto/HTML%20CODE/Barbie.html"
+
     },
     {
         id: Date.now(),
@@ -228,7 +280,9 @@ const products = [
         image: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-16-300x300.jpg",
         onSale: true,
         popularity: 200,
-        releaseDate: "2025-06-01"
+        releaseDate: "2025-06-01",
+        link: "file:///C:/Users/Al-3amer/Desktop/frontend-learning-journey/Merto/HTML%20CODE/Barbie.html"
+
     },
     {
         id: Date.now(),
@@ -239,7 +293,9 @@ const products = [
         image: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-16-300x300.jpg",
         onSale: true,
         popularity: 195,
-        releaseDate: "2025-05-19"
+        releaseDate: "2025-05-19",
+        link: "file:///C:/Users/Al-3amer/Desktop/frontend-learning-journey/Merto/HTML%20CODE/Barbie.html"
+
     },
     {
         id: Date.now(),
@@ -250,7 +306,9 @@ const products = [
         image: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-3-300x300.jpg",
         onSale: false,
         popularity: 170,
-        releaseDate: "2025-06-07"
+        releaseDate: "2025-06-07",
+        link: "file:///C:/Users/Al-3amer/Desktop/frontend-learning-journey/Merto/HTML%20CODE/Barbie.html"
+
     },
     {
         id: Date.now(),
@@ -261,7 +319,9 @@ const products = [
         image: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-16-300x300.jpg",
         onSale: true,
         popularity: 260,
-        releaseDate: "2025-07-09"
+        releaseDate: "2025-07-09",
+        link: "file:///C:/Users/Al-3amer/Desktop/frontend-learning-journey/Merto/HTML%20CODE/Barbie.html"
+
     },
     {
         id: Date.now(),
@@ -272,7 +332,9 @@ const products = [
         image: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-8-300x300.jpg",
         onSale: true,
         popularity: 350,
-        releaseDate: "2025-07-02"
+        releaseDate: "2025-07-02",
+        link: "file:///C:/Users/Al-3amer/Desktop/frontend-learning-journey/Merto/HTML%20CODE/Barbie.html"
+
     }
 ];
 
@@ -291,11 +353,14 @@ const createMyOwnEle = function (parent, newElement, txt, src, classes) {
     return myEle;
 };
 
-
-
 function draw(d, parent) {
+    const col = createMyOwnEle(parent, "div", null, null, "product-item card col-lg-3 col-6 position-relative");
 
-const col = createMyOwnEle(parent, "div", null, null, "product-item card col-lg-3 col-6 position-relative");
+    // خلي الكارت يشتغل كـ لينك
+    col.style.cursor = "pointer";
+    col.addEventListener("click", () => {
+        window.location.href = d.link; // يفتح اللينك
+    });
 
     const card = createMyOwnEle(col, "div", null, null, "");
 
@@ -303,7 +368,7 @@ const col = createMyOwnEle(parent, "div", null, null, "product-item card col-lg-
 
     const body = createMyOwnEle(card, "div", null, null, "card-body");
 
-    const title = createMyOwnEle(body, "p", d.title, null, "card-text lh-sm m-0");
+    createMyOwnEle(body, "p", d.title, null, "card-text lh-sm m-0");
 
     const priceDiv = createMyOwnEle(card, "div", null, null, "px-3 mb-2 d-flex align-items-center gap-2");
 
@@ -367,4 +432,43 @@ saleCheckbox.addEventListener("change", () => {
         : products;
 
     filtered.forEach(product => draw(product, product_cards));
+});
+
+let sortSelect = document.querySelector("#sortSelect"); 
+
+function sortProducts(productsArr, sortType) {
+    let sorted = [...productsArr];
+
+    switch (sortType) {
+        case "1": // Price: Low to High
+            sorted.sort((a, b) => parseFloat((a.salePrice || a.price).replace("$", "")) -
+                                  parseFloat((b.salePrice || b.price).replace("$", "")));
+            break;
+        case "2": // Price: High to Low
+            sorted.sort((a, b) => parseFloat((b.salePrice || b.price).replace("$", "")) -
+                                  parseFloat((a.salePrice || a.price).replace("$", "")));
+            break;
+        case "3": // Popularity
+            sorted.sort((a, b) => b.popularity - a.popularity);
+            break;
+        default: 
+            sorted.sort((a, b) => new Date(b.releaseDate) - new Date(a.releaseDate));
+            break;
+    }
+    return sorted;
+}
+
+function renderProducts(productsArr) {
+    product_cards.innerHTML = "";
+    productsArr.forEach(product => draw(product, product_cards));
+}
+
+sortSelect.addEventListener("change", () => {
+    let sortValue = sortSelect.value;
+    let filtered = saleCheckbox.checked
+        ? products.filter(el => el.salePrice != null)
+        : products;
+
+    let sorted = sortProducts(filtered, sortValue);
+    renderProducts(sorted);
 });
