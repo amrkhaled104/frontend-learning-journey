@@ -66,6 +66,6 @@ This project was created to **solidify the skills** gained during training by re
 **Amr Khaled**
 
 * GitHub: [amrkhaled104](https://github.com/amrkhaled104)
-* LinkedIn: [Amr Khaled](https://www.linkedin.com/in/amr-khaled-419260304/)
+* LinkedIn: [Amr Khaled](https://www.linkedin.com/in/%D9%90amr-khaled-419260304/)
 
 ---
