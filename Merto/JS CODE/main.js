@@ -4,6 +4,7 @@ $(document).ready(function () {
     $(".owlS1").owlCarousel({
         loop: true,
         margin: 20,
+        nav: false,
         autoplay: true,
         autoplayTimeout: 4000,
         smartSpeed: 800,
@@ -24,7 +25,7 @@ $(document).ready(function () {
         margin: 15,
         responsive: {
             0: {
-                items: 1
+                items: 2
             },
             576: {
                 items: 2

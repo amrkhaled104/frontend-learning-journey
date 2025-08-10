@@ -264,8 +264,8 @@
                 <a href="#" class="btn position-relative d-md-flex d-none p-0">
                     <i class="bi bi-heart fs-5 hover-danger"></i>
                     <span
-                        class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger text-white"
-                        style="font-size: 0.7rem; width: 20px; height: 20px; display: flex; justify-content: center; align-items: center;">
+                        class="position-absolute  start-100 translate-middle badge rounded-circle bg-danger text-white"
+                        style="font-size: 0.7rem; width: 20px; height: 20px; display: flex; justify-content: center; align-items: center; top:10%; z-index: 9999;">
                         0
                     </span>
                 </a>
@@ -274,8 +274,8 @@
                 <a href="#" class="btn position-relative p-0 ms-2 ms-md-0">
                     <i class="bi bi-cart2 fs-5 hover-danger"></i>
                     <span
-                        class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger text-white"
-                        style="font-size: 0.7rem; width: 20px; height: 20px; display: flex; justify-content: center; align-items: center;">
+                        class="position-absolute  start-100 translate-middle badge rounded-circle bg-danger text-white"
+                        style="font-size: 0.7rem; width: 20px; height: 20px; display: flex; justify-content: center; align-items: center; top:15% ;z-index: 9999;">
                         0
                     </span>
                 </a>
@@ -832,9 +832,11 @@
 
                     <div class="carousel-inner h-100">
                         <!-- Slide 1 -->
-                        <div class="carousel-item active h-100 position-relative ">
-                            <img src="../images/slide1-demo1.jpg" class="d-block w-100 h-100 object-fit-fill"
-                                alt="First slide">
+                        <div class="carousel-item active h-100 position-relative" style="background-color: #84a7a9;">
+                            <img src="../images/slide1-demo1.jpg"
+                                class="position-absolute top-50 end-0 translate-middle-y"
+                                style="height: 100%; object-fit: contain; ">
+
                             <div class="position-absolute top-50 start-0 translate-middle-y text-start text-white p-4 carousel-content"
                                 style="width: 90%; max-width: 600px; left: 5%;">
                                 <p class="mb-3 fs-5">Limited time offer*</p>
@@ -842,14 +844,16 @@
                                 <h4 class="fw-semibold mb-4 fs-4">Armchairs</h4>
                                 <a href="#" class="btn btn-light text-dark px-4 py-2 fw-semibold fs-6">SHOP NOW</a>
                             </div>
-
                         </div>
 
+
                         <!-- Slide 2 -->
-                        <div class="carousel-item h-100 position-relative ">
-                            <img src="../images/slide2-demo1.jpg" class="d-block w-100 h-100 object-fit-fill"
-                                alt="Second slide">
-                           <div class="position-absolute top-50 start-0 translate-middle-y text-start text-white p-4 carousel-content"
+                        <div class="carousel-item active h-100 position-relative" style="background-color: #cba787">
+                            <img src="../images/slide2-demo1.jpg"
+                                class="position-absolute top-50 end-0 translate-middle-y"
+                                style="height: 100%; object-fit: cover; ">
+
+                            <div class="position-absolute top-50 start-0 translate-middle-y text-start text-white p-4 carousel-content"
                                 style="width: 90%; max-width: 600px; left: 5%;">
                                 <p class="mb-3 fs-5">Up to 40% off</p>
                                 <h2 class="fw-bold display-5">Body Lotion <br> Spf lab 50+</h2>
@@ -859,10 +863,12 @@
                         </div>
 
                         <!-- Slide 3 -->
-                        <div class="carousel-item h-100 position-relative ">
-                            <img src="../images/slide3-demo1.png" class="d-block w-100 h-100 object-fit-fill"
-                                alt="Third slide">
-                             <div class="position-absolute top-50 start-0 translate-middle-y text-start text-white p-4 carousel-content"
+                        <div class="carousel-item active h-100 position-relative" style="background-color:#dc3545 ">
+                            <img src="../images/slide3-demo1.png"
+                                class="position-absolute top-50 end-0 translate-middle-y"
+                                style="height: 100%; object-fit: contain; ">
+
+                            <div class="position-absolute top-50 start-0 translate-middle-y text-start text-white p-4 carousel-content"
                                 style="width: 90%; max-width: 600px; left: 5%;">
                                 <p class="mb-3 fs-5">Limited time offer*</p>
                                 <h2 class="fw-bold display-5">From Italia <br> Sale 25% off</h2>
@@ -1040,12 +1046,12 @@
                                 <!-- Countdown Timer -->
                                 <div class="zero-circle d-flex justify-content-center align-items-center border rounded-circle bg-dark text-white col-auto"
                                     style="width: 35px; height: 35px;">
-                                    <span>00</span>
+                                    <span>02</span>
                                 </div>
                                 <span class="text-muted col-auto fw-semibold">:</span>
                                 <div class="zero-circle d-flex justify-content-center align-items-center border rounded-circle bg-dark text-white col-auto"
                                     style="width: 35px; height: 35px;">
-                                    <span>00</span>
+                                    <span>12</span>
                                 </div>
                                 <span class="text-muted col-auto fw-semibold">:</span>
                                 <div class="zero-circle d-flex justify-content-center align-items-center border rounded-circle bg-dark text-white col-auto"
@@ -1590,66 +1596,79 @@
     </section>
 
     <!-- ========== FEATURED PRODUCT SECTION ========== -->
-    <section class="container-fluid p-0 bg-gray position-relative" style="width: 100%;">
-        <h1 class="position-absolute w-100 text-center fw-bold"
+    <section class="container-fluid p-0 bg-gray position-relative " style="width: 100%; margin-top: 5%;">
+        <h1 class="position-absolute w-100 text-center fw-bold hoddie"
             style="font-size: 20vw; top: 25%; left: 5%; transform: translate(-25%, -25%); color: rgba(252, 242, 242, 0.367); z-index: 1;">
             Hoodie
         </h1>
 
-        <div class="position-absolute rounded-circle bg-danger text-white fw-bold d-flex align-items-center justify-content-center animate__animated animate__pulse animate__infinite"
+        <div class="position-absolute rounded-circle bg-danger text-white fw-bold d-flex align-items-center Discount justify-content-center animate__animated animate__pulse animate__infinite"
             style="top: 25%; left: 36%; width: 90px; height: 90px; z-index: 2; font-size: 1.7rem;">
             -30%
         </div>
 
-        <div id="mainHomeCarousel" class="carousel slide" data-bs-ride="carousel" style="height: 110vh;">
-            <div class="bg-white position-absolute rounded product-details text-start py-5 px-5"
-                style="width: 30%;  z-index: 500; right: 10%; top: 10%;">
+        <div id="mainHomeCarousel" class="carousel slide position-relative" data-bs-ride="carousel"
+            style="height: 110vh;">
 
-                <h3 class="fw-bold fs-4">Athletics Embroidered<br>Relaxed Hoodie</h3>
+            <!-- Product Details Card -->
+            <div class="bg-white rounded product-details text-start p-4 shadow position-absolute d-flex flex-column justify-content-between"
+                style="z-index: 10; right: 10%; top: 20%; width: 30%; min-width: 250px; height: auto; max-height: 90vh;">
 
-                <ul class="list-unstyled my-3">
-                    <li class="text-success">✔ 64% cotton, 36% polyester</li>
-                    <li class="text-success">✔ Do not dry clean</li>
-                    <li class="text-success">✔ Machine wash</li>
-                </ul>
+                <div>
+                    <h3 class="fw-bold fs-4">Athletics Embroidered<br>Relaxed Hoodie</h3>
 
-                <hr>
+                    <ul class="list-unstyled my-3">
+                        <li class="text-success">✔ 64% cotton, 36% polyester</li>
+                        <li class="text-success">✔ Do not dry clean</li>
+                        <li class="text-success">✔ Machine wash</li>
+                    </ul>
 
-                <div class="price mt-3 " style="margin-bottom: 5rem;">
-                    <span class="fw-bold fs-4 ">$89</span>
-                    <span class="text-muted text-decoration-line-through ms-2">$120</span>
+                    <hr>
+
+                    <div class="price mt-3 mb-4">
+                        <span class="fw-bold fs-4">$89</span>
+                        <span class="text-muted text-decoration-line-through ms-2">$120</span>
+                    </div>
+
+                    <!-- Thumbnails -->
+                    <div class="carousel-indicators position-relative justify-content-start my-3"
+                        style="margin-left: 0;">
+                        <button type="button" data-bs-target="#mainHomeCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"
+                            style="height: 5vw; width: 5vw; max-width: 80px; min-width: 40px; background-image: url(slideeee.jpg); background-size: cover; background-repeat: no-repeat;">
+                        </button>
+                        <button type="button" data-bs-target="#mainHomeCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"
+                            style="height: 5vw; width: 5vw; max-width: 80px; min-width: 40px; background-image: url(slideee.jpg); background-size: cover; background-repeat: no-repeat;">
+                        </button>
+                        <button type="button" data-bs-target="#mainHomeCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"
+                            style="width: 5vw; height: 5vw; max-width: 80px; min-width: 40px; background-image: url(slidee.jpg); background-size: cover; background-repeat: no-repeat;">
+                        </button>
+                    </div>
                 </div>
 
-                <div class="carousel-indicators position-absolute" style="z-index: 501; right: 15%; top: 55%;">
-                    <button type="button" data-bs-target="#mainHomeCarousel" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"
-                        style="width: 75px; height: 75px; background-image: url(slideeee.jpg); background-size: cover; background-repeat: no-repeat;">
-                        ></button>
-                    <button type="button" data-bs-target="#mainHomeCarousel" data-bs-slide-to="1" aria-label="Slide 2"
-                        style="width: 75px; height: 75px; background-image: url(slideee.jpg); background-size: cover; background-repeat: no-repeat;">
-                        ></button>
-                    <button type="button" data-bs-target="#mainHomeCarousel" data-bs-slide-to="2" aria-label="Slide 3"
-                        style="width: 75px; height: 75px; background-image: url(slidee.jpg); background-size: cover; background-repeat: no-repeat;"></button>
-                </div>
-
-
-                <button class="btn btn-dark w-100 mt-3 p-3 fw-bold">BUY NOW</button>
+                <button class="btn btn-dark w-100 mt-3 p-3 fw-bold custom-hover-btn">BUY NOW</button>
             </div>
 
 
+            <!-- Carousel Images -->
             <div class="carousel-inner h-100">
                 <div class="carousel-item active h-100 position-relative bg-gray">
-                    <img src="../images/images_ for_ main/slide-hoodie-1.png" class="" style="margin-left: 7rem;">
-
-                </div>
-                <div class="carousel-item h-100 position-relative bg-gray ">
-                    <img src="../images/images_ for_ main/slide-hoodie-2.png" class="" style="margin-left: 7rem;">
+                    <img src="../images/images_ for_ main/slide-hoodie-1.png" class="img-fluid img"
+                        style="margin-left: 7rem;">
                 </div>
                 <div class="carousel-item h-100 position-relative bg-gray">
-                    <img src="../images/images_ for_ main/slide-hoodie-4.png" class="" style="margin-left: 7rem;">
+                    <img src="../images/images_ for_ main/slide-hoodie-2.png" class="img-fluid img"
+                        style="margin-left: 7rem;">
+                </div>
+                <div class="carousel-item h-100 position-relative bg-gray">
+                    <img src="../images/images_ for_ main/slide-hoodie-4.png" class="img-fluid img"
+                        style="margin-left: 7rem;">
                 </div>
             </div>
 
+            <!-- Controls -->
             <button class="carousel-control-prev" type="button" data-bs-target="#mainHomeCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -1663,10 +1682,10 @@
 
 
     <!-- ==========  Best Selling Section SECTION ========== -->
-    <section class="container-fluid p-0">
+    <section class="container-fluid p-0 mt-0">
         <div class="container py-5">
             <div class="row">
-                <div class="container-fluid py-5">
+                <div class="container-fluid pt-5">
                     <div class="container mx-auto p-0">
                         <div class="row align-items-center">
                             <h3 class="fw-bold col-md-7 col-12 text-md-start text-center mb-md-0 mb-4">Best Selling
@@ -2198,139 +2217,104 @@
     </section>
 
     <!-- ========== FOOTER SECTION ========== -->
-    <footer class="footer container-fluid py-5 bg-footer px-0">
-        <!-- Mobile View Footer -->
-        <div class="col-12 d-md-none d-block mb-4">
-            <img src="../images/logo.png" class="col-4 mb-4">
-            <div class="row footer-text-color align-items-center">
-                <div class="col-1 text-center mb-1"><i class="fa-solid fa-location-dot"></i></div>
-                <div class="col-10">
-                    <p class="mb-0">29 SE 2nd Ave, Miami Florida 33131, United States</p>
+    <footer class="footer container-fluid py-5 bg-footer px-0 text-white">
+
+        <div class="container px-0 m-auto">
+            <div class="row justify-content-between">
+
+                <!-- Column 1: Newsletter + Social -->
+                <div class="col-md-3 col-12 mb-4">
+                    <img src="../images/logo.png" class="w-50 mb-4 d-md-block d-none">
+                    <img src="../images/logo.png" class="w-50 mb-4 d-block d-md-none">
+                    <p><i class="fa-solid fa-location-dot me-2 "></i> 29 SE 2nd Ave, Miami Florida 33131</p>
+                    <p><i class="fa-solid fa-envelope me-2"></i> info@example.com</p>
+                    <p><a href="#" class="link-item fs-4">(+92) 3942 7879</a></p>
+
                 </div>
-            </div>
-            <div class="footer-text-color row align-items-center mb-4">
-                <div class="col-1 text-center"><i class="fa-solid fa-envelope text-center"></i></div>
-                <div class="col-10">
-                    <p class="mb-0">29 SE 2nd Ave, Miami Florida 33131, United States</p>
+
+                <!-- Column 2: Account Links -->
+                <div class="col-md-2 col-6">
+                    <p class="fw-bold mb-4">Account</p>
+                    <ul class="list-unstyled">
+                        <li class="my-2"><a href="#" class="link-item">Cart</a></li>
+                        <li class="my-2"><a href="#" class="link-item">My account</a></li>
+                        <li class="my-2"><a href="#" class="link-item">My orders</a></li>
+                        <li class="my-2"><a href="#" class="link-item">Wishlist</a></li>
+                        <li class="my-2"><a href="#" class="link-item">Affiliate Program</a></li>
+                    </ul>
                 </div>
-            </div>
-            <div>
-                <a href="#" class="link-item fs-4">(+92) 3942 7879</a>
-            </div>
-        </div>
 
-        <!-- Desktop View Footer -->
-        <div class="container px-0 m-auto row justify-content-between" dir="rtl">
-            <!-- Newsletter Subscription -->
-            <div class="col-md-3 col-12 pb-4" dir="ltr">
-                <p class="text-white fs-4">Let's keep in touch</p>
-                <div class="input-group mb-3 bg-footer border border-1 rounded-2 text-white py-1 mt-5">
-                    <input type="text" class="form-control bg-transparent border-0 text-white"
-                        placeholder="enter your email" aria-label="Recipient's username"
-                        aria-describedby="button-addon2">
-                    <button class="btn btn-outline-secondary border-0" type="button" id="button-addon2">
-                        <a href="#" class="link-item"> <i class="fa-solid fa-arrow-right"></i></a>
-                    </button>
+                <!-- Column 3: Information Links -->
+                <div class="col-md-2 col-6">
+                    <p class="fw-bold mb-4">Information</p>
+                    <ul class="list-unstyled">
+                        <li class="my-2"><a href="#" class="link-item">Track order</a></li>
+                        <li class="my-2"><a href="#" class="link-item">Shipping & Returns</a></li>
+                        <li class="my-2"><a href="#" class="link-item">About us</a></li>
+                        <li class="my-2"><a href="#" class="link-item">Help</a></li>
+                        <li class="my-2"><a href="#" class="link-item">Gift Cards</a></li>
+                    </ul>
                 </div>
-                <div class="mt-5">
-                    <span class="px-2"><a href="#" class="link-item"><i
-                                class="fa-brands fa-facebook-f icon"></i></a></span>
-                    <span class="px-2"><a href="#" class="link-item"><i class="fa-brands fa-tiktok icon"></i></a></span>
-                    <span class="px-2"><a href="#" class="link-item"><i
-                                class="fa-brands fa-x-twitter icon"></i></a></span>
-                    <span class="px-2"><a href="#" class="link-item"><i
-                                class="fa-brands fa-youtube icon"></i></a></span>
-                    <span class="px-2"><a href="#" class="link-item"><i
-                                class="fa-brands fa-instagram icon"></i></a></span>
+
+                <!-- Column 4: Shopping Links -->
+                <div class="col-md-2 col-6">
+                    <p class="fw-bold mb-4">Shopping</p>
+                    <ul class="list-unstyled">
+                        <li class="my-2"><a href="#" class="link-item">Wishlist</a></li>
+                        <li class="my-2"><a href="#" class="link-item">Shop by Brand</a></li>
+                        <li class="my-2"><a href="#" class="link-item">Offers</a></li>
+                        <li class="my-2"><a href="#" class="link-item">Track order</a></li>
+                        <li class="my-2"><a href="#" class="link-item">Size Guide</a></li>
+                    </ul>
                 </div>
+
+                <!-- Column 5: Contact Info -->
+                <div class="col-md-3 col-12">
+                    <p class="fs-4">Let's keep in touch</p>
+                    <div class="input-group mb-3 border border-1 rounded-2 py-1 mt-4">
+                        <input type="text" class="form-control bg-transparent border-0 text-white"
+                            placeholder="Enter your email">
+                        <button class="btn border-0" type="button">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class="mt-4">
+                        <a href="#" class="px-2 link-item"><i class="fa-brands fa-facebook-f icon"></i></a>
+                        <a href="#" class="px-2 link-item"><i class="fa-brands fa-tiktok icon"></i></a>
+                        <a href="#" class="px-2 link-item"><i class="fa-brands fa-x-twitter icon"></i></a>
+                        <a href="#" class="px-2 link-item"><i class="fa-brands fa-youtube icon"></i></a>
+                        <a href="#" class="px-2 link-item"><i class="fa-brands fa-instagram icon"></i></a>
+                    </div>
+
+                </div>
+
             </div>
 
-            <!-- Account Links -->
-            <div class="col-md-2 col-3" dir="ltr">
-                <p class="fs- text-white mb-4 fw-bold">Account</p>
-                <ul class="list-unstyled">
-                    <li class="my-4"><a href="#" class="link-item">Cart</a></li>
-                    <li class="my-4"><a href="#" class="link-item">My accout</a></li>
-                    <li class="my-4"><a href="#" class="link-item">My orders</a></li>
-                    <li class="my-4"><a href="#" class="link-item">Wishlist</a></li>
-                    <li class="my-4"><a href="#" class="link-item">Affiliate Program</a></li>
-                </ul>
-            </div>
-
-            <!-- Information Links -->
-            <div class="col-md-2 col-3" dir="ltr">
-                <p class="fs-6 text-white mb-4 fw-bold">Information</p>
-                <ul class="list-unstyled">
-                    <li class="my-4"><a href="#" class="link-item">Track order</a></li>
-                    <li class="my-4"><a href="#" class="link-item">Shipping & Returns</a></li>
-                    <li class="my-4"><a href="#" class="link-item">About us</a></li>
-                    <li class="my-4"><a href="#" class="link-item">Help</a></li>
-                    <li class="my-4"><a href="#" class="link-item">Git Cards</a></li>
-                </ul>
-            </div>
-
-            <!-- Shopping Links -->
-            <div class="col-md-2 col-3" dir="ltr">
-                <p class="fs- text-white mb-4 fw-bold">Shopping</p>
-                <ul class="list-unstyled">
-                    <li class="my-4"><a href="#" class="link-item">Wishlist</a></li>
-                    <li class="my-4"><a href="#" class="link-item">Shop by Brand</a></li>
-                    <li class="my-4"><a href="#" class="link-item">Offers</a></li>
-                    <li class="my-4"><a href="#" class="link-item">Track order</a></li>
-                    <li class="my-4"><a href="#" class="link-item">Size Guide</a></li>
-                </ul>
-            </div>
-
-            <!-- Contact Information -->
-            <div class="col-md-3 col-3 pe-2" dir="ltr">
-                <img src="../images/logo.png" class="w-50 mb-5">
-                <div class="row footer-text-color align-items-center">
-                    <div class="col-1"><i class="fa-solid fa-location-dot"></i></div>
-                    <div class="col-10">
-                        <p class="">29 SE 2nd Ave, Miami Florida 33131, United States</p>
+            <!-- Footer Bottom -->
+            <div class="row down-footer mt-5 text-white">
+                <div class="col-md-4 col-12 d-flex mb-3">
+                    <i class="fa-solid fa-phone fa-2x me-3"></i>
+                    <div>
+                        <p class="mb-1 fw-light">Didn't find what you were looking for?</p>
+                        <a href="#" class="slide-link">Contact us</a>
                     </div>
                 </div>
-                <div class="footer-text-color row align-items-center">
-                    <div class="col-1"><i class="fa-solid fa-envelope"></i></div>
-                    <div class="col-10">
-                        <p class="">29 SE 2nd Ave, Miami Florida 33131, United States</p>
+                <div class="col-md-4 col-12 d-flex mb-3">
+                    <i class="fa-solid fa-headset fa-2x me-3"></i>
+                    <div>
+                        <p class="mb-1 fw-light">Need help with your order?</p>
+                        <a href="#" class="slide-link">Contact us</a>
                     </div>
                 </div>
-                <div>
-                    <a href="#" class="link-item fs-4">(+92) 3942 7879</a>
+                <div class="col-md-4 col-12 d-flex mb-3">
+                    <i class=" bi bi-body-text fa-2x me-3"></i>
+                    <div>
+                        <p class="mb-1 fw-light">We’d love to hear what you think!</p>
+                        <a href="#" class="slide-link">Give Feedback</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Footer Bottom Links -->
-        <div class="container mx-auto mt-5 row down-footer">
-            <div class="col-md-4 col-11 row align-items-start p-0 mb-2">
-                <div class="col-2 text-white pt-2">
-                    <i class="fa-solid fa-phone fa-2x"></i>
-                </div>
-                <div class="col-10 text-white p-0">
-                    <p class="mb-1 fw-light">Didn't find what you were looking for?</p>
-                    <a href="#" class="slide-link">Contact us</a>
-                </div>
-            </div>
-            <div class="col-md-4 col-11 row align-items-start p-0 mb-2">
-                <div class="col-2 text-white pt-2">
-                    <i class="fa-solid fa-phone fa-2x"></i>
-                </div>
-                <div class="col-10 text-white p-0">
-                    <p class="mb-1 fw-light">Didn't find what you were looking for?</p>
-                    <a href="#" class="slide-link">Contact us</a>
-                </div>
-            </div>
-            <div class="col-md-4 col-11 row align-items-start p-0 mb-2">
-                <div class="col-2 text-white pt-2">
-                    <i class="fa-solid fa-phone fa-2x"></i>
-                </div>
-                <div class="col-10 text-white p-0">
-                    <p class="mb-1 fw-light">Didn't find what you were looking for?</p>
-                    <a href="#" class="slide-link">Contact us</a>
-                </div>
-            </div>
         </div>
 
     </footer>
