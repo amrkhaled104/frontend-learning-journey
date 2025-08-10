@@ -14,7 +14,7 @@ document.addEventListener("click", function (e) {
 const categoryLinks = document.querySelectorAll('.category-link');
 const hoverBoxes = document.querySelectorAll('.hover-box');
 
-if (window.innerWidth >= 992) { // فقط في الشاشات الكبيرة
+if (window.innerWidth >= 992) { 
     categoryLinks.forEach(link => {
         const targetId = link.dataset.target;
         const targetBox = document.getElementById(targetId);
