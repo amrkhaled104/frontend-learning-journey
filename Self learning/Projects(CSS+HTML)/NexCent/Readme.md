@@ -1,4 +1,3 @@
-```markdown
 # NexCent — Minimal Landing Page (HTML + CSS)
 
 ![HTML](https://img.shields.io/badge/HTML-5-orange?logo=html5&logoColor=white)
@@ -32,8 +31,6 @@ The goal was to reproduce the Figma design as closely as possible while practici
 
 ## 🗂️ Repo structure (important files)
 
-```
-
 NexCent/
 ├─ css/
 │  └─ style.css         # main stylesheet (organized with sections & variables)
@@ -41,7 +38,6 @@ NexCent/
 ├─ index.html           # main HTML page
 └─ README.md            # this file
 
-````
 
 ---
 
