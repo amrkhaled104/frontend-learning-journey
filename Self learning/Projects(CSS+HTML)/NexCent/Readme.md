@@ -9,8 +9,6 @@ This project reproduces a clean agency/homepage design from a Figma file and imp
 
 - **Figma design:** [Link](https://www.figma.com/design/Z9WlIuxKtTQIxEr7iq4504/Minimal-Landing-Page-Design-%7C-Website-Home-Page-Design-%7C-Agency-Website-UI-Design--Community-?node-id=211-1738&t=0AUJdsYQWJHzK5PA-0)  
 - **Source code:** [GitHub](https://github.com/amrkhaled104/frontend-learning-journey/tree/main/Self%20learning/Projects(CSS%2BHTML)/NexCent)  
-- **Live demo:** *[Add GitHub Pages link here]*
-
 ---
 
 ## 🧾 Project overview
@@ -30,14 +28,14 @@ The goal was to reproduce the Figma design as closely as possible while practici
 ---
 
 ## 🗂️ Repo structure (important files)
-
+```markdown
 NexCent/
 ├─ css/
 │  └─ style.css         # main stylesheet (organized with sections & variables)
 ├─ images/              # all images used in the page (logos, icons, illustrations)
 ├─ index.html           # main HTML page
 └─ README.md            # this file
-
+```
 
 ---
 
@@ -46,7 +44,7 @@ NexCent/
 1. Clone the repository:
    ```bash
    git clone https://github.com/amrkhaled104/frontend-learning-journey.git
-````
+```
 
 2. Open the project folder in your file manager or editor and open `index.html` in your browser.
    Or run a quick static server (recommended for consistent file paths):
@@ -82,9 +80,6 @@ NexCent/
 ## 📸 Design reference
 
 * Figma: [Minimal Landing Page Design](https://www.figma.com/design/Z9WlIuxKtTQIxEr7iq4504/Minimal-Landing-Page-Design-%7C-Website-Home-Page-Design-%7C-Agency-Website-UI-Design--Community-?node-id=211-1738&t=0AUJdsYQWJHzK5PA-0)
-* Screenshot (built project):
-  ![Project Screenshot](./images/screenshot.png)
-
 ---
 
 ## 🧑‍💻 Contributing / Notes
