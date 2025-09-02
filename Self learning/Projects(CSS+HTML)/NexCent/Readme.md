@@ -37,25 +37,6 @@ NexCent/
 └─ README.md            # this file
 ```
 
----
-
-## 🚀 How to run (locally)
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/amrkhaled104/frontend-learning-journey.git
-```
-
-2. Open the project folder in your file manager or editor and open `index.html` in your browser.
-   Or run a quick static server (recommended for consistent file paths):
-
-   ```bash
-   # Python 3
-   python -m http.server 8000
-   # then open http://localhost:8000/<path-to-repo>/NexCent/index.html
-   ```
-
----
 
 ## 📱 Responsive behavior & notes
 
