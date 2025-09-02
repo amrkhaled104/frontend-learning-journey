@@ -1,10 +1,16 @@
+```markdown
 # NexCent — Minimal Landing Page (HTML + CSS)
+
+![HTML](https://img.shields.io/badge/HTML-5-orange?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-3-blue?logo=css3&logoColor=white)
+![Figma](https://img.shields.io/badge/Design-Figma-purple?logo=figma&logoColor=white)
 
 A responsive minimal landing page built with plain **HTML** and **CSS** as a self-learning exercise.  
 This project reproduces a clean agency/homepage design from a Figma file and implements layout patterns and techniques learned during self-study (Grid, Flexbox, responsive breakpoints, CSS variables, simple components).
 
-- **Figma design:** https://www.figma.com/design/Z9WlIuxKtTQIxEr7iq4504/Minimal-Landing-Page-Design-%7C-Website-Home-Page-Design-%7C-Agency-Website-UI-Design--Community-?node-id=211-1738&t=0AUJdsYQWJHzK5PA-0  
-- **Source code:** https://github.com/amrkhaled104/frontend-learning-journey/tree/main/Self%20learning/Projects(CSS%2BHTML)/NexCent
+- **Figma design:** [Link](https://www.figma.com/design/Z9WlIuxKtTQIxEr7iq4504/Minimal-Landing-Page-Design-%7C-Website-Home-Page-Design-%7C-Agency-Website-UI-Design--Community-?node-id=211-1738&t=0AUJdsYQWJHzK5PA-0)  
+- **Source code:** [GitHub](https://github.com/amrkhaled104/frontend-learning-journey/tree/main/Self%20learning/Projects(CSS%2BHTML)/NexCent)  
+- **Live demo:** *[Add GitHub Pages link here]*
 
 ---
 
@@ -26,6 +32,7 @@ The goal was to reproduce the Figma design as closely as possible while practici
 
 ## 🗂️ Repo structure (important files)
 
+```
 
 NexCent/
 ├─ css/
@@ -35,8 +42,6 @@ NexCent/
 └─ README.md            # this file
 
 ````
-
-> If your repo uses slightly different filenames or folders, update the paths accordingly.
 
 ---
 
@@ -60,10 +65,10 @@ NexCent/
 
 ## 📱 Responsive behavior & notes
 
-* Desktop: two-column hero (text 2fr, image 1fr). Header uses grid template areas for stable placement.
-* Tablet: spacing and font sizes reduced. Header padding adjusted.
-* Mobile: hero becomes a single-column layout and **image appears above** the text (implemented via grid areas or reordering).
-* Cards & logos use `repeat(auto-fit, minmax(...))` so they automatically reflow into rows on smaller screens.
+* **Desktop:** two-column hero (text 2fr, image 1fr). Header uses grid template areas for stable placement.
+* **Tablet:** spacing and font sizes reduced. Header padding adjusted.
+* **Mobile:** hero becomes a single-column layout and **image appears above** the text (implemented via grid areas or reordering).
+* **Cards & logos:** use `repeat(auto-fit, minmax(...))` so they automatically reflow into rows on smaller screens.
 
 ---
 
@@ -76,17 +81,19 @@ NexCent/
 * Creating repeating components (cards, logos) and keeping consistent spacing with CSS variables.
 * Small UI polish: hover effects, box-shadow, and accessible CTA styles.
 
+---
 
 ## 📸 Design reference
 
-* Figma: [https://www.figma.com/design/Z9WlIuxKtTQIxEr7iq4504/Minimal-Landing-Page-Design-%7C-Website-Home-Page-Design-%7C-Agency-Website-UI-Design--Community-?node-id=211-1738\&t=0AUJdsYQWJHzK5PA-0](https://www.figma.com/design/Z9WlIuxKtTQIxEr7iq4504/Minimal-Landing-Page-Design-%7C-Website-Home-Page-Design-%7C-Agency-Website-UI-Design--Community-?node-id=211-1738&t=0AUJdsYQWJHzK5PA-0)
+* Figma: [Minimal Landing Page Design](https://www.figma.com/design/Z9WlIuxKtTQIxEr7iq4504/Minimal-Landing-Page-Design-%7C-Website-Home-Page-Design-%7C-Agency-Website-UI-Design--Community-?node-id=211-1738&t=0AUJdsYQWJHzK5PA-0)
+* Screenshot (built project):
+  ![Project Screenshot](./images/screenshot.png)
 
 ---
 
 ## 🧑‍💻 Contributing / Notes
 
-This is a personal learning project. If you want to suggest improvements or fixes, feel free to open an issue or a pull request on the repo. For quick fixes, add a branch, implement the change, and open a PR.
+This is a personal learning project.
+If you want to suggest improvements or fixes, feel free to open an issue or a pull request on the repo. For quick fixes, add a branch, implement the change, and open a PR.
 
 ---
-
-
