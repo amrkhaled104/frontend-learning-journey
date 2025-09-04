@@ -1,0 +1,75 @@
+/*Font*/
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Global Rules*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    height: 5000px;
+
+}
+
+.first::first-letter {
+    color: red;
+}
+
+.first {
+    width: 600px;
+    padding: 30px;
+    margin: 30px auto;
+    font-size: 3rem;
+    text-align: center;
+    background: rgb(218, 218, 218);
+
+    border: 12px solid transparent;
+    border-image: linear-gradient(to right,
+            rgb(255, 72, 0) 0%, rgb(255, 72, 0) 20%,
+            rgb(0, 171, 251) 20%, rgb(0, 171, 251) 40%,
+            rgb(3, 255, 75) 40%, rgb(3, 255, 75) 60%,
+            rgb(255, 0, 208) 60%, rgb(255, 0, 208) 80%,
+            rgb(128, 0, 255) 80%, rgb(128, 0, 255) 100%) 1;
+    letter-spacing: 5px;
+}
+
+hr {
+    height: 20px;
+    background-color: black;
+}
+.form{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+  max-width:600px;
+  margin:30px auto;
+}
+
+.field{ position:relative; }
+
+.second{
+  width:100%;
+  background:#dadada;
+  padding:20px;
+  border:none;
+  outline:none;
+  caret-color:red;
+}
+
+.field::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:-5px;
+  height:5px;
+  background: linear-gradient(to right, red 0%
+  ,red 50%, 
+  rgb(15,144,141)50%, rgb(15,144,141)100%);
+  
+}
