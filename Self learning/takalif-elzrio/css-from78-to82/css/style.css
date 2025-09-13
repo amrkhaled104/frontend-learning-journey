@@ -14,36 +14,41 @@ body {
 
 }
 
-div.red.main{
+div.red.main {
     color: red;
 }
-hr{
+
+hr {
     width: 100%;
     height: 5px;
     background-color: black;
     margin: 20px 0;
 }
-.assign-2.parent div:nth-child(2){
-    color: red;
-}
-.assign-3.parent > div:only-child{
+
+.assign-2.parent div:nth-child(2) {
     color: red;
 }
 
-.assign-4 > div[title]:not(.no-need){
+.assign-3.parent>div:only-child {
     color: red;
 }
-.assign-5 > div:nth-of-type(2) div:last-child{
+
+.assign-4>div[title]:not(.no-need) {
     color: red;
 }
+
+.assign-5>div:nth-of-type(2) div:last-child {
+    color: red;
+}
+
 .assign-6 div:not(.no-need) div:nth-last-of-type(2) {
     color: red;
 }
-.assign-7 div:first-child div:nth-child(5){
+
+.assign-7 div:first-child div:nth-child(5) {
     color: red;
 }
-.assign-8 div:nth-of-type(2),
-.assign-8 div:nth-of-type(3),
-.assign-8 p {
-    color: red;
+
+.assign-8 > *:not(div:first-child):not(div:last-child):not(h3) {
+  color: red;
 }
