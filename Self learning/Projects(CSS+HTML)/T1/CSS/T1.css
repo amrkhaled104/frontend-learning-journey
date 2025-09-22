@@ -24,6 +24,9 @@ body {
     font-family: "Work Sans", sans-serif;
     /* Main font for the page */
 }
+html{
+    scroll-behavior: smooth;
+}
 
 /* Main container to center content */
 .container {
@@ -38,8 +41,14 @@ Header
 =========================*/
 header {
     padding: 20px 0;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
 }
-
+section{
+    scroll-margin-top:100px ;
+}
 /* Logo image */
 header img {
     width: 60px;
