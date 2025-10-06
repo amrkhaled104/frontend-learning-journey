@@ -1,6 +1,6 @@
 //  Function to create an element
 function createElement(type) {
-  return document.createElement(type);
+    return document.createElement(type);
 }
 
 //  Create Header
@@ -31,16 +31,16 @@ let listnav = ["Home", "About", "Service", "Content"];
 
 // Function to create <li> with text
 function createListItem(text) {
-  let li = createElement("li");
-  li.textContent = text;
-  li.style.cssText = "cursor: pointer; font-weight: 500;";
-  return li;
+    let li = createElement("li");
+    li.textContent = text;
+    li.style.cssText = "cursor: pointer; font-weight: 500;";
+    return li;
 }
 
 // 🔹 Add <li> items to <ul>
 for (let i = 0; i < listnav.length; i++) {
-  let li = createListItem(listnav[i]);
-  nav.appendChild(li);
+    let li = createListItem(listnav[i]);
+    nav.appendChild(li);
 }
 
 //  Append Navigation to Header and Header to Body
@@ -53,14 +53,13 @@ grid.style.cssText = `
   background-color: lightgray;
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 `;
-
 //  Create 15 Product Cards
 for (let i = 0; i < 15; i++) {
-  let card = createElement("div");
-  card.style.cssText = `
+    let card = createElement("div");
+    card.style.cssText = `
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,19 +70,19 @@ for (let i = 0; i < 15; i++) {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   `;
 
-  // 🔸 Product Number
-  let count = createElement("h1");
-  count.textContent = `${i + 1}`;
+    // 🔸 Product Number
+    let count = createElement("h1");
+    count.textContent = `${i + 1}`;
 
-  // 🔸 Product Label
-  let prod = createElement("p");
-  prod.textContent = "Product";
-  prod.style.cssText = "color: gray; font-size: 18px; margin: 10px 0 0;";
+    // 🔸 Product Label
+    let prod = createElement("p");
+    prod.textContent = "Product";
+    prod.style.cssText = "color: gray; font-size: 18px; margin: 10px 0 0;";
 
-  //  Append Elements
-  card.appendChild(count);
-  card.appendChild(prod);
-  grid.appendChild(card);
+    //  Append Elements
+    card.appendChild(count);
+    card.appendChild(prod);
+    grid.appendChild(card);
 }
 
 //  Append Grid to Document
