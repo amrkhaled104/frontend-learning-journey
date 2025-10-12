@@ -49,7 +49,11 @@
 // after.textContent = "End";
 // div.after(after);
 //4
-let lastdiv = document.querySelector("div");
-let last = lastdiv.lastChild.textContent.trim();
-console.log((last));
+// let lastdiv = document.querySelector("div");
+// let last = lastdiv.lastChild.textContent.trim();
+// console.log((last));
 
+//5
+document.addEventListener("click", (e) => {
+  console.log(`This is ${e.target.tagName}`)
+});
