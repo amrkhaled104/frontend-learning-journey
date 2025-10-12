@@ -52,3 +52,4 @@
 let lastdiv = document.querySelector("div");
 let last = lastdiv.lastChild.textContent.trim();
 console.log((last));
+
