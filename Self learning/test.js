@@ -1,59 +1,38 @@
-// // let add = document.querySelector(".classes-to-add");
-// // let remove = document.querySelector(".classes-to-remove");
-// // let current = document.querySelector(".element.current");
-// // let classes = document.querySelector(".classes-list");
+let btn = document.querySelector(".btn");
+let board = document.querySelector(".board");
 
-// // add.addEventListener("blur", function (e) {
-// //   let values = add.value.trim().split(" ").filter(v => v !== "");
-// //   for (let i = 0; i < values.length; i++) {
-// //     current.classList.add(values[i]);
-// //     let spann = document.createElement("span");
-// //     spann.textContent = values[i];
-// //     let innerDiv = classes.children[1];
-// //     innerDiv.appendChild(spann);
-// //   }
-// //    add.value = "";
-// // });
-// // remove.addEventListener("blur", () => {
-// //  let values = remove.value.trim().split(" ").filter(v => v !== "");
-// //   let innerDiv = classes.children[1];
-
-// //   for (let i = 0; i < values.length; i++) {
-// //     current.classList.remove(values[i]);
-
-// //     let spans = innerDiv.querySelectorAll("span");
-// //     spans.forEach(el => {
-// //       if (el.textContent === values[i]) {
-// //         el.remove();
-// //       }
-// //     });
-// //   }
-// //   remove.value = "";
-// // });
-
-
-// //2
-// let parg = document.querySelectorAll("p");
-// parg[0].remove();
-// let div = document.querySelector(".our-element");
-// let before = document.createElement("div");
-// before.setAttribute("class","start");
-// before.setAttribute("tilte", "Start Element");
-// before.setAttribute("data-value", "Start");
-// before.textContent = "Start";
-// div.before(before);
-// let after = document.createElement("div");
-// after.setAttribute("class","End");
-// after.setAttribute("tilte", "End Element");
-// after.setAttribute("data-value", "End");
-// after.textContent = "End";
-// div.after(after);
-//4
-// let lastdiv = document.querySelector("div");
-// let last = lastdiv.lastChild.textContent.trim();
-// console.log((last));
-
-//5
-document.addEventListener("click", (e) => {
-  console.log(`This is ${e.target.tagName}`)
+window.addEventListener("scroll", () => {
+  if (scrollY >= 600) {
+    btn.style.display = "block";
+    btn.style.position = "fixed";
+  } else {
+    btn.style.display = "none";
+  }
 });
+
+btn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
+});
+
+function updateBackground() {
+  board.style.backgroundColor = window.localStorage['color'] || 'white';
+}
+
+updateBackground();
+document.addEventListener("click", (e) => {
+  let classes = [...e.target.classList];
+  const colors = ["red", "blue", "black", "green"];
+  
+  for (let color of colors) {
+    if (classes.includes(color)) {
+      localStorage.setItem("color", color);
+      updateBackground();
+      break;
+    }
+  }
+});
+
