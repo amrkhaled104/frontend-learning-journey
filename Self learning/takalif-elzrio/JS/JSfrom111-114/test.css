@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  height: 5000px;
+  background-color: rgb(189, 159, 159);
+}
+
+/* Setting Button */
+.Setting {
+  margin: 30px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: rgba(100,100,100,0.75);
+  position: relative; 
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+/* Setting Content */
+.setting_content {
+  position: absolute;
+  top: 0px;
+  left: 50px;
+  width: 300px;
+  background-color: white;
+  padding: 10px;
+  color: black;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 1s ease;
+  pointer-events: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  -webkit-transform: translateX(-50px);
+  -moz-transform: translateX(-50px);
+  -ms-transform: translateX(-50px);
+  -o-transform: translateX(-50px);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+
+.setting_content.show {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto; 
+}
+
+/* Font Box */
+.Font {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Dropdowns */
+.font_setting {
+  display: flex;
+  gap: 10px;
+}
+
+.font_setting select {
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+}
